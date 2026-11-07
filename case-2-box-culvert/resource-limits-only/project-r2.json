@@ -1,0 +1,2682 @@
+{
+  "activities": {
+    "A": {
+      "duration": 16,
+      "name": "总体开挖",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BE": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "BE",
+          "source_ids": [
+            "narrative-line-17"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 8,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-17"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-17"
+      ]
+    },
+    "B1": {
+      "duration": 8,
+      "name": "开挖额外2m厚海泥",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BE": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "BE",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "B10": {
+      "duration": 20,
+      "name": "安装顶板及上部侧墙模板",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CF": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CF",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "B11": {
+      "duration": 5,
+      "name": "浇筑顶板及上部侧墙混凝土",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CLB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "CLB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "B2": {
+      "duration": 16,
+      "name": "铺填并压实额外2m厚填石料",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BE": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "BE",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "RR": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "RR",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "B3": {
+      "duration": 12,
+      "name": "铺设并压实400mm厚填石",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BE": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "BE",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "RR": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "RR",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "B4": {
+      "duration": 3,
+      "name": "浇筑75mm厚垫层混凝土",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CLB": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "CLB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 6,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "B5": {
+      "duration": 32,
+      "name": "绑扎底板及下部侧墙钢筋",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BBF": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "BBF",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "B6": {
+      "duration": 16,
+      "name": "安装底板及下部侧墙模板",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CF": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CF",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "B7": {
+      "duration": 4,
+      "name": "浇筑底板及下部侧墙混凝土",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CLB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "CLB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "B8": {
+      "duration": 32,
+      "name": "搭设顶板支架",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "LB": {
+          "at": "work_segments",
+          "quantity": 6,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "B9": {
+      "duration": 20,
+      "name": "绑扎顶板及上部侧墙钢筋",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BBF": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "BBF",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-19"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-19"
+      ]
+    },
+    "C1": {
+      "duration": 12,
+      "name": "铺设并压实400mm厚填石",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BE": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "BE",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "RR": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "RR",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-21"
+      ]
+    },
+    "C2": {
+      "duration": 3,
+      "name": "浇筑75mm厚垫层混凝土",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CLB": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "CLB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-21"
+      ]
+    },
+    "C3": {
+      "duration": 32,
+      "name": "绑扎底板及下部侧墙钢筋",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BBF": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "BBF",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-21"
+      ]
+    },
+    "C4": {
+      "duration": 16,
+      "name": "安装底板及下部侧墙模板",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CF": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CF",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-21"
+      ]
+    },
+    "C5": {
+      "duration": 4,
+      "name": "浇筑底板及下部侧墙混凝土",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CLB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "CLB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-21"
+      ]
+    },
+    "C6": {
+      "duration": 32,
+      "name": "搭设顶板支架",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "LB": {
+          "at": "work_segments",
+          "quantity": 5,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-21"
+      ]
+    },
+    "C7": {
+      "duration": 20,
+      "name": "绑扎顶板及上部侧墙钢筋",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BBF": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "BBF",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-21"
+      ]
+    },
+    "C8": {
+      "duration": 20,
+      "name": "安装顶板及上部侧墙模板",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CF": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CF",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-21"
+      ]
+    },
+    "C9": {
+      "duration": 5,
+      "name": "浇筑顶板及上部侧墙混凝土",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CLB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "CLB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-21"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-21"
+      ]
+    },
+    "D1": {
+      "duration": 2,
+      "name": "铺设并压实400mm厚填石",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BE": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "BE",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "RR": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "RR",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-23"
+      ]
+    },
+    "D2": {
+      "duration": 1,
+      "name": "浇筑75mm厚垫层混凝土",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CLB": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "CLB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "RR": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "RR",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-23"
+      ]
+    },
+    "D3": {
+      "duration": 5,
+      "name": "绑扎底板及下部侧墙钢筋",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BBF": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "BBF",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-23"
+      ]
+    },
+    "D4": {
+      "duration": 2,
+      "name": "安装底板及下部侧墙模板",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CF": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CF",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-23"
+      ]
+    },
+    "D5": {
+      "duration": 1,
+      "name": "浇筑底板及下部侧墙混凝土",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CLB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "CLB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "RR": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "RR",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-23"
+      ]
+    },
+    "D6": {
+      "duration": 4,
+      "name": "搭设顶板支架",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-23"
+      ]
+    },
+    "D7": {
+      "duration": 6,
+      "name": "绑扎顶板及上部侧墙钢筋",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BBF": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "BBF",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-23"
+      ]
+    },
+    "D8": {
+      "duration": 3,
+      "name": "安装顶板及上部侧墙模板",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CF": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CF",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-23"
+      ]
+    },
+    "D9": {
+      "duration": 1,
+      "name": "浇筑顶板及上部侧墙混凝土",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CLB": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "CLB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        },
+        "RR": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "RR",
+          "source_ids": [
+            "narrative-line-23"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-23"
+      ]
+    },
+    "E1": {
+      "duration": 90,
+      "name": "混凝土管报审批核及供货",
+      "priority": 0,
+      "produces": {},
+      "requires": {},
+      "source_ids": [
+        "narrative-line-25"
+      ]
+    },
+    "E2": {
+      "duration": 1,
+      "name": "在端墙处安放预制混凝土管",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "CMC": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CMC",
+          "source_ids": [
+            "narrative-line-25"
+          ]
+        },
+        "DL": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "DL",
+          "source_ids": [
+            "narrative-line-25"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 6,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-25"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-25"
+      ]
+    },
+    "F": {
+      "duration": 7,
+      "name": "回填及压实",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "BE": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "BE",
+          "source_ids": [
+            "narrative-line-27"
+          ]
+        },
+        "LB": {
+          "at": "work_segments",
+          "quantity": 8,
+          "resource_id": "LB",
+          "source_ids": [
+            "narrative-line-27"
+          ]
+        },
+        "RR": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "RR",
+          "source_ids": [
+            "narrative-line-27"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative-line-27"
+      ]
+    }
+  },
+  "id": "case-2-box-culvert",
+  "issues": {
+    "available-BBF": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/BBF/kind": "reusable",
+          "/resources/BBF/unit": "person"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": true
+      },
+      "kind": "missing",
+      "path": "/resources/BBF/supply/initial/available",
+      "proposal": true,
+      "reason": "Narrative gives a capacity but not initial availability.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "available-BE": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/BE/kind": "reusable",
+          "/resources/BE/unit": "machine"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": true
+      },
+      "kind": "missing",
+      "path": "/resources/BE/supply/initial/available",
+      "proposal": true,
+      "reason": "Narrative gives a capacity but not initial availability.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "available-CF": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/CF/kind": "reusable",
+          "/resources/CF/unit": "person"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": true
+      },
+      "kind": "missing",
+      "path": "/resources/CF/supply/initial/available",
+      "proposal": true,
+      "reason": "Narrative gives a capacity but not initial availability.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "available-CLB": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/CLB/kind": "reusable",
+          "/resources/CLB/unit": "person"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": true
+      },
+      "kind": "missing",
+      "path": "/resources/CLB/supply/initial/available",
+      "proposal": true,
+      "reason": "Narrative gives a capacity but not initial availability.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "available-CMC": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/CMC/kind": "reusable",
+          "/resources/CMC/unit": "machine"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": true
+      },
+      "kind": "missing",
+      "path": "/resources/CMC/supply/initial/available",
+      "proposal": true,
+      "reason": "Narrative gives a capacity but not initial availability.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "available-DL": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/DL/kind": "reusable",
+          "/resources/DL/unit": "person"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": true
+      },
+      "kind": "missing",
+      "path": "/resources/DL/supply/initial/available",
+      "proposal": true,
+      "reason": "Narrative gives a capacity but not initial availability.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "available-LB": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/LB/kind": "reusable",
+          "/resources/LB/unit": "person"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": true
+      },
+      "kind": "missing",
+      "path": "/resources/LB/supply/initial/available",
+      "proposal": true,
+      "reason": "Narrative gives a capacity but not initial availability.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "available-RR": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/RR/kind": "reusable",
+          "/resources/RR/unit": "machine"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": true
+      },
+      "kind": "missing",
+      "path": "/resources/RR/supply/initial/available",
+      "proposal": true,
+      "reason": "Narrative gives a capacity but not initial availability.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "goal": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": {
+          "finish_activity_ids": [
+            "F"
+          ],
+          "kind": "project_completion"
+        }
+      },
+      "kind": "missing",
+      "path": "/simulation/goal",
+      "proposal": {
+        "finish_activity_ids": [
+          "F"
+        ],
+        "kind": "project_completion"
+      },
+      "reason": "Project completion at F is inferred from the terminal activity, not explicitly selected.",
+      "source_ids": [
+        "narrative-line-27"
+      ],
+      "status": "confirmed"
+    },
+    "horizon": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/time_unit": "day"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": null
+      },
+      "kind": "missing",
+      "path": "/simulation/horizon",
+      "reason": "A simulation horizon or explicit no-horizon choice is not stated.",
+      "source_ids": [
+        "request-current"
+      ],
+      "status": "confirmed"
+    },
+    "max-transactions": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 10000
+      },
+      "kind": "missing",
+      "path": "/simulation/max_transactions",
+      "proposal": 10000,
+      "reason": "Safety transaction limit is not stated.",
+      "source_ids": [
+        "request-current"
+      ],
+      "status": "confirmed"
+    },
+    "priority-A": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/A/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-17"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B1": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B1/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B10": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B10/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B11": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B11/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B2": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B2/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B3": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B3/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B4": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B4/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B5": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B5/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B6": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B6/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B7": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B7/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B8": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B8/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B9": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B9/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "status": "confirmed"
+    },
+    "priority-C1": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/C1/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "status": "confirmed"
+    },
+    "priority-C2": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/C2/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "status": "confirmed"
+    },
+    "priority-C3": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/C3/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "status": "confirmed"
+    },
+    "priority-C4": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/C4/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "status": "confirmed"
+    },
+    "priority-C5": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/C5/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "status": "confirmed"
+    },
+    "priority-C6": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/C6/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "status": "confirmed"
+    },
+    "priority-C7": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/C7/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "status": "confirmed"
+    },
+    "priority-C8": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/C8/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "status": "confirmed"
+    },
+    "priority-C9": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/C9/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "status": "confirmed"
+    },
+    "priority-D1": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/D1/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "status": "confirmed"
+    },
+    "priority-D2": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/D2/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "status": "confirmed"
+    },
+    "priority-D3": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/D3/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "status": "confirmed"
+    },
+    "priority-D4": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/D4/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "status": "confirmed"
+    },
+    "priority-D5": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/D5/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "status": "confirmed"
+    },
+    "priority-D6": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/D6/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "status": "confirmed"
+    },
+    "priority-D7": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/D7/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "status": "confirmed"
+    },
+    "priority-D8": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/D8/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "status": "confirmed"
+    },
+    "priority-D9": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/D9/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "status": "confirmed"
+    },
+    "priority-E1": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/E1/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-25"
+      ],
+      "status": "confirmed"
+    },
+    "priority-E2": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/E2/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-25"
+      ],
+      "status": "confirmed"
+    },
+    "priority-F": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/F/priority",
+      "proposal": 0,
+      "reason": "Resource queue priority is not stated in the narrative.",
+      "source_ids": [
+        "narrative-line-27"
+      ],
+      "status": "confirmed"
+    },
+    "ready-time-BBF": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/BBF/kind": "reusable",
+          "/resources/BBF/unit": "person",
+          "/time_unit": "day"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/resources/BBF/supply/initial/ready_time",
+      "proposal": 0,
+      "reason": "Narrative gives a capacity but no initial ready time.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "ready-time-BE": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/BE/kind": "reusable",
+          "/resources/BE/unit": "machine",
+          "/time_unit": "day"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/resources/BE/supply/initial/ready_time",
+      "proposal": 0,
+      "reason": "Narrative gives a capacity but no initial ready time.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "ready-time-CF": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/CF/kind": "reusable",
+          "/resources/CF/unit": "person",
+          "/time_unit": "day"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/resources/CF/supply/initial/ready_time",
+      "proposal": 0,
+      "reason": "Narrative gives a capacity but no initial ready time.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "ready-time-CLB": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/CLB/kind": "reusable",
+          "/resources/CLB/unit": "person",
+          "/time_unit": "day"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/resources/CLB/supply/initial/ready_time",
+      "proposal": 0,
+      "reason": "Narrative gives a capacity but no initial ready time.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "ready-time-CMC": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/CMC/kind": "reusable",
+          "/resources/CMC/unit": "machine",
+          "/time_unit": "day"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/resources/CMC/supply/initial/ready_time",
+      "proposal": 0,
+      "reason": "Narrative gives a capacity but no initial ready time.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "ready-time-DL": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/DL/kind": "reusable",
+          "/resources/DL/unit": "person",
+          "/time_unit": "day"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/resources/DL/supply/initial/ready_time",
+      "proposal": 0,
+      "reason": "Narrative gives a capacity but no initial ready time.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "ready-time-LB": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/LB/kind": "reusable",
+          "/resources/LB/unit": "person",
+          "/time_unit": "day"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/resources/LB/supply/initial/ready_time",
+      "proposal": 0,
+      "reason": "Narrative gives a capacity but no initial ready time.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "ready-time-RR": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/resources/RR/kind": "reusable",
+          "/resources/RR/unit": "machine",
+          "/time_unit": "day"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/resources/RR/supply/initial/ready_time",
+      "proposal": 0,
+      "reason": "Narrative gives a capacity but no initial ready time.",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "status": "confirmed"
+    },
+    "resources-E1": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": {}
+      },
+      "kind": "missing",
+      "path": "/activities/E1/requires",
+      "proposal": {},
+      "reason": "The table lists no resource demand for E1; confirm whether to model no demand.",
+      "source_ids": [
+        "narrative-line-25"
+      ],
+      "status": "confirmed"
+    },
+    "run-count": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 1
+      },
+      "kind": "missing",
+      "path": "/simulation/run/runs",
+      "proposal": 1,
+      "reason": "Number of simulation runs is not stated.",
+      "source_ids": [
+        "request-current"
+      ],
+      "status": "confirmed"
+    },
+    "run-seed": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 17
+      },
+      "kind": "default",
+      "path": "/simulation/run/seed",
+      "proposal": 42,
+      "reason": "用户明确确认单次仿真的固定 seed=17。",
+      "source_ids": [
+        "narrative-overview",
+        "narrative-calendar",
+        "narrative-resources",
+        "request-current"
+      ],
+      "status": "confirmed"
+    },
+    "start-time": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/time_unit": "day"
+        },
+        "project_id": "case-2-box-culvert",
+        "source_id": "user-modeling-choices-2026-10-08",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/simulation/start_time",
+      "proposal": 0,
+      "reason": "Simulation time origin is not stated.",
+      "source_ids": [
+        "request-current"
+      ],
+      "status": "confirmed"
+    }
+  },
+  "metadata": {
+    "downstream_status": {
+      "s3": {
+        "reason": "project facts changed at /activities/A/priority, /activities/B1/priority, /activities/B2/priority, /activities/B3/priority, /activities/B4/priority, /activities/B5/priority, /activities/B6/priority, /activities/B7/priority, /activities/B8/priority, /activities/B9/priority, /activities/B10/priority, /activities/B11/priority, /activities/C1/priority, /activities/C2/priority, /activities/C3/priority, /activities/C4/priority, /activities/C5/priority, /activities/C6/priority, /activities/C7/priority, /activities/C8/priority, /activities/C9/priority, /activities/D1/priority, /activities/D2/priority, /activities/D3/priority, /activities/D4/priority, /activities/D5/priority, /activities/D6/priority, /activities/D7/priority, /activities/D8/priority, /activities/D9/priority, /activities/E1/priority, /activities/E2/priority, /activities/F/priority, /resources/BBF/supply/initial/ready_time, /resources/BBF/supply/initial/available, /resources/BE/supply/initial/ready_time, /resources/BE/supply/initial/available, /resources/CMC/supply/initial/ready_time, /resources/CMC/supply/initial/available, /resources/CF/supply/initial/ready_time, /resources/CF/supply/initial/available, /resources/CLB/supply/initial/ready_time, /resources/CLB/supply/initial/available, /resources/DL/supply/initial/ready_time, /resources/DL/supply/initial/available, /resources/LB/supply/initial/ready_time, /resources/LB/supply/initial/available, /resources/RR/supply/initial/ready_time, /resources/RR/supply/initial/available, /activities/E1/requires, /simulation/start_time, /simulation/horizon, /simulation/max_transactions, /simulation/goal",
+        "source_revision": 1,
+        "status": "stale"
+      },
+      "simulation": {
+        "reason": "project facts changed at /activities/A/priority, /activities/B1/priority, /activities/B2/priority, /activities/B3/priority, /activities/B4/priority, /activities/B5/priority, /activities/B6/priority, /activities/B7/priority, /activities/B8/priority, /activities/B9/priority, /activities/B10/priority, /activities/B11/priority, /activities/C1/priority, /activities/C2/priority, /activities/C3/priority, /activities/C4/priority, /activities/C5/priority, /activities/C6/priority, /activities/C7/priority, /activities/C8/priority, /activities/C9/priority, /activities/D1/priority, /activities/D2/priority, /activities/D3/priority, /activities/D4/priority, /activities/D5/priority, /activities/D6/priority, /activities/D7/priority, /activities/D8/priority, /activities/D9/priority, /activities/E1/priority, /activities/E2/priority, /activities/F/priority, /resources/BBF/supply/initial/ready_time, /resources/BBF/supply/initial/available, /resources/BE/supply/initial/ready_time, /resources/BE/supply/initial/available, /resources/CMC/supply/initial/ready_time, /resources/CMC/supply/initial/available, /resources/CF/supply/initial/ready_time, /resources/CF/supply/initial/available, /resources/CLB/supply/initial/ready_time, /resources/CLB/supply/initial/available, /resources/DL/supply/initial/ready_time, /resources/DL/supply/initial/available, /resources/LB/supply/initial/ready_time, /resources/LB/supply/initial/available, /resources/RR/supply/initial/ready_time, /resources/RR/supply/initial/available, /activities/E1/requires, /simulation/start_time, /simulation/horizon, /simulation/max_transactions, /simulation/goal, /simulation/run/runs, /simulation/run/seed",
+        "source_revision": 1,
+        "status": "stale"
+      }
+    },
+    "original_activity_count": 33,
+    "resource_calendar_source_id": "narrative-calendar",
+    "resource_calendar_supported": false,
+    "source_narrative_sha256": "498472a9574a4bf00eefa0507cc4b60da689ba32150d506cce14fa06f9b4fad1"
+  },
+  "name": "箱涵排水工程案例",
+  "policy": {
+    "duration": "confirmed_constant",
+    "execution": "pause_release_reacquire",
+    "source_ids": [
+      "policy-current"
+    ]
+  },
+  "relations": {
+    "R-A-B1": {
+      "from": "A",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B1",
+      "type": "FS"
+    },
+    "R-A-C1": {
+      "from": "A",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C1",
+      "type": "FS"
+    },
+    "R-B1-B2": {
+      "from": "B1",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B2",
+      "type": "FS"
+    },
+    "R-B10-B11": {
+      "from": "B10",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B11",
+      "type": "FS"
+    },
+    "R-B11-F": {
+      "from": "B11",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-27"
+      ],
+      "to": "F",
+      "type": "FS"
+    },
+    "R-B2-B3": {
+      "from": "B2",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B3",
+      "type": "FS"
+    },
+    "R-B3-B4": {
+      "from": "B3",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B4",
+      "type": "FS"
+    },
+    "R-B4-B5": {
+      "from": "B4",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B5",
+      "type": "FS"
+    },
+    "R-B4-B6": {
+      "from": "B4",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B6",
+      "type": "FS"
+    },
+    "R-B5-B7": {
+      "from": "B5",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B7",
+      "type": "FS"
+    },
+    "R-B6-B7": {
+      "from": "B6",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B7",
+      "type": "FS"
+    },
+    "R-B7-B8": {
+      "from": "B7",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B8",
+      "type": "FS"
+    },
+    "R-B8-B10": {
+      "from": "B8",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B10",
+      "type": "FS"
+    },
+    "R-B8-B9": {
+      "from": "B8",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B9",
+      "type": "FS"
+    },
+    "R-B9-B11": {
+      "from": "B9",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "to": "B11",
+      "type": "FS"
+    },
+    "R-C1-C2": {
+      "from": "C1",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C2",
+      "type": "FS"
+    },
+    "R-C2-C3": {
+      "from": "C2",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C3",
+      "type": "FS"
+    },
+    "R-C2-C4": {
+      "from": "C2",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C4",
+      "type": "FS"
+    },
+    "R-C3-C5": {
+      "from": "C3",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C5",
+      "type": "FS"
+    },
+    "R-C4-C5": {
+      "from": "C4",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C5",
+      "type": "FS"
+    },
+    "R-C5-C6": {
+      "from": "C5",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C6",
+      "type": "FS"
+    },
+    "R-C6-C7": {
+      "from": "C6",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C7",
+      "type": "FS"
+    },
+    "R-C6-C8": {
+      "from": "C6",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C8",
+      "type": "FS"
+    },
+    "R-C7-C9": {
+      "from": "C7",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C9",
+      "type": "FS"
+    },
+    "R-C8-C9": {
+      "from": "C8",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "to": "C9",
+      "type": "FS"
+    },
+    "R-C9-D1": {
+      "from": "C9",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D1",
+      "type": "FS"
+    },
+    "R-D1-D2": {
+      "from": "D1",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D2",
+      "type": "FS"
+    },
+    "R-D2-D3": {
+      "from": "D2",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D3",
+      "type": "FS"
+    },
+    "R-D3-D4": {
+      "from": "D3",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D4",
+      "type": "FS"
+    },
+    "R-D4-D5": {
+      "from": "D4",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D5",
+      "type": "FS"
+    },
+    "R-D5-D6": {
+      "from": "D5",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D6",
+      "type": "FS"
+    },
+    "R-D6-D7": {
+      "from": "D6",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D7",
+      "type": "FS"
+    },
+    "R-D6-D8": {
+      "from": "D6",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D8",
+      "type": "FS"
+    },
+    "R-D7-D9": {
+      "from": "D7",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D9",
+      "type": "FS"
+    },
+    "R-D8-D9": {
+      "from": "D8",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D9",
+      "type": "FS"
+    },
+    "R-D9-F": {
+      "from": "D9",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-27"
+      ],
+      "to": "F",
+      "type": "FS"
+    },
+    "R-E1-E2": {
+      "from": "E1",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-25"
+      ],
+      "to": "E2",
+      "type": "FS"
+    },
+    "R-E2-D6": {
+      "from": "E2",
+      "lag": 0,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "to": "D6",
+      "type": "FS"
+    }
+  },
+  "resources": {
+    "BBF": {
+      "kind": "reusable",
+      "name": "钢筋工",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 4,
+          "id_prefix": "BBF-",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative-resources"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "person"
+    },
+    "BE": {
+      "kind": "reusable",
+      "name": "反铲挖掘机",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 4,
+          "id_prefix": "BE-",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative-resources"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "machine"
+    },
+    "CF": {
+      "kind": "reusable",
+      "name": "模板木工",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 2,
+          "id_prefix": "CF-",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative-resources"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "person"
+    },
+    "CLB": {
+      "kind": "reusable",
+      "name": "混凝土工",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 5,
+          "id_prefix": "CLB-",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative-resources"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "person"
+    },
+    "CMC": {
+      "kind": "reusable",
+      "name": "履带式起重机",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 3,
+          "id_prefix": "CMC-",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative-resources"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "machine"
+    },
+    "DL": {
+      "kind": "reusable",
+      "name": "渠管工",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 1,
+          "id_prefix": "DL-",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative-resources"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "person"
+    },
+    "LB": {
+      "kind": "reusable",
+      "name": "技术工人",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 8,
+          "id_prefix": "LB-",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative-resources"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "person"
+    },
+    "RR": {
+      "kind": "reusable",
+      "name": "压路机",
+      "source_ids": [
+        "narrative-resources"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 4,
+          "id_prefix": "RR-",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative-resources"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "machine"
+    }
+  },
+  "revision": 2,
+  "schema_version": "project-1.0",
+  "simulation": {
+    "duration_mode": "confirmed_constant",
+    "goal": {
+      "finish_activity_ids": [
+        "F"
+      ],
+      "kind": "project_completion"
+    },
+    "horizon": null,
+    "max_transactions": 10000,
+    "profile": "activity_network",
+    "run": {
+      "runs": 1,
+      "seed": 17
+    },
+    "source_ids": [
+      "request-current",
+      "narrative-overview"
+    ],
+    "start_time": 0
+  },
+  "source_ids": [
+    "narrative-overview",
+    "narrative-calendar",
+    "narrative-resources",
+    "request-current"
+  ],
+  "sources": {
+    "narrative-calendar": {
+      "kind": "document",
+      "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=9",
+      "text": "Resource calendars: six-day labor and carpenter weeks, four-day concreting laborer weeks, no machine calendar."
+    },
+    "narrative-line-17": {
+      "kind": "document",
+      "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=17",
+      "text": "Activities, durations, predecessors and resource demands stated on line 17."
+    },
+    "narrative-line-19": {
+      "kind": "document",
+      "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=19",
+      "text": "Activities, durations, predecessors and resource demands stated on line 19."
+    },
+    "narrative-line-21": {
+      "kind": "document",
+      "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=21",
+      "text": "Activities, durations, predecessors and resource demands stated on line 21."
+    },
+    "narrative-line-23": {
+      "kind": "document",
+      "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=23",
+      "text": "Activities, durations, predecessors and resource demands stated on line 23."
+    },
+    "narrative-line-25": {
+      "kind": "document",
+      "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=25",
+      "text": "Activities, durations, predecessors and resource demands stated on line 25."
+    },
+    "narrative-line-27": {
+      "kind": "document",
+      "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=27",
+      "text": "Activities, durations, predecessors and resource demands stated on line 27."
+    },
+    "narrative-overview": {
+      "kind": "document",
+      "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=7",
+      "text": "33 activities, eight resource types and two construction fronts."
+    },
+    "narrative-resources": {
+      "kind": "document",
+      "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=13",
+      "text": "Eight resource types and their stated available upper limits."
+    },
+    "policy-current": {
+      "kind": "policy",
+      "locator": "AGENTS.md#已确认的M1决策",
+      "text": "confirmed_constant duration and pause_release_reacquire execution policy."
+    },
+    "request-current": {
+      "kind": "user",
+      "locator": "conversation://current-user-request",
+      "text": "从原始叙述重新跑 case-2 的全部流程，结果保存到 run，不用看旧版本。"
+    },
+    "user-modeling-choices-2026-10-08": {
+      "kind": "user",
+      "locator": "conversation://question-reply/call_1f39a2803f6b48f78051edd570b23657",
+      "text": "用户对整组设置（33项活动 priority=0；8种资源从第0天可用；E1不占用这8种资源；起点0天、无 horizon、max_transactions=10000；目标F完成；1次运行、固定seed=17）答复：确认整组设置。"
+    }
+  },
+  "status": "draft",
+  "time_unit": "day"
+}

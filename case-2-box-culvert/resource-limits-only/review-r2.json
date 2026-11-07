@@ -1,0 +1,46 @@
+{
+  "project": {
+    "canonical_sha256": "f02a9d9cad2c1b1003fc8f8f0840881e9ec88326c23af269648d5d18dd4fd80c",
+    "declared_status": "draft",
+    "id": "case-2-box-culvert",
+    "revision": 2
+  },
+  "questions": [],
+  "readiness": {
+    "aon": {
+      "blockers": [],
+      "ready": true
+    },
+    "pdm": {
+      "blockers": [],
+      "ready": true
+    },
+    "run": {
+      "blockers": [],
+      "ready": true
+    },
+    "s3": {
+      "blockers": [],
+      "ready": true
+    },
+    "simulation": {
+      "blockers": [
+        {
+          "code": "GENERATED_S3_REQUIRED",
+          "message": "Actual simulation readiness requires same-revision AON/S3 generation, strict validation and loader acceptance.",
+          "path": "/simulation"
+        }
+      ],
+      "ready": false
+    }
+  },
+  "schema": {
+    "contract": "project-1.0",
+    "valid": true
+  },
+  "semantics": {
+    "diagnostics": [],
+    "valid": true
+  },
+  "status": "ready"
+}

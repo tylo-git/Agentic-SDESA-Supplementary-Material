@@ -1,0 +1,897 @@
+{
+  "activities": [
+    {
+      "description": "活动 A [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:A:0;project-revision:31",
+        "value": 2
+      },
+      "id": "n:1:A:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00001",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00001"
+        },
+        {
+          "description": "Complete dependency e:00002",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00002"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "CN"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00012"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CN"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "活动 B [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:B:0;project-revision:31",
+        "value": 3
+      },
+      "id": "n:1:B:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00003",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00003"
+        },
+        {
+          "description": "Complete dependency e:00004",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00004"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00013"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "活动 C [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:C:0;project-revision:31",
+        "value": 5
+      },
+      "id": "n:1:C:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00005",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00005"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00014"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "活动 D [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:D:0;project-revision:31",
+        "value": 4
+      },
+      "id": "n:1:D:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00006",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00006"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 3,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00001"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "活动 E [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:E:0;project-revision:31",
+        "value": 4
+      },
+      "id": "n:1:E:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00007",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00007"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00002"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "活动 F [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:F:0;project-revision:31",
+        "value": 3
+      },
+      "id": "n:1:F:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00008",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00008"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "CN"
+        },
+        {
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00003"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CN"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "活动 G [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:G:0;project-revision:31",
+        "value": 6
+      },
+      "id": "n:1:G:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00009",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00009"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00004"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00005"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "活动 H [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:H:0;project-revision:31",
+        "value": 2
+      },
+      "id": "n:1:H:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00010",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00010"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "CN"
+        },
+        {
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00006"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CN"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "活动 I [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:I:0;project-revision:31",
+        "value": 3
+      },
+      "id": "n:1:I:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00011",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00011"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00008"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00009"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "Finish [zero_work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:FN:0;project-revision:31",
+        "value": 0
+      },
+      "id": "n:2:FN:0",
+      "priority": 0,
+      "produces": [],
+      "releases": [],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00007"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00010"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00011"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "Start [zero_work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:ST:0;project-revision:31",
+        "value": 0
+      },
+      "id": "n:2:ST:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00012",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00012"
+        },
+        {
+          "description": "Complete dependency e:00013",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00013"
+        },
+        {
+          "description": "Complete dependency e:00014",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00014"
+        }
+      ],
+      "releases": [],
+      "requires": [],
+      "route_mode": "choice",
+      "routes": []
+    }
+  ],
+  "flow_entities": [
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:A:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:A:0",
+      "initial_activity": "n:1:A:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:B:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:B:0",
+      "initial_activity": "n:1:B:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:C:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:C:0",
+      "initial_activity": "n:1:C:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:D:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:D:0",
+      "initial_activity": "n:1:D:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:E:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:E:0",
+      "initial_activity": "n:1:E:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:F:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:F:0",
+      "initial_activity": "n:1:F:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:G:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:G:0",
+      "initial_activity": "n:1:G:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:H:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:H:0",
+      "initial_activity": "n:1:H:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:I:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:I:0",
+      "initial_activity": "n:1:I:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:FN:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:FN:0",
+      "initial_activity": "n:2:FN:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:ST:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:ST:0",
+      "initial_activity": "n:2:ST:0",
+      "type": "activity_trigger"
+    }
+  ],
+  "flow_entity_batches": [],
+  "horizon": null,
+  "metadata": {
+    "agenticsdesa": {
+      "activity_mapping": {
+        "n:1:A:0": {
+          "aon_node_id": "n:1:A:0",
+          "role": "work",
+          "source_activity_id": "A",
+          "work_interval": {
+            "finish": 2,
+            "start": 0
+          }
+        },
+        "n:1:B:0": {
+          "aon_node_id": "n:1:B:0",
+          "role": "work",
+          "source_activity_id": "B",
+          "work_interval": {
+            "finish": 3,
+            "start": 0
+          }
+        },
+        "n:1:C:0": {
+          "aon_node_id": "n:1:C:0",
+          "role": "work",
+          "source_activity_id": "C",
+          "work_interval": {
+            "finish": 5,
+            "start": 0
+          }
+        },
+        "n:1:D:0": {
+          "aon_node_id": "n:1:D:0",
+          "role": "work",
+          "source_activity_id": "D",
+          "work_interval": {
+            "finish": 4,
+            "start": 0
+          }
+        },
+        "n:1:E:0": {
+          "aon_node_id": "n:1:E:0",
+          "role": "work",
+          "source_activity_id": "E",
+          "work_interval": {
+            "finish": 4,
+            "start": 0
+          }
+        },
+        "n:1:F:0": {
+          "aon_node_id": "n:1:F:0",
+          "role": "work",
+          "source_activity_id": "F",
+          "work_interval": {
+            "finish": 3,
+            "start": 0
+          }
+        },
+        "n:1:G:0": {
+          "aon_node_id": "n:1:G:0",
+          "role": "work",
+          "source_activity_id": "G",
+          "work_interval": {
+            "finish": 6,
+            "start": 0
+          }
+        },
+        "n:1:H:0": {
+          "aon_node_id": "n:1:H:0",
+          "role": "work",
+          "source_activity_id": "H",
+          "work_interval": {
+            "finish": 2,
+            "start": 0
+          }
+        },
+        "n:1:I:0": {
+          "aon_node_id": "n:1:I:0",
+          "role": "work",
+          "source_activity_id": "I",
+          "work_interval": {
+            "finish": 3,
+            "start": 0
+          }
+        },
+        "n:2:FN:0": {
+          "aon_node_id": "n:2:FN:0",
+          "role": "zero_work",
+          "source_activity_id": "FN",
+          "work_interval": {
+            "finish": 0,
+            "start": 0
+          }
+        },
+        "n:2:ST:0": {
+          "aon_node_id": "n:2:ST:0",
+          "role": "zero_work",
+          "source_activity_id": "ST",
+          "work_interval": {
+            "finish": 0,
+            "start": 0
+          }
+        }
+      },
+      "aon_schema_version": "aon-1.0",
+      "aon_sha256": "3ecd86523dc8c1df82b6572e4b13f978ffc53c416065c9a771cd181c88219f13",
+      "builder_version": "build-s3-1.0",
+      "finish_gate_mapping": {},
+      "goal": {
+        "finish_activity_ids": [
+          "FN"
+        ],
+        "kind": "project_completion"
+      },
+      "goal_activity_mapping": {
+        "FN": "n:2:FN:0"
+      },
+      "profile": "activity_network",
+      "project_id": "case-1-double-resource-p25",
+      "project_revision": 31,
+      "project_sha256": "b9a32cffec456c63cedc3138f9a4777695a29b86aa3f0a1b7c9240dbabcd2dbf",
+      "token_mapping": {
+        "__agenticsdesa_token__:7:e:00001": {
+          "consumer_activity": "n:1:D:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:A:0",
+          "quantity": 1,
+          "source_edge_id": "e:00001"
+        },
+        "__agenticsdesa_token__:7:e:00002": {
+          "consumer_activity": "n:1:E:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:A:0",
+          "quantity": 1,
+          "source_edge_id": "e:00002"
+        },
+        "__agenticsdesa_token__:7:e:00003": {
+          "consumer_activity": "n:1:F:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:B:0",
+          "quantity": 1,
+          "source_edge_id": "e:00003"
+        },
+        "__agenticsdesa_token__:7:e:00004": {
+          "consumer_activity": "n:1:G:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:B:0",
+          "quantity": 1,
+          "source_edge_id": "e:00004"
+        },
+        "__agenticsdesa_token__:7:e:00005": {
+          "consumer_activity": "n:1:G:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:C:0",
+          "quantity": 1,
+          "source_edge_id": "e:00005"
+        },
+        "__agenticsdesa_token__:7:e:00006": {
+          "consumer_activity": "n:1:H:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:D:0",
+          "quantity": 1,
+          "source_edge_id": "e:00006"
+        },
+        "__agenticsdesa_token__:7:e:00007": {
+          "consumer_activity": "n:2:FN:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:E:0",
+          "quantity": 1,
+          "source_edge_id": "e:00007"
+        },
+        "__agenticsdesa_token__:7:e:00008": {
+          "consumer_activity": "n:1:I:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:F:0",
+          "quantity": 1,
+          "source_edge_id": "e:00008"
+        },
+        "__agenticsdesa_token__:7:e:00009": {
+          "consumer_activity": "n:1:I:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:G:0",
+          "quantity": 1,
+          "source_edge_id": "e:00009"
+        },
+        "__agenticsdesa_token__:7:e:00010": {
+          "consumer_activity": "n:2:FN:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:H:0",
+          "quantity": 1,
+          "source_edge_id": "e:00010"
+        },
+        "__agenticsdesa_token__:7:e:00011": {
+          "consumer_activity": "n:2:FN:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:I:0",
+          "quantity": 1,
+          "source_edge_id": "e:00011"
+        },
+        "__agenticsdesa_token__:7:e:00012": {
+          "consumer_activity": "n:1:A:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:ST:0",
+          "quantity": 1,
+          "source_edge_id": "e:00012"
+        },
+        "__agenticsdesa_token__:7:e:00013": {
+          "consumer_activity": "n:1:B:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:ST:0",
+          "quantity": 1,
+          "source_edge_id": "e:00013"
+        },
+        "__agenticsdesa_token__:7:e:00014": {
+          "consumer_activity": "n:1:C:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:ST:0",
+          "quantity": 1,
+          "source_edge_id": "e:00014"
+        }
+      }
+    },
+    "max_transactions": 100000,
+    "resource_queue_estimate": {
+      "activity_network_upper_bound": 21,
+      "initial_entities": 7,
+      "process_flow_may_be_unbounded": false,
+      "produced_per_single_execution_of_each_activity": 14
+    }
+  },
+  "name": "双资源施工调度案例（P25）",
+  "resource_batches": [
+    {
+      "available": true,
+      "count": 1,
+      "description": "吊机",
+      "disposable": false,
+      "id_prefix": "CN-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "CN"
+    },
+    {
+      "available": true,
+      "count": 6,
+      "description": "工人",
+      "disposable": false,
+      "id_prefix": "LB-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "LB"
+    }
+  ],
+  "resource_types": [
+    {
+      "description": "吊机 [crane]",
+      "kind": "reusable",
+      "type": "CN"
+    },
+    {
+      "description": "工人 [person]",
+      "kind": "reusable",
+      "type": "LB"
+    },
+    {
+      "description": "Completion token for n:1:A:0 -> n:1:D:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00001"
+    },
+    {
+      "description": "Completion token for n:1:A:0 -> n:1:E:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00002"
+    },
+    {
+      "description": "Completion token for n:1:B:0 -> n:1:F:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00003"
+    },
+    {
+      "description": "Completion token for n:1:B:0 -> n:1:G:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00004"
+    },
+    {
+      "description": "Completion token for n:1:C:0 -> n:1:G:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00005"
+    },
+    {
+      "description": "Completion token for n:1:D:0 -> n:1:H:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00006"
+    },
+    {
+      "description": "Completion token for n:1:E:0 -> n:2:FN:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00007"
+    },
+    {
+      "description": "Completion token for n:1:F:0 -> n:1:I:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00008"
+    },
+    {
+      "description": "Completion token for n:1:G:0 -> n:1:I:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00009"
+    },
+    {
+      "description": "Completion token for n:1:H:0 -> n:2:FN:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00010"
+    },
+    {
+      "description": "Completion token for n:1:I:0 -> n:2:FN:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00011"
+    },
+    {
+      "description": "Completion token for n:2:ST:0 -> n:1:A:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00012"
+    },
+    {
+      "description": "Completion token for n:2:ST:0 -> n:1:B:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00013"
+    },
+    {
+      "description": "Completion token for n:2:ST:0 -> n:1:C:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00014"
+    }
+  ],
+  "resources": [],
+  "schema_version": "s3-1.0",
+  "time_unit": "day"
+}

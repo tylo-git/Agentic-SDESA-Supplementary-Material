@@ -1,0 +1,2648 @@
+{
+  "conversion": {
+    "duration_policy": "confirmed_constant",
+    "execution_policy": "pause_release_reacquire",
+    "numeric_policy": "decimal_exact_json",
+    "ruleset_version": "workshop-1.0",
+    "semantics": "work_prefix_tail_endpoint_lower_bounds",
+    "source_pdm_schema": "pdm-1.0",
+    "source_pdm_sha256": "f02a9c8f1dd9dee5125cf6e4830e80e294ab4ba7554fdc9bab570277dc3856fc",
+    "source_project_sha256": "f02a9d9cad2c1b1003fc8f8f0840881e9ec88326c23af269648d5d18dd4fd80c"
+  },
+  "edges": [
+    {
+      "from": "n:1:A:0",
+      "id": "e:00001",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-A-B1"
+      ],
+      "to": "n:2:B1:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:A:0",
+      "id": "e:00002",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-A-C1"
+      ],
+      "to": "n:2:C1:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B1:0",
+      "id": "e:00003",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B1-B2"
+      ],
+      "to": "n:2:B2:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B2:0",
+      "id": "e:00004",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B2-B3"
+      ],
+      "to": "n:2:B3:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B3:0",
+      "id": "e:00005",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B3-B4"
+      ],
+      "to": "n:2:B4:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B4:0",
+      "id": "e:00006",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B4-B5"
+      ],
+      "to": "n:2:B5:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B4:0",
+      "id": "e:00007",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B4-B6"
+      ],
+      "to": "n:2:B6:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B5:0",
+      "id": "e:00008",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B5-B7"
+      ],
+      "to": "n:2:B7:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B6:0",
+      "id": "e:00009",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B6-B7"
+      ],
+      "to": "n:2:B7:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B7:0",
+      "id": "e:00010",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B7-B8"
+      ],
+      "to": "n:2:B8:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B8:0",
+      "id": "e:00011",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B8-B9"
+      ],
+      "to": "n:2:B9:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B8:0",
+      "id": "e:00012",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B8-B10"
+      ],
+      "to": "n:3:B10:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:B9:0",
+      "id": "e:00013",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B9-B11"
+      ],
+      "to": "n:3:B11:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C1:0",
+      "id": "e:00014",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C1-C2"
+      ],
+      "to": "n:2:C2:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C2:0",
+      "id": "e:00015",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C2-C3"
+      ],
+      "to": "n:2:C3:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C2:0",
+      "id": "e:00016",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C2-C4"
+      ],
+      "to": "n:2:C4:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C3:0",
+      "id": "e:00017",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C3-C5"
+      ],
+      "to": "n:2:C5:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C4:0",
+      "id": "e:00018",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C4-C5"
+      ],
+      "to": "n:2:C5:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C5:0",
+      "id": "e:00019",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C5-C6"
+      ],
+      "to": "n:2:C6:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C6:0",
+      "id": "e:00020",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C6-C7"
+      ],
+      "to": "n:2:C7:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C6:0",
+      "id": "e:00021",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C6-C8"
+      ],
+      "to": "n:2:C8:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C7:0",
+      "id": "e:00022",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C7-C9"
+      ],
+      "to": "n:2:C9:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C8:0",
+      "id": "e:00023",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C8-C9"
+      ],
+      "to": "n:2:C9:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:C9:0",
+      "id": "e:00024",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-C9-D1"
+      ],
+      "to": "n:2:D1:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:D1:0",
+      "id": "e:00025",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-D1-D2"
+      ],
+      "to": "n:2:D2:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:D2:0",
+      "id": "e:00026",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-D2-D3"
+      ],
+      "to": "n:2:D3:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:D3:0",
+      "id": "e:00027",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-D3-D4"
+      ],
+      "to": "n:2:D4:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:D4:0",
+      "id": "e:00028",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-D4-D5"
+      ],
+      "to": "n:2:D5:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:D5:0",
+      "id": "e:00029",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-D5-D6"
+      ],
+      "to": "n:2:D6:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:D6:0",
+      "id": "e:00030",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-D6-D7"
+      ],
+      "to": "n:2:D7:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:D6:0",
+      "id": "e:00031",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-D6-D8"
+      ],
+      "to": "n:2:D8:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:D7:0",
+      "id": "e:00032",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-D7-D9"
+      ],
+      "to": "n:2:D9:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:D8:0",
+      "id": "e:00033",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-D8-D9"
+      ],
+      "to": "n:2:D9:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:D9:0",
+      "id": "e:00034",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-D9-F"
+      ],
+      "to": "n:1:F:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:E1:0",
+      "id": "e:00035",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-E1-E2"
+      ],
+      "to": "n:2:E2:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:E2:0",
+      "id": "e:00036",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-E2-D6"
+      ],
+      "to": "n:2:D6:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:3:B10:0",
+      "id": "e:00037",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B10-B11"
+      ],
+      "to": "n:3:B11:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:3:B11:0",
+      "id": "e:00038",
+      "lag": 0,
+      "source_relation_ids": [
+        "R-B11-F"
+      ],
+      "to": "n:1:F:0",
+      "type": "FS"
+    }
+  ],
+  "mapping": {
+    "activities": {
+      "A": {
+        "cut_points": [],
+        "duration": 16,
+        "label": "总体开挖",
+        "source_ids": [
+          "narrative-line-17"
+        ],
+        "source_pdm_row_id": "activity:A"
+      },
+      "B1": {
+        "cut_points": [],
+        "duration": 8,
+        "label": "开挖额外2m厚海泥",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B1"
+      },
+      "B10": {
+        "cut_points": [],
+        "duration": 20,
+        "label": "安装顶板及上部侧墙模板",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B10"
+      },
+      "B11": {
+        "cut_points": [],
+        "duration": 5,
+        "label": "浇筑顶板及上部侧墙混凝土",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B11"
+      },
+      "B2": {
+        "cut_points": [],
+        "duration": 16,
+        "label": "铺填并压实额外2m厚填石料",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B2"
+      },
+      "B3": {
+        "cut_points": [],
+        "duration": 12,
+        "label": "铺设并压实400mm厚填石",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B3"
+      },
+      "B4": {
+        "cut_points": [],
+        "duration": 3,
+        "label": "浇筑75mm厚垫层混凝土",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B4"
+      },
+      "B5": {
+        "cut_points": [],
+        "duration": 32,
+        "label": "绑扎底板及下部侧墙钢筋",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B5"
+      },
+      "B6": {
+        "cut_points": [],
+        "duration": 16,
+        "label": "安装底板及下部侧墙模板",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B6"
+      },
+      "B7": {
+        "cut_points": [],
+        "duration": 4,
+        "label": "浇筑底板及下部侧墙混凝土",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B7"
+      },
+      "B8": {
+        "cut_points": [],
+        "duration": 32,
+        "label": "搭设顶板支架",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B8"
+      },
+      "B9": {
+        "cut_points": [],
+        "duration": 20,
+        "label": "绑扎顶板及上部侧墙钢筋",
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "activity:B9"
+      },
+      "C1": {
+        "cut_points": [],
+        "duration": 12,
+        "label": "铺设并压实400mm厚填石",
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "activity:C1"
+      },
+      "C2": {
+        "cut_points": [],
+        "duration": 3,
+        "label": "浇筑75mm厚垫层混凝土",
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "activity:C2"
+      },
+      "C3": {
+        "cut_points": [],
+        "duration": 32,
+        "label": "绑扎底板及下部侧墙钢筋",
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "activity:C3"
+      },
+      "C4": {
+        "cut_points": [],
+        "duration": 16,
+        "label": "安装底板及下部侧墙模板",
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "activity:C4"
+      },
+      "C5": {
+        "cut_points": [],
+        "duration": 4,
+        "label": "浇筑底板及下部侧墙混凝土",
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "activity:C5"
+      },
+      "C6": {
+        "cut_points": [],
+        "duration": 32,
+        "label": "搭设顶板支架",
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "activity:C6"
+      },
+      "C7": {
+        "cut_points": [],
+        "duration": 20,
+        "label": "绑扎顶板及上部侧墙钢筋",
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "activity:C7"
+      },
+      "C8": {
+        "cut_points": [],
+        "duration": 20,
+        "label": "安装顶板及上部侧墙模板",
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "activity:C8"
+      },
+      "C9": {
+        "cut_points": [],
+        "duration": 5,
+        "label": "浇筑顶板及上部侧墙混凝土",
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "activity:C9"
+      },
+      "D1": {
+        "cut_points": [],
+        "duration": 2,
+        "label": "铺设并压实400mm厚填石",
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "activity:D1"
+      },
+      "D2": {
+        "cut_points": [],
+        "duration": 1,
+        "label": "浇筑75mm厚垫层混凝土",
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "activity:D2"
+      },
+      "D3": {
+        "cut_points": [],
+        "duration": 5,
+        "label": "绑扎底板及下部侧墙钢筋",
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "activity:D3"
+      },
+      "D4": {
+        "cut_points": [],
+        "duration": 2,
+        "label": "安装底板及下部侧墙模板",
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "activity:D4"
+      },
+      "D5": {
+        "cut_points": [],
+        "duration": 1,
+        "label": "浇筑底板及下部侧墙混凝土",
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "activity:D5"
+      },
+      "D6": {
+        "cut_points": [],
+        "duration": 4,
+        "label": "搭设顶板支架",
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "activity:D6"
+      },
+      "D7": {
+        "cut_points": [],
+        "duration": 6,
+        "label": "绑扎顶板及上部侧墙钢筋",
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "activity:D7"
+      },
+      "D8": {
+        "cut_points": [],
+        "duration": 3,
+        "label": "安装顶板及上部侧墙模板",
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "activity:D8"
+      },
+      "D9": {
+        "cut_points": [],
+        "duration": 1,
+        "label": "浇筑顶板及上部侧墙混凝土",
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "activity:D9"
+      },
+      "E1": {
+        "cut_points": [],
+        "duration": 90,
+        "label": "混凝土管报审批核及供货",
+        "source_ids": [
+          "narrative-line-25"
+        ],
+        "source_pdm_row_id": "activity:E1"
+      },
+      "E2": {
+        "cut_points": [],
+        "duration": 1,
+        "label": "在端墙处安放预制混凝土管",
+        "source_ids": [
+          "narrative-line-25"
+        ],
+        "source_pdm_row_id": "activity:E2"
+      },
+      "F": {
+        "cut_points": [],
+        "duration": 7,
+        "label": "回填及压实",
+        "source_ids": [
+          "narrative-line-27"
+        ],
+        "source_pdm_row_id": "activity:F"
+      }
+    },
+    "activity_endpoints": {
+      "A": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:A:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:A:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:A:0"
+        }
+      },
+      "B1": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:B1:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:B1:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:B1:0"
+        }
+      },
+      "B10": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:3:B10:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:3:B10:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:3:B10:0"
+        }
+      },
+      "B11": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:3:B11:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:3:B11:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:3:B11:0"
+        }
+      },
+      "B2": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:B2:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:B2:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:B2:0"
+        }
+      },
+      "B3": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:B3:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:B3:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:B3:0"
+        }
+      },
+      "B4": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:B4:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:B4:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:B4:0"
+        }
+      },
+      "B5": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:B5:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:B5:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:B5:0"
+        }
+      },
+      "B6": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:B6:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:B6:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:B6:0"
+        }
+      },
+      "B7": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:B7:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:B7:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:B7:0"
+        }
+      },
+      "B8": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:B8:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:B8:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:B8:0"
+        }
+      },
+      "B9": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:B9:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:B9:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:B9:0"
+        }
+      },
+      "C1": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:C1:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:C1:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:C1:0"
+        }
+      },
+      "C2": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:C2:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:C2:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:C2:0"
+        }
+      },
+      "C3": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:C3:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:C3:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:C3:0"
+        }
+      },
+      "C4": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:C4:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:C4:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:C4:0"
+        }
+      },
+      "C5": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:C5:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:C5:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:C5:0"
+        }
+      },
+      "C6": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:C6:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:C6:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:C6:0"
+        }
+      },
+      "C7": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:C7:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:C7:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:C7:0"
+        }
+      },
+      "C8": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:C8:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:C8:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:C8:0"
+        }
+      },
+      "C9": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:C9:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:C9:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:C9:0"
+        }
+      },
+      "D1": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:D1:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:D1:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:D1:0"
+        }
+      },
+      "D2": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:D2:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:D2:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:D2:0"
+        }
+      },
+      "D3": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:D3:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:D3:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:D3:0"
+        }
+      },
+      "D4": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:D4:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:D4:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:D4:0"
+        }
+      },
+      "D5": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:D5:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:D5:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:D5:0"
+        }
+      },
+      "D6": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:D6:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:D6:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:D6:0"
+        }
+      },
+      "D7": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:D7:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:D7:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:D7:0"
+        }
+      },
+      "D8": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:D8:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:D8:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:D8:0"
+        }
+      },
+      "D9": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:D9:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:D9:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:D9:0"
+        }
+      },
+      "E1": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:E1:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:E1:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:E1:0"
+        }
+      },
+      "E2": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:E2:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:E2:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:E2:0"
+        }
+      },
+      "F": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:F:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:F:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:F:0"
+        }
+      }
+    },
+    "activity_segments": {
+      "A": [
+        "n:1:A:0"
+      ],
+      "B1": [
+        "n:2:B1:0"
+      ],
+      "B10": [
+        "n:3:B10:0"
+      ],
+      "B11": [
+        "n:3:B11:0"
+      ],
+      "B2": [
+        "n:2:B2:0"
+      ],
+      "B3": [
+        "n:2:B3:0"
+      ],
+      "B4": [
+        "n:2:B4:0"
+      ],
+      "B5": [
+        "n:2:B5:0"
+      ],
+      "B6": [
+        "n:2:B6:0"
+      ],
+      "B7": [
+        "n:2:B7:0"
+      ],
+      "B8": [
+        "n:2:B8:0"
+      ],
+      "B9": [
+        "n:2:B9:0"
+      ],
+      "C1": [
+        "n:2:C1:0"
+      ],
+      "C2": [
+        "n:2:C2:0"
+      ],
+      "C3": [
+        "n:2:C3:0"
+      ],
+      "C4": [
+        "n:2:C4:0"
+      ],
+      "C5": [
+        "n:2:C5:0"
+      ],
+      "C6": [
+        "n:2:C6:0"
+      ],
+      "C7": [
+        "n:2:C7:0"
+      ],
+      "C8": [
+        "n:2:C8:0"
+      ],
+      "C9": [
+        "n:2:C9:0"
+      ],
+      "D1": [
+        "n:2:D1:0"
+      ],
+      "D2": [
+        "n:2:D2:0"
+      ],
+      "D3": [
+        "n:2:D3:0"
+      ],
+      "D4": [
+        "n:2:D4:0"
+      ],
+      "D5": [
+        "n:2:D5:0"
+      ],
+      "D6": [
+        "n:2:D6:0"
+      ],
+      "D7": [
+        "n:2:D7:0"
+      ],
+      "D8": [
+        "n:2:D8:0"
+      ],
+      "D9": [
+        "n:2:D9:0"
+      ],
+      "E1": [
+        "n:2:E1:0"
+      ],
+      "E2": [
+        "n:2:E2:0"
+      ],
+      "F": [
+        "n:1:F:0"
+      ]
+    },
+    "patterns": [],
+    "relations": [
+      {
+        "from_activity_id": "A",
+        "generated_edge_ids": [
+          "e:00001"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:A:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-A-B1",
+        "source_relation_id": "R-A-B1",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:B1:0"
+        },
+        "to_activity_id": "B1",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "A",
+        "generated_edge_ids": [
+          "e:00002"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:A:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-A-C1",
+        "source_relation_id": "R-A-C1",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C1:0"
+        },
+        "to_activity_id": "C1",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B1",
+        "generated_edge_ids": [
+          "e:00003"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B1:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B1-B2",
+        "source_relation_id": "R-B1-B2",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:B2:0"
+        },
+        "to_activity_id": "B2",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B10",
+        "generated_edge_ids": [
+          "e:00037"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:3:B10:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B10-B11",
+        "source_relation_id": "R-B10-B11",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:3:B11:0"
+        },
+        "to_activity_id": "B11",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B11",
+        "generated_edge_ids": [
+          "e:00038"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:3:B11:0"
+        },
+        "source_ids": [
+          "narrative-line-27"
+        ],
+        "source_pdm_row_id": "relation:R-B11-F",
+        "source_relation_id": "R-B11-F",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:F:0"
+        },
+        "to_activity_id": "F",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B2",
+        "generated_edge_ids": [
+          "e:00004"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B2:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B2-B3",
+        "source_relation_id": "R-B2-B3",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:B3:0"
+        },
+        "to_activity_id": "B3",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B3",
+        "generated_edge_ids": [
+          "e:00005"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B3:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B3-B4",
+        "source_relation_id": "R-B3-B4",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:B4:0"
+        },
+        "to_activity_id": "B4",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B4",
+        "generated_edge_ids": [
+          "e:00006"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B4:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B4-B5",
+        "source_relation_id": "R-B4-B5",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:B5:0"
+        },
+        "to_activity_id": "B5",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B4",
+        "generated_edge_ids": [
+          "e:00007"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B4:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B4-B6",
+        "source_relation_id": "R-B4-B6",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:B6:0"
+        },
+        "to_activity_id": "B6",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B5",
+        "generated_edge_ids": [
+          "e:00008"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B5:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B5-B7",
+        "source_relation_id": "R-B5-B7",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:B7:0"
+        },
+        "to_activity_id": "B7",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B6",
+        "generated_edge_ids": [
+          "e:00009"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B6:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B6-B7",
+        "source_relation_id": "R-B6-B7",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:B7:0"
+        },
+        "to_activity_id": "B7",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B7",
+        "generated_edge_ids": [
+          "e:00010"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B7:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B7-B8",
+        "source_relation_id": "R-B7-B8",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:B8:0"
+        },
+        "to_activity_id": "B8",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B8",
+        "generated_edge_ids": [
+          "e:00012"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B8:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B8-B10",
+        "source_relation_id": "R-B8-B10",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:3:B10:0"
+        },
+        "to_activity_id": "B10",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B8",
+        "generated_edge_ids": [
+          "e:00011"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B8:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B8-B9",
+        "source_relation_id": "R-B8-B9",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:B9:0"
+        },
+        "to_activity_id": "B9",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B9",
+        "generated_edge_ids": [
+          "e:00013"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:B9:0"
+        },
+        "source_ids": [
+          "narrative-line-19"
+        ],
+        "source_pdm_row_id": "relation:R-B9-B11",
+        "source_relation_id": "R-B9-B11",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:3:B11:0"
+        },
+        "to_activity_id": "B11",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C1",
+        "generated_edge_ids": [
+          "e:00014"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C1:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-C1-C2",
+        "source_relation_id": "R-C1-C2",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C2:0"
+        },
+        "to_activity_id": "C2",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C2",
+        "generated_edge_ids": [
+          "e:00015"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C2:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-C2-C3",
+        "source_relation_id": "R-C2-C3",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C3:0"
+        },
+        "to_activity_id": "C3",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C2",
+        "generated_edge_ids": [
+          "e:00016"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C2:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-C2-C4",
+        "source_relation_id": "R-C2-C4",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C4:0"
+        },
+        "to_activity_id": "C4",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C3",
+        "generated_edge_ids": [
+          "e:00017"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C3:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-C3-C5",
+        "source_relation_id": "R-C3-C5",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C5:0"
+        },
+        "to_activity_id": "C5",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C4",
+        "generated_edge_ids": [
+          "e:00018"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C4:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-C4-C5",
+        "source_relation_id": "R-C4-C5",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C5:0"
+        },
+        "to_activity_id": "C5",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C5",
+        "generated_edge_ids": [
+          "e:00019"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C5:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-C5-C6",
+        "source_relation_id": "R-C5-C6",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C6:0"
+        },
+        "to_activity_id": "C6",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C6",
+        "generated_edge_ids": [
+          "e:00020"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C6:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-C6-C7",
+        "source_relation_id": "R-C6-C7",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C7:0"
+        },
+        "to_activity_id": "C7",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C6",
+        "generated_edge_ids": [
+          "e:00021"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C6:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-C6-C8",
+        "source_relation_id": "R-C6-C8",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C8:0"
+        },
+        "to_activity_id": "C8",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C7",
+        "generated_edge_ids": [
+          "e:00022"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C7:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-C7-C9",
+        "source_relation_id": "R-C7-C9",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C9:0"
+        },
+        "to_activity_id": "C9",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C8",
+        "generated_edge_ids": [
+          "e:00023"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C8:0"
+        },
+        "source_ids": [
+          "narrative-line-21"
+        ],
+        "source_pdm_row_id": "relation:R-C8-C9",
+        "source_relation_id": "R-C8-C9",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:C9:0"
+        },
+        "to_activity_id": "C9",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C9",
+        "generated_edge_ids": [
+          "e:00024"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:C9:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-C9-D1",
+        "source_relation_id": "R-C9-D1",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D1:0"
+        },
+        "to_activity_id": "D1",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D1",
+        "generated_edge_ids": [
+          "e:00025"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:D1:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-D1-D2",
+        "source_relation_id": "R-D1-D2",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D2:0"
+        },
+        "to_activity_id": "D2",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D2",
+        "generated_edge_ids": [
+          "e:00026"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:D2:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-D2-D3",
+        "source_relation_id": "R-D2-D3",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D3:0"
+        },
+        "to_activity_id": "D3",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D3",
+        "generated_edge_ids": [
+          "e:00027"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:D3:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-D3-D4",
+        "source_relation_id": "R-D3-D4",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D4:0"
+        },
+        "to_activity_id": "D4",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D4",
+        "generated_edge_ids": [
+          "e:00028"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:D4:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-D4-D5",
+        "source_relation_id": "R-D4-D5",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D5:0"
+        },
+        "to_activity_id": "D5",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D5",
+        "generated_edge_ids": [
+          "e:00029"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:D5:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-D5-D6",
+        "source_relation_id": "R-D5-D6",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D6:0"
+        },
+        "to_activity_id": "D6",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D6",
+        "generated_edge_ids": [
+          "e:00030"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:D6:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-D6-D7",
+        "source_relation_id": "R-D6-D7",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D7:0"
+        },
+        "to_activity_id": "D7",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D6",
+        "generated_edge_ids": [
+          "e:00031"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:D6:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-D6-D8",
+        "source_relation_id": "R-D6-D8",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D8:0"
+        },
+        "to_activity_id": "D8",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D7",
+        "generated_edge_ids": [
+          "e:00032"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:D7:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-D7-D9",
+        "source_relation_id": "R-D7-D9",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D9:0"
+        },
+        "to_activity_id": "D9",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D8",
+        "generated_edge_ids": [
+          "e:00033"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:D8:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-D8-D9",
+        "source_relation_id": "R-D8-D9",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D9:0"
+        },
+        "to_activity_id": "D9",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D9",
+        "generated_edge_ids": [
+          "e:00034"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:D9:0"
+        },
+        "source_ids": [
+          "narrative-line-27"
+        ],
+        "source_pdm_row_id": "relation:R-D9-F",
+        "source_relation_id": "R-D9-F",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:F:0"
+        },
+        "to_activity_id": "F",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "E1",
+        "generated_edge_ids": [
+          "e:00035"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:E1:0"
+        },
+        "source_ids": [
+          "narrative-line-25"
+        ],
+        "source_pdm_row_id": "relation:R-E1-E2",
+        "source_relation_id": "R-E1-E2",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:E2:0"
+        },
+        "to_activity_id": "E2",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "E2",
+        "generated_edge_ids": [
+          "e:00036"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:E2:0"
+        },
+        "source_ids": [
+          "narrative-line-23"
+        ],
+        "source_pdm_row_id": "relation:R-E2-D6",
+        "source_relation_id": "R-E2-D6",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:D6:0"
+        },
+        "to_activity_id": "D6",
+        "type": "FS"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "duration": 16,
+      "id": "n:1:A:0",
+      "kind": "activity",
+      "label": "总体开挖",
+      "role": "work",
+      "source_activity_id": "A",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 16,
+        "start": 0
+      }
+    },
+    {
+      "duration": 7,
+      "id": "n:1:F:0",
+      "kind": "activity",
+      "label": "回填及压实",
+      "role": "work",
+      "source_activity_id": "F",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 7,
+        "start": 0
+      }
+    },
+    {
+      "duration": 8,
+      "id": "n:2:B1:0",
+      "kind": "activity",
+      "label": "开挖额外2m厚海泥",
+      "role": "work",
+      "source_activity_id": "B1",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 8,
+        "start": 0
+      }
+    },
+    {
+      "duration": 16,
+      "id": "n:2:B2:0",
+      "kind": "activity",
+      "label": "铺填并压实额外2m厚填石料",
+      "role": "work",
+      "source_activity_id": "B2",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 16,
+        "start": 0
+      }
+    },
+    {
+      "duration": 12,
+      "id": "n:2:B3:0",
+      "kind": "activity",
+      "label": "铺设并压实400mm厚填石",
+      "role": "work",
+      "source_activity_id": "B3",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 12,
+        "start": 0
+      }
+    },
+    {
+      "duration": 3,
+      "id": "n:2:B4:0",
+      "kind": "activity",
+      "label": "浇筑75mm厚垫层混凝土",
+      "role": "work",
+      "source_activity_id": "B4",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 3,
+        "start": 0
+      }
+    },
+    {
+      "duration": 32,
+      "id": "n:2:B5:0",
+      "kind": "activity",
+      "label": "绑扎底板及下部侧墙钢筋",
+      "role": "work",
+      "source_activity_id": "B5",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 32,
+        "start": 0
+      }
+    },
+    {
+      "duration": 16,
+      "id": "n:2:B6:0",
+      "kind": "activity",
+      "label": "安装底板及下部侧墙模板",
+      "role": "work",
+      "source_activity_id": "B6",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 16,
+        "start": 0
+      }
+    },
+    {
+      "duration": 4,
+      "id": "n:2:B7:0",
+      "kind": "activity",
+      "label": "浇筑底板及下部侧墙混凝土",
+      "role": "work",
+      "source_activity_id": "B7",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 4,
+        "start": 0
+      }
+    },
+    {
+      "duration": 32,
+      "id": "n:2:B8:0",
+      "kind": "activity",
+      "label": "搭设顶板支架",
+      "role": "work",
+      "source_activity_id": "B8",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 32,
+        "start": 0
+      }
+    },
+    {
+      "duration": 20,
+      "id": "n:2:B9:0",
+      "kind": "activity",
+      "label": "绑扎顶板及上部侧墙钢筋",
+      "role": "work",
+      "source_activity_id": "B9",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 20,
+        "start": 0
+      }
+    },
+    {
+      "duration": 12,
+      "id": "n:2:C1:0",
+      "kind": "activity",
+      "label": "铺设并压实400mm厚填石",
+      "role": "work",
+      "source_activity_id": "C1",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 12,
+        "start": 0
+      }
+    },
+    {
+      "duration": 3,
+      "id": "n:2:C2:0",
+      "kind": "activity",
+      "label": "浇筑75mm厚垫层混凝土",
+      "role": "work",
+      "source_activity_id": "C2",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 3,
+        "start": 0
+      }
+    },
+    {
+      "duration": 32,
+      "id": "n:2:C3:0",
+      "kind": "activity",
+      "label": "绑扎底板及下部侧墙钢筋",
+      "role": "work",
+      "source_activity_id": "C3",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 32,
+        "start": 0
+      }
+    },
+    {
+      "duration": 16,
+      "id": "n:2:C4:0",
+      "kind": "activity",
+      "label": "安装底板及下部侧墙模板",
+      "role": "work",
+      "source_activity_id": "C4",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 16,
+        "start": 0
+      }
+    },
+    {
+      "duration": 4,
+      "id": "n:2:C5:0",
+      "kind": "activity",
+      "label": "浇筑底板及下部侧墙混凝土",
+      "role": "work",
+      "source_activity_id": "C5",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 4,
+        "start": 0
+      }
+    },
+    {
+      "duration": 32,
+      "id": "n:2:C6:0",
+      "kind": "activity",
+      "label": "搭设顶板支架",
+      "role": "work",
+      "source_activity_id": "C6",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 32,
+        "start": 0
+      }
+    },
+    {
+      "duration": 20,
+      "id": "n:2:C7:0",
+      "kind": "activity",
+      "label": "绑扎顶板及上部侧墙钢筋",
+      "role": "work",
+      "source_activity_id": "C7",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 20,
+        "start": 0
+      }
+    },
+    {
+      "duration": 20,
+      "id": "n:2:C8:0",
+      "kind": "activity",
+      "label": "安装顶板及上部侧墙模板",
+      "role": "work",
+      "source_activity_id": "C8",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 20,
+        "start": 0
+      }
+    },
+    {
+      "duration": 5,
+      "id": "n:2:C9:0",
+      "kind": "activity",
+      "label": "浇筑顶板及上部侧墙混凝土",
+      "role": "work",
+      "source_activity_id": "C9",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 5,
+        "start": 0
+      }
+    },
+    {
+      "duration": 2,
+      "id": "n:2:D1:0",
+      "kind": "activity",
+      "label": "铺设并压实400mm厚填石",
+      "role": "work",
+      "source_activity_id": "D1",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 2,
+        "start": 0
+      }
+    },
+    {
+      "duration": 1,
+      "id": "n:2:D2:0",
+      "kind": "activity",
+      "label": "浇筑75mm厚垫层混凝土",
+      "role": "work",
+      "source_activity_id": "D2",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 1,
+        "start": 0
+      }
+    },
+    {
+      "duration": 5,
+      "id": "n:2:D3:0",
+      "kind": "activity",
+      "label": "绑扎底板及下部侧墙钢筋",
+      "role": "work",
+      "source_activity_id": "D3",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 5,
+        "start": 0
+      }
+    },
+    {
+      "duration": 2,
+      "id": "n:2:D4:0",
+      "kind": "activity",
+      "label": "安装底板及下部侧墙模板",
+      "role": "work",
+      "source_activity_id": "D4",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 2,
+        "start": 0
+      }
+    },
+    {
+      "duration": 1,
+      "id": "n:2:D5:0",
+      "kind": "activity",
+      "label": "浇筑底板及下部侧墙混凝土",
+      "role": "work",
+      "source_activity_id": "D5",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 1,
+        "start": 0
+      }
+    },
+    {
+      "duration": 4,
+      "id": "n:2:D6:0",
+      "kind": "activity",
+      "label": "搭设顶板支架",
+      "role": "work",
+      "source_activity_id": "D6",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 4,
+        "start": 0
+      }
+    },
+    {
+      "duration": 6,
+      "id": "n:2:D7:0",
+      "kind": "activity",
+      "label": "绑扎顶板及上部侧墙钢筋",
+      "role": "work",
+      "source_activity_id": "D7",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 6,
+        "start": 0
+      }
+    },
+    {
+      "duration": 3,
+      "id": "n:2:D8:0",
+      "kind": "activity",
+      "label": "安装顶板及上部侧墙模板",
+      "role": "work",
+      "source_activity_id": "D8",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 3,
+        "start": 0
+      }
+    },
+    {
+      "duration": 1,
+      "id": "n:2:D9:0",
+      "kind": "activity",
+      "label": "浇筑顶板及上部侧墙混凝土",
+      "role": "work",
+      "source_activity_id": "D9",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 1,
+        "start": 0
+      }
+    },
+    {
+      "duration": 90,
+      "id": "n:2:E1:0",
+      "kind": "activity",
+      "label": "混凝土管报审批核及供货",
+      "role": "work",
+      "source_activity_id": "E1",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 90,
+        "start": 0
+      }
+    },
+    {
+      "duration": 1,
+      "id": "n:2:E2:0",
+      "kind": "activity",
+      "label": "在端墙处安放预制混凝土管",
+      "role": "work",
+      "source_activity_id": "E2",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 1,
+        "start": 0
+      }
+    },
+    {
+      "duration": 20,
+      "id": "n:3:B10:0",
+      "kind": "activity",
+      "label": "安装顶板及上部侧墙模板",
+      "role": "work",
+      "source_activity_id": "B10",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 20,
+        "start": 0
+      }
+    },
+    {
+      "duration": 5,
+      "id": "n:3:B11:0",
+      "kind": "activity",
+      "label": "浇筑顶板及上部侧墙混凝土",
+      "role": "work",
+      "source_activity_id": "B11",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 5,
+        "start": 0
+      }
+    }
+  ],
+  "project_id": "case-2-box-culvert",
+  "project_revision": 2,
+  "schema_version": "aon-1.0",
+  "time_unit": "day"
+}

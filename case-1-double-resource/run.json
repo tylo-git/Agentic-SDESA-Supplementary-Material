@@ -1,0 +1,94 @@
+{
+  "schema_version": "agenticsdesa-run-1.0",
+  "project_id": "case-1-double-resource-p25",
+  "project_revision": 31,
+  "inputs": {
+    "project": {
+      "path": "project-r31.json",
+      "sha256": "c1ce0638680fbfc469a6dd1141ca1ba418d089527ef371aa5ceeb4a2ebdad253",
+      "canonical_sha256": "b9a32cffec456c63cedc3138f9a4777695a29b86aa3f0a1b7c9240dbabcd2dbf"
+    },
+    "pdm": {
+      "path": "pdm-r31.json",
+      "sha256": "273351b4e34e178e869e0267656c3062d869f3ebbe2be9d74fd42a9841237edd"
+    },
+    "aon": {
+      "path": "aon-r31.json",
+      "sha256": "0f8c11dec92238d59dc461f189e2ccd1e352a211ff9263b46722dff5d390cf0b"
+    },
+    "s3": {
+      "path": "s3-r31.json",
+      "sha256": "18e5260173d3727f49cc40b98abe6b268415e5f87c9727ae5f3810d830617029",
+      "strict_validation": "passed",
+      "native_loader": "accepted"
+    }
+  },
+  "model": {
+    "profile": "activity_network",
+    "horizon": null,
+    "max_transactions": 100000,
+    "goal": {
+      "kind": "project_completion",
+      "source_activity_id": "FN",
+      "mapped_activity_id": "n:2:FN:0",
+      "required_completions": 1
+    },
+    "physical_resources": {"LB": 6, "CN": 1},
+    "all_activity_priorities": 0
+  },
+  "simulation": {
+    "runs": 1,
+    "seed": 17,
+    "output_dir": "simulation",
+    "engine": "bundled copied SDESA",
+    "run_choice_source": "conversation://2026-10-07/run-choice"
+  },
+  "result": {
+    "stop_reason": "all_flow_records_processed",
+    "final_time": 22.0,
+    "time_unit": "day",
+    "business_status": "completed",
+    "observed_goal_completions": 1,
+    "events_total": 11,
+    "events_completed_within_horizon": 11,
+    "unprocessed_flow_records": 0,
+    "blocked_flow_records": 0,
+    "resources_total": 21,
+    "physical_reusable_resources": 7,
+    "generated_disposable_completion_tokens": 14,
+    "reusable_resources_with_owner_at_stop": 0,
+    "evidence": [
+      "Mapped FN activity n:2:FN:0 completed once at day 22 and completed_within_horizon=true.",
+      "Each of the eleven AON activities completed once, with no out-of-horizon event.",
+      "All eleven FlowRecords have departure_time and none has blocked_reason.",
+      "All seven reusable laborer/crane entities have no owner at stop."
+    ]
+  },
+  "performance": {
+    "cli_command_wall_time_seconds": 2.8285822,
+    "wall_time_scope": "Observed command execution including Python startup and native export; not an engine-only benchmark.",
+    "resources_csv_bytes": 2504
+  },
+  "outputs": [
+    {
+      "path": "simulation/summary.json",
+      "bytes": 9519,
+      "sha256": "b1031f3cfb4e3ff7be9be5fb28af9e7d1344cf9555ac90f5cbe499859c7462be"
+    },
+    {
+      "path": "simulation/events.csv",
+      "bytes": 2835,
+      "sha256": "89dd66557b92d8a90f449a3d59703406e7b8c57765527010b92f9c89cbf7b7dc"
+    },
+    {
+      "path": "simulation/flow_queue.csv",
+      "bytes": 836,
+      "sha256": "57d965d87d40b0abe1e71f5c805e6607a9e580713222ce2924dce81c8ca2b233"
+    },
+    {
+      "path": "simulation/resources.csv",
+      "bytes": 2504,
+      "sha256": "360f9ee0e76bcd1ce5e0682302e7396437796734182715b0cdc37367a9a3e442"
+    }
+  ]
+}

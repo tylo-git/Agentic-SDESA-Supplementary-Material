@@ -1,0 +1,3042 @@
+{
+  "activities": [
+    {
+      "description": "总体开挖 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:A:0;project-revision:5",
+        "value": 16
+      },
+      "id": "n:1:A:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00001",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00001"
+        },
+        {
+          "description": "Complete dependency e:00002",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00002"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 4,
+          "type": "BE"
+        },
+        {
+          "quantity": 8,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "BE"
+        },
+        {
+          "disposable": false,
+          "quantity": 8,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "回填及压实 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:1:F:0;project-revision:5",
+        "value": 7
+      },
+      "id": "n:1:F:0",
+      "priority": 0,
+      "produces": [],
+      "releases": [
+        {
+          "quantity": 4,
+          "type": "BE"
+        },
+        {
+          "quantity": 8,
+          "type": "LB"
+        },
+        {
+          "quantity": 4,
+          "type": "RR"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00034"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00038"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "BE"
+        },
+        {
+          "disposable": false,
+          "quantity": 8,
+          "type": "LB"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "RR"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "开挖额外 2 m 厚的海泥 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:B1:0;project-revision:5",
+        "value": 8
+      },
+      "id": "n:2:B1:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00003",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00003"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "BE"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00001"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "BE"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "铺填并压实额外 2 m 厚的填石料 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:B2:0;project-revision:5",
+        "value": 16
+      },
+      "id": "n:2:B2:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00004",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00004"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "BE"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        },
+        {
+          "quantity": 2,
+          "type": "RR"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00003"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "BE"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "RR"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "铺设并压实 400 mm 厚填石 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:B3:0;project-revision:5",
+        "value": 12
+      },
+      "id": "n:2:B3:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00005",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00005"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "BE"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        },
+        {
+          "quantity": 2,
+          "type": "RR"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00004"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "BE"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "RR"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "浇筑 75 mm 厚垫层混凝土 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:B4:0;project-revision:5",
+        "value": 3
+      },
+      "id": "n:2:B4:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00006",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00006"
+        },
+        {
+          "description": "Complete dependency e:00007",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00007"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "CLB"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 6,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00005"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "CLB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 6,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "绑扎底板及下部侧墙钢筋 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:B5:0;project-revision:5",
+        "value": 32
+      },
+      "id": "n:2:B5:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00008",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00008"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "BBF"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00006"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "BBF"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "安装底板及下部侧墙模板 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:B6:0;project-revision:5",
+        "value": 16
+      },
+      "id": "n:2:B6:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00009",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00009"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00007"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "浇筑底板及下部侧墙混凝土 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:B7:0;project-revision:5",
+        "value": 4
+      },
+      "id": "n:2:B7:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00010",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00010"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00008"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00009"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "搭设顶板支架 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:B8:0;project-revision:5",
+        "value": 32
+      },
+      "id": "n:2:B8:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00011",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00011"
+        },
+        {
+          "description": "Complete dependency e:00012",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00012"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 6,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00010"
+        },
+        {
+          "disposable": false,
+          "quantity": 6,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "绑扎顶板及上部侧墙钢筋 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:B9:0;project-revision:5",
+        "value": 20
+      },
+      "id": "n:2:B9:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00013",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00013"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "BBF"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 3,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00011"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "BBF"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "铺设并压实 400 mm 厚填石 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:C1:0;project-revision:5",
+        "value": 12
+      },
+      "id": "n:2:C1:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00014",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00014"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "BE"
+        },
+        {
+          "quantity": 3,
+          "type": "LB"
+        },
+        {
+          "quantity": 2,
+          "type": "RR"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00002"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "BE"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "LB"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "RR"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "浇筑 75 mm 厚垫层混凝土 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:C2:0;project-revision:5",
+        "value": 3
+      },
+      "id": "n:2:C2:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00015",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00015"
+        },
+        {
+          "description": "Complete dependency e:00016",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00016"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "CLB"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00014"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "CLB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "绑扎底板及下部侧墙钢筋 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:C3:0;project-revision:5",
+        "value": 32
+      },
+      "id": "n:2:C3:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00017",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00017"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "BBF"
+        },
+        {
+          "quantity": 3,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00015"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "BBF"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "安装底板及下部侧墙模板 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:C4:0;project-revision:5",
+        "value": 16
+      },
+      "id": "n:2:C4:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00018",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00018"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00016"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "浇筑底板及下部侧墙混凝土 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:C5:0;project-revision:5",
+        "value": 4
+      },
+      "id": "n:2:C5:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00019",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00019"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00017"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00018"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "搭设顶板支架 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:C6:0;project-revision:5",
+        "value": 32
+      },
+      "id": "n:2:C6:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00020",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00020"
+        },
+        {
+          "description": "Complete dependency e:00021",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00021"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 5,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00019"
+        },
+        {
+          "disposable": false,
+          "quantity": 5,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "绑扎顶板及上部侧墙钢筋 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:C7:0;project-revision:5",
+        "value": 20
+      },
+      "id": "n:2:C7:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00022",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00022"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "BBF"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 3,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00020"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "BBF"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "安装顶板及上部侧墙模板 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:C8:0;project-revision:5",
+        "value": 20
+      },
+      "id": "n:2:C8:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00023",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00023"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00021"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "浇筑顶板及上部侧墙混凝土 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:C9:0;project-revision:5",
+        "value": 5
+      },
+      "id": "n:2:C9:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00024",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00024"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 3,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00022"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00023"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "铺设并压实 400 mm 厚填石 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:D1:0;project-revision:5",
+        "value": 2
+      },
+      "id": "n:2:D1:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00025",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00025"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "BE"
+        },
+        {
+          "quantity": 2,
+          "type": "LB"
+        },
+        {
+          "quantity": 1,
+          "type": "RR"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00024"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "BE"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "LB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "RR"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "浇筑 75 mm 厚垫层混凝土 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:D2:0;project-revision:5",
+        "value": 1
+      },
+      "id": "n:2:D2:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00026",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00026"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "CLB"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 2,
+          "type": "LB"
+        },
+        {
+          "quantity": 1,
+          "type": "RR"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00025"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "CLB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "LB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "RR"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "绑扎底板及下部侧墙钢筋 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:D3:0;project-revision:5",
+        "value": 5
+      },
+      "id": "n:2:D3:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00027",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00027"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "BBF"
+        },
+        {
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00026"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "BBF"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "安装底板及下部侧墙模板 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:D4:0;project-revision:5",
+        "value": 2
+      },
+      "id": "n:2:D4:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00028",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00028"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00027"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "浇筑底板及下部侧墙混凝土 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:D5:0;project-revision:5",
+        "value": 1
+      },
+      "id": "n:2:D5:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00029",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00029"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 2,
+          "type": "LB"
+        },
+        {
+          "quantity": 1,
+          "type": "RR"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00028"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "LB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "RR"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "搭设顶板支架 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:D6:0;project-revision:5",
+        "value": 4
+      },
+      "id": "n:2:D6:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00030",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00030"
+        },
+        {
+          "description": "Complete dependency e:00031",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00031"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00029"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00036"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "绑扎顶板及上部侧墙钢筋 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:D7:0;project-revision:5",
+        "value": 6
+      },
+      "id": "n:2:D7:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00032",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00032"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 2,
+          "type": "BBF"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00030"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "BBF"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "安装顶板及上部侧墙模板 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:D8:0;project-revision:5",
+        "value": 3
+      },
+      "id": "n:2:D8:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00033",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00033"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00031"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "浇筑顶板及上部侧墙混凝土 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:D9:0;project-revision:5",
+        "value": 1
+      },
+      "id": "n:2:D9:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00034",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00034"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 2,
+          "type": "LB"
+        },
+        {
+          "quantity": 1,
+          "type": "RR"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00032"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00033"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 2,
+          "type": "LB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "RR"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "混凝土管厂家的报审、批核及混凝土管供货 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:E1:0;project-revision:5",
+        "value": 90
+      },
+      "id": "n:2:E1:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00035",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00035"
+        }
+      ],
+      "releases": [],
+      "requires": [],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "在端墙处安放预制混凝土管 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:2:E2:0;project-revision:5",
+        "value": 1
+      },
+      "id": "n:2:E2:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00036",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00036"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 1,
+          "type": "DL"
+        },
+        {
+          "quantity": 6,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00035"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "DL"
+        },
+        {
+          "disposable": false,
+          "quantity": 6,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "安装顶板及上部侧墙模板 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:3:B10:0;project-revision:5",
+        "value": 20
+      },
+      "id": "n:3:B10:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00037",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00037"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00012"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CF"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "浇筑顶板及上部侧墙混凝土 [work]",
+      "duration": {
+        "kind": "constant",
+        "provenance": "aon:n:3:B11:0;project-revision:5",
+        "value": 5
+      },
+      "id": "n:3:B11:0",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Complete dependency e:00038",
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00038"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00013"
+        },
+        {
+          "disposable": true,
+          "quantity": 1,
+          "type": "__agenticsdesa_token__:7:e:00037"
+        },
+        {
+          "disposable": false,
+          "quantity": 3,
+          "type": "CLB"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "CMC"
+        },
+        {
+          "disposable": false,
+          "quantity": 4,
+          "type": "LB"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    }
+  ],
+  "flow_entities": [
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:A:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:A:0",
+      "initial_activity": "n:1:A:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:1:F:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:7:n:1:F:0",
+      "initial_activity": "n:1:F:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:B1:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:B1:0",
+      "initial_activity": "n:2:B1:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:B2:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:B2:0",
+      "initial_activity": "n:2:B2:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:B3:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:B3:0",
+      "initial_activity": "n:2:B3:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:B4:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:B4:0",
+      "initial_activity": "n:2:B4:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:B5:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:B5:0",
+      "initial_activity": "n:2:B5:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:B6:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:B6:0",
+      "initial_activity": "n:2:B6:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:B7:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:B7:0",
+      "initial_activity": "n:2:B7:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:B8:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:B8:0",
+      "initial_activity": "n:2:B8:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:B9:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:B9:0",
+      "initial_activity": "n:2:B9:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:C1:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:C1:0",
+      "initial_activity": "n:2:C1:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:C2:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:C2:0",
+      "initial_activity": "n:2:C2:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:C3:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:C3:0",
+      "initial_activity": "n:2:C3:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:C4:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:C4:0",
+      "initial_activity": "n:2:C4:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:C5:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:C5:0",
+      "initial_activity": "n:2:C5:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:C6:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:C6:0",
+      "initial_activity": "n:2:C6:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:C7:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:C7:0",
+      "initial_activity": "n:2:C7:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:C8:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:C8:0",
+      "initial_activity": "n:2:C8:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:C9:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:C9:0",
+      "initial_activity": "n:2:C9:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:D1:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:D1:0",
+      "initial_activity": "n:2:D1:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:D2:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:D2:0",
+      "initial_activity": "n:2:D2:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:D3:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:D3:0",
+      "initial_activity": "n:2:D3:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:D4:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:D4:0",
+      "initial_activity": "n:2:D4:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:D5:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:D5:0",
+      "initial_activity": "n:2:D5:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:D6:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:D6:0",
+      "initial_activity": "n:2:D6:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:D7:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:D7:0",
+      "initial_activity": "n:2:D7:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:D8:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:D8:0",
+      "initial_activity": "n:2:D8:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:D9:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:D9:0",
+      "initial_activity": "n:2:D9:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:E1:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:E1:0",
+      "initial_activity": "n:2:E1:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:2:E2:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:8:n:2:E2:0",
+      "initial_activity": "n:2:E2:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:3:B10:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:9:n:3:B10:0",
+      "initial_activity": "n:3:B10:0",
+      "type": "activity_trigger"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {
+        "aon_node_id": "n:3:B11:0",
+        "profile": "activity_network"
+      },
+      "id": "trigger:9:n:3:B11:0",
+      "initial_activity": "n:3:B11:0",
+      "type": "activity_trigger"
+    }
+  ],
+  "flow_entity_batches": [],
+  "horizon": null,
+  "metadata": {
+    "agenticsdesa": {
+      "activity_mapping": {
+        "n:1:A:0": {
+          "aon_node_id": "n:1:A:0",
+          "role": "work",
+          "source_activity_id": "A",
+          "work_interval": {
+            "finish": 16,
+            "start": 0
+          }
+        },
+        "n:1:F:0": {
+          "aon_node_id": "n:1:F:0",
+          "role": "work",
+          "source_activity_id": "F",
+          "work_interval": {
+            "finish": 7,
+            "start": 0
+          }
+        },
+        "n:2:B1:0": {
+          "aon_node_id": "n:2:B1:0",
+          "role": "work",
+          "source_activity_id": "B1",
+          "work_interval": {
+            "finish": 8,
+            "start": 0
+          }
+        },
+        "n:2:B2:0": {
+          "aon_node_id": "n:2:B2:0",
+          "role": "work",
+          "source_activity_id": "B2",
+          "work_interval": {
+            "finish": 16,
+            "start": 0
+          }
+        },
+        "n:2:B3:0": {
+          "aon_node_id": "n:2:B3:0",
+          "role": "work",
+          "source_activity_id": "B3",
+          "work_interval": {
+            "finish": 12,
+            "start": 0
+          }
+        },
+        "n:2:B4:0": {
+          "aon_node_id": "n:2:B4:0",
+          "role": "work",
+          "source_activity_id": "B4",
+          "work_interval": {
+            "finish": 3,
+            "start": 0
+          }
+        },
+        "n:2:B5:0": {
+          "aon_node_id": "n:2:B5:0",
+          "role": "work",
+          "source_activity_id": "B5",
+          "work_interval": {
+            "finish": 32,
+            "start": 0
+          }
+        },
+        "n:2:B6:0": {
+          "aon_node_id": "n:2:B6:0",
+          "role": "work",
+          "source_activity_id": "B6",
+          "work_interval": {
+            "finish": 16,
+            "start": 0
+          }
+        },
+        "n:2:B7:0": {
+          "aon_node_id": "n:2:B7:0",
+          "role": "work",
+          "source_activity_id": "B7",
+          "work_interval": {
+            "finish": 4,
+            "start": 0
+          }
+        },
+        "n:2:B8:0": {
+          "aon_node_id": "n:2:B8:0",
+          "role": "work",
+          "source_activity_id": "B8",
+          "work_interval": {
+            "finish": 32,
+            "start": 0
+          }
+        },
+        "n:2:B9:0": {
+          "aon_node_id": "n:2:B9:0",
+          "role": "work",
+          "source_activity_id": "B9",
+          "work_interval": {
+            "finish": 20,
+            "start": 0
+          }
+        },
+        "n:2:C1:0": {
+          "aon_node_id": "n:2:C1:0",
+          "role": "work",
+          "source_activity_id": "C1",
+          "work_interval": {
+            "finish": 12,
+            "start": 0
+          }
+        },
+        "n:2:C2:0": {
+          "aon_node_id": "n:2:C2:0",
+          "role": "work",
+          "source_activity_id": "C2",
+          "work_interval": {
+            "finish": 3,
+            "start": 0
+          }
+        },
+        "n:2:C3:0": {
+          "aon_node_id": "n:2:C3:0",
+          "role": "work",
+          "source_activity_id": "C3",
+          "work_interval": {
+            "finish": 32,
+            "start": 0
+          }
+        },
+        "n:2:C4:0": {
+          "aon_node_id": "n:2:C4:0",
+          "role": "work",
+          "source_activity_id": "C4",
+          "work_interval": {
+            "finish": 16,
+            "start": 0
+          }
+        },
+        "n:2:C5:0": {
+          "aon_node_id": "n:2:C5:0",
+          "role": "work",
+          "source_activity_id": "C5",
+          "work_interval": {
+            "finish": 4,
+            "start": 0
+          }
+        },
+        "n:2:C6:0": {
+          "aon_node_id": "n:2:C6:0",
+          "role": "work",
+          "source_activity_id": "C6",
+          "work_interval": {
+            "finish": 32,
+            "start": 0
+          }
+        },
+        "n:2:C7:0": {
+          "aon_node_id": "n:2:C7:0",
+          "role": "work",
+          "source_activity_id": "C7",
+          "work_interval": {
+            "finish": 20,
+            "start": 0
+          }
+        },
+        "n:2:C8:0": {
+          "aon_node_id": "n:2:C8:0",
+          "role": "work",
+          "source_activity_id": "C8",
+          "work_interval": {
+            "finish": 20,
+            "start": 0
+          }
+        },
+        "n:2:C9:0": {
+          "aon_node_id": "n:2:C9:0",
+          "role": "work",
+          "source_activity_id": "C9",
+          "work_interval": {
+            "finish": 5,
+            "start": 0
+          }
+        },
+        "n:2:D1:0": {
+          "aon_node_id": "n:2:D1:0",
+          "role": "work",
+          "source_activity_id": "D1",
+          "work_interval": {
+            "finish": 2,
+            "start": 0
+          }
+        },
+        "n:2:D2:0": {
+          "aon_node_id": "n:2:D2:0",
+          "role": "work",
+          "source_activity_id": "D2",
+          "work_interval": {
+            "finish": 1,
+            "start": 0
+          }
+        },
+        "n:2:D3:0": {
+          "aon_node_id": "n:2:D3:0",
+          "role": "work",
+          "source_activity_id": "D3",
+          "work_interval": {
+            "finish": 5,
+            "start": 0
+          }
+        },
+        "n:2:D4:0": {
+          "aon_node_id": "n:2:D4:0",
+          "role": "work",
+          "source_activity_id": "D4",
+          "work_interval": {
+            "finish": 2,
+            "start": 0
+          }
+        },
+        "n:2:D5:0": {
+          "aon_node_id": "n:2:D5:0",
+          "role": "work",
+          "source_activity_id": "D5",
+          "work_interval": {
+            "finish": 1,
+            "start": 0
+          }
+        },
+        "n:2:D6:0": {
+          "aon_node_id": "n:2:D6:0",
+          "role": "work",
+          "source_activity_id": "D6",
+          "work_interval": {
+            "finish": 4,
+            "start": 0
+          }
+        },
+        "n:2:D7:0": {
+          "aon_node_id": "n:2:D7:0",
+          "role": "work",
+          "source_activity_id": "D7",
+          "work_interval": {
+            "finish": 6,
+            "start": 0
+          }
+        },
+        "n:2:D8:0": {
+          "aon_node_id": "n:2:D8:0",
+          "role": "work",
+          "source_activity_id": "D8",
+          "work_interval": {
+            "finish": 3,
+            "start": 0
+          }
+        },
+        "n:2:D9:0": {
+          "aon_node_id": "n:2:D9:0",
+          "role": "work",
+          "source_activity_id": "D9",
+          "work_interval": {
+            "finish": 1,
+            "start": 0
+          }
+        },
+        "n:2:E1:0": {
+          "aon_node_id": "n:2:E1:0",
+          "role": "work",
+          "source_activity_id": "E1",
+          "work_interval": {
+            "finish": 90,
+            "start": 0
+          }
+        },
+        "n:2:E2:0": {
+          "aon_node_id": "n:2:E2:0",
+          "role": "work",
+          "source_activity_id": "E2",
+          "work_interval": {
+            "finish": 1,
+            "start": 0
+          }
+        },
+        "n:3:B10:0": {
+          "aon_node_id": "n:3:B10:0",
+          "role": "work",
+          "source_activity_id": "B10",
+          "work_interval": {
+            "finish": 20,
+            "start": 0
+          }
+        },
+        "n:3:B11:0": {
+          "aon_node_id": "n:3:B11:0",
+          "role": "work",
+          "source_activity_id": "B11",
+          "work_interval": {
+            "finish": 5,
+            "start": 0
+          }
+        }
+      },
+      "aon_schema_version": "aon-1.0",
+      "aon_sha256": "b69604f8955dfea9474d87520d0d9f74e3ef3f75f95712ea0d50c6dcf08d08dc",
+      "builder_version": "build-s3-1.0",
+      "finish_gate_mapping": {},
+      "goal": {
+        "finish_activity_ids": [
+          "F"
+        ],
+        "kind": "project_completion"
+      },
+      "goal_activity_mapping": {
+        "F": "n:1:F:0"
+      },
+      "profile": "activity_network",
+      "project_id": "case-2-box-culvert-lu-lam-dai-2008",
+      "project_revision": 5,
+      "project_sha256": "d5802d140a035014182eef7bcee85e628f71d336fb7d79ccfda8f47f2603799d",
+      "token_mapping": {
+        "__agenticsdesa_token__:7:e:00001": {
+          "consumer_activity": "n:2:B1:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:A:0",
+          "quantity": 1,
+          "source_edge_id": "e:00001"
+        },
+        "__agenticsdesa_token__:7:e:00002": {
+          "consumer_activity": "n:2:C1:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:A:0",
+          "quantity": 1,
+          "source_edge_id": "e:00002"
+        },
+        "__agenticsdesa_token__:7:e:00003": {
+          "consumer_activity": "n:2:B2:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B1:0",
+          "quantity": 1,
+          "source_edge_id": "e:00003"
+        },
+        "__agenticsdesa_token__:7:e:00004": {
+          "consumer_activity": "n:2:B3:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B2:0",
+          "quantity": 1,
+          "source_edge_id": "e:00004"
+        },
+        "__agenticsdesa_token__:7:e:00005": {
+          "consumer_activity": "n:2:B4:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B3:0",
+          "quantity": 1,
+          "source_edge_id": "e:00005"
+        },
+        "__agenticsdesa_token__:7:e:00006": {
+          "consumer_activity": "n:2:B5:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B4:0",
+          "quantity": 1,
+          "source_edge_id": "e:00006"
+        },
+        "__agenticsdesa_token__:7:e:00007": {
+          "consumer_activity": "n:2:B6:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B4:0",
+          "quantity": 1,
+          "source_edge_id": "e:00007"
+        },
+        "__agenticsdesa_token__:7:e:00008": {
+          "consumer_activity": "n:2:B7:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B5:0",
+          "quantity": 1,
+          "source_edge_id": "e:00008"
+        },
+        "__agenticsdesa_token__:7:e:00009": {
+          "consumer_activity": "n:2:B7:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B6:0",
+          "quantity": 1,
+          "source_edge_id": "e:00009"
+        },
+        "__agenticsdesa_token__:7:e:00010": {
+          "consumer_activity": "n:2:B8:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B7:0",
+          "quantity": 1,
+          "source_edge_id": "e:00010"
+        },
+        "__agenticsdesa_token__:7:e:00011": {
+          "consumer_activity": "n:2:B9:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B8:0",
+          "quantity": 1,
+          "source_edge_id": "e:00011"
+        },
+        "__agenticsdesa_token__:7:e:00012": {
+          "consumer_activity": "n:3:B10:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B8:0",
+          "quantity": 1,
+          "source_edge_id": "e:00012"
+        },
+        "__agenticsdesa_token__:7:e:00013": {
+          "consumer_activity": "n:3:B11:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B9:0",
+          "quantity": 1,
+          "source_edge_id": "e:00013"
+        },
+        "__agenticsdesa_token__:7:e:00014": {
+          "consumer_activity": "n:2:C2:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C1:0",
+          "quantity": 1,
+          "source_edge_id": "e:00014"
+        },
+        "__agenticsdesa_token__:7:e:00015": {
+          "consumer_activity": "n:2:C3:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C2:0",
+          "quantity": 1,
+          "source_edge_id": "e:00015"
+        },
+        "__agenticsdesa_token__:7:e:00016": {
+          "consumer_activity": "n:2:C4:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C2:0",
+          "quantity": 1,
+          "source_edge_id": "e:00016"
+        },
+        "__agenticsdesa_token__:7:e:00017": {
+          "consumer_activity": "n:2:C5:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C3:0",
+          "quantity": 1,
+          "source_edge_id": "e:00017"
+        },
+        "__agenticsdesa_token__:7:e:00018": {
+          "consumer_activity": "n:2:C5:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C4:0",
+          "quantity": 1,
+          "source_edge_id": "e:00018"
+        },
+        "__agenticsdesa_token__:7:e:00019": {
+          "consumer_activity": "n:2:C6:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C5:0",
+          "quantity": 1,
+          "source_edge_id": "e:00019"
+        },
+        "__agenticsdesa_token__:7:e:00020": {
+          "consumer_activity": "n:2:C7:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C6:0",
+          "quantity": 1,
+          "source_edge_id": "e:00020"
+        },
+        "__agenticsdesa_token__:7:e:00021": {
+          "consumer_activity": "n:2:C8:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C6:0",
+          "quantity": 1,
+          "source_edge_id": "e:00021"
+        },
+        "__agenticsdesa_token__:7:e:00022": {
+          "consumer_activity": "n:2:C9:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C7:0",
+          "quantity": 1,
+          "source_edge_id": "e:00022"
+        },
+        "__agenticsdesa_token__:7:e:00023": {
+          "consumer_activity": "n:2:C9:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C8:0",
+          "quantity": 1,
+          "source_edge_id": "e:00023"
+        },
+        "__agenticsdesa_token__:7:e:00024": {
+          "consumer_activity": "n:2:D1:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C9:0",
+          "quantity": 1,
+          "source_edge_id": "e:00024"
+        },
+        "__agenticsdesa_token__:7:e:00025": {
+          "consumer_activity": "n:2:D2:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D1:0",
+          "quantity": 1,
+          "source_edge_id": "e:00025"
+        },
+        "__agenticsdesa_token__:7:e:00026": {
+          "consumer_activity": "n:2:D3:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D2:0",
+          "quantity": 1,
+          "source_edge_id": "e:00026"
+        },
+        "__agenticsdesa_token__:7:e:00027": {
+          "consumer_activity": "n:2:D4:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D3:0",
+          "quantity": 1,
+          "source_edge_id": "e:00027"
+        },
+        "__agenticsdesa_token__:7:e:00028": {
+          "consumer_activity": "n:2:D5:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D4:0",
+          "quantity": 1,
+          "source_edge_id": "e:00028"
+        },
+        "__agenticsdesa_token__:7:e:00029": {
+          "consumer_activity": "n:2:D6:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D5:0",
+          "quantity": 1,
+          "source_edge_id": "e:00029"
+        },
+        "__agenticsdesa_token__:7:e:00030": {
+          "consumer_activity": "n:2:D7:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D6:0",
+          "quantity": 1,
+          "source_edge_id": "e:00030"
+        },
+        "__agenticsdesa_token__:7:e:00031": {
+          "consumer_activity": "n:2:D8:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D6:0",
+          "quantity": 1,
+          "source_edge_id": "e:00031"
+        },
+        "__agenticsdesa_token__:7:e:00032": {
+          "consumer_activity": "n:2:D9:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D7:0",
+          "quantity": 1,
+          "source_edge_id": "e:00032"
+        },
+        "__agenticsdesa_token__:7:e:00033": {
+          "consumer_activity": "n:2:D9:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D8:0",
+          "quantity": 1,
+          "source_edge_id": "e:00033"
+        },
+        "__agenticsdesa_token__:7:e:00034": {
+          "consumer_activity": "n:1:F:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D9:0",
+          "quantity": 1,
+          "source_edge_id": "e:00034"
+        },
+        "__agenticsdesa_token__:7:e:00035": {
+          "consumer_activity": "n:2:E2:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:E1:0",
+          "quantity": 1,
+          "source_edge_id": "e:00035"
+        },
+        "__agenticsdesa_token__:7:e:00036": {
+          "consumer_activity": "n:2:D6:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:E2:0",
+          "quantity": 1,
+          "source_edge_id": "e:00036"
+        },
+        "__agenticsdesa_token__:7:e:00037": {
+          "consumer_activity": "n:3:B11:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:3:B10:0",
+          "quantity": 1,
+          "source_edge_id": "e:00037"
+        },
+        "__agenticsdesa_token__:7:e:00038": {
+          "consumer_activity": "n:1:F:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:3:B11:0",
+          "quantity": 1,
+          "source_edge_id": "e:00038"
+        }
+      }
+    },
+    "max_transactions": 100000,
+    "resource_queue_estimate": {
+      "activity_network_upper_bound": 69,
+      "initial_entities": 31,
+      "process_flow_may_be_unbounded": false,
+      "produced_per_single_execution_of_each_activity": 38
+    }
+  },
+  "name": "箱涵排水工程案例（2026-11-04 最新资源日历）",
+  "resource_batches": [
+    {
+      "available": true,
+      "count": 4,
+      "description": "钢筋工",
+      "disposable": false,
+      "id_prefix": "BBF-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "BBF"
+    },
+    {
+      "available": true,
+      "count": 4,
+      "description": "反铲挖掘机",
+      "disposable": false,
+      "id_prefix": "BE-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "BE"
+    },
+    {
+      "available": true,
+      "count": 2,
+      "description": "模板木工",
+      "disposable": false,
+      "id_prefix": "CF-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "CF"
+    },
+    {
+      "available": true,
+      "count": 5,
+      "description": "混凝土工",
+      "disposable": false,
+      "id_prefix": "CLB-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "CLB"
+    },
+    {
+      "available": true,
+      "count": 3,
+      "description": "履带式起重机",
+      "disposable": false,
+      "id_prefix": "CMC-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "CMC"
+    },
+    {
+      "available": true,
+      "count": 1,
+      "description": "渠管工",
+      "disposable": false,
+      "id_prefix": "DL-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "DL"
+    },
+    {
+      "available": true,
+      "count": 8,
+      "description": "技术工人",
+      "disposable": false,
+      "id_prefix": "LB-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "LB"
+    },
+    {
+      "available": true,
+      "count": 4,
+      "description": "压路机",
+      "disposable": false,
+      "id_prefix": "RR-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "RR"
+    }
+  ],
+  "resource_calendar": {
+    "day0_weekday": 1,
+    "units_per_day": 1,
+    "working_days": {
+      "BBF": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "BE": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "CF": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "CLB": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "CMC": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "DL": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "LB": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "RR": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "resource_types": [
+    {
+      "description": "钢筋工 [person]",
+      "kind": "reusable",
+      "type": "BBF"
+    },
+    {
+      "description": "反铲挖掘机 [machine]",
+      "kind": "reusable",
+      "type": "BE"
+    },
+    {
+      "description": "模板木工 [person]",
+      "kind": "reusable",
+      "type": "CF"
+    },
+    {
+      "description": "混凝土工 [person]",
+      "kind": "reusable",
+      "type": "CLB"
+    },
+    {
+      "description": "履带式起重机 [machine]",
+      "kind": "reusable",
+      "type": "CMC"
+    },
+    {
+      "description": "渠管工 [person]",
+      "kind": "reusable",
+      "type": "DL"
+    },
+    {
+      "description": "技术工人 [person]",
+      "kind": "reusable",
+      "type": "LB"
+    },
+    {
+      "description": "压路机 [machine]",
+      "kind": "reusable",
+      "type": "RR"
+    },
+    {
+      "description": "Completion token for n:1:A:0 -> n:2:B1:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00001"
+    },
+    {
+      "description": "Completion token for n:1:A:0 -> n:2:C1:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00002"
+    },
+    {
+      "description": "Completion token for n:2:B1:0 -> n:2:B2:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00003"
+    },
+    {
+      "description": "Completion token for n:2:B2:0 -> n:2:B3:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00004"
+    },
+    {
+      "description": "Completion token for n:2:B3:0 -> n:2:B4:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00005"
+    },
+    {
+      "description": "Completion token for n:2:B4:0 -> n:2:B5:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00006"
+    },
+    {
+      "description": "Completion token for n:2:B4:0 -> n:2:B6:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00007"
+    },
+    {
+      "description": "Completion token for n:2:B5:0 -> n:2:B7:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00008"
+    },
+    {
+      "description": "Completion token for n:2:B6:0 -> n:2:B7:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00009"
+    },
+    {
+      "description": "Completion token for n:2:B7:0 -> n:2:B8:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00010"
+    },
+    {
+      "description": "Completion token for n:2:B8:0 -> n:2:B9:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00011"
+    },
+    {
+      "description": "Completion token for n:2:B8:0 -> n:3:B10:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00012"
+    },
+    {
+      "description": "Completion token for n:2:B9:0 -> n:3:B11:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00013"
+    },
+    {
+      "description": "Completion token for n:2:C1:0 -> n:2:C2:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00014"
+    },
+    {
+      "description": "Completion token for n:2:C2:0 -> n:2:C3:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00015"
+    },
+    {
+      "description": "Completion token for n:2:C2:0 -> n:2:C4:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00016"
+    },
+    {
+      "description": "Completion token for n:2:C3:0 -> n:2:C5:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00017"
+    },
+    {
+      "description": "Completion token for n:2:C4:0 -> n:2:C5:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00018"
+    },
+    {
+      "description": "Completion token for n:2:C5:0 -> n:2:C6:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00019"
+    },
+    {
+      "description": "Completion token for n:2:C6:0 -> n:2:C7:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00020"
+    },
+    {
+      "description": "Completion token for n:2:C6:0 -> n:2:C8:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00021"
+    },
+    {
+      "description": "Completion token for n:2:C7:0 -> n:2:C9:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00022"
+    },
+    {
+      "description": "Completion token for n:2:C8:0 -> n:2:C9:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00023"
+    },
+    {
+      "description": "Completion token for n:2:C9:0 -> n:2:D1:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00024"
+    },
+    {
+      "description": "Completion token for n:2:D1:0 -> n:2:D2:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00025"
+    },
+    {
+      "description": "Completion token for n:2:D2:0 -> n:2:D3:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00026"
+    },
+    {
+      "description": "Completion token for n:2:D3:0 -> n:2:D4:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00027"
+    },
+    {
+      "description": "Completion token for n:2:D4:0 -> n:2:D5:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00028"
+    },
+    {
+      "description": "Completion token for n:2:D5:0 -> n:2:D6:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00029"
+    },
+    {
+      "description": "Completion token for n:2:D6:0 -> n:2:D7:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00030"
+    },
+    {
+      "description": "Completion token for n:2:D6:0 -> n:2:D8:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00031"
+    },
+    {
+      "description": "Completion token for n:2:D7:0 -> n:2:D9:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00032"
+    },
+    {
+      "description": "Completion token for n:2:D8:0 -> n:2:D9:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00033"
+    },
+    {
+      "description": "Completion token for n:2:D9:0 -> n:1:F:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00034"
+    },
+    {
+      "description": "Completion token for n:2:E1:0 -> n:2:E2:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00035"
+    },
+    {
+      "description": "Completion token for n:2:E2:0 -> n:2:D6:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00036"
+    },
+    {
+      "description": "Completion token for n:3:B10:0 -> n:3:B11:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00037"
+    },
+    {
+      "description": "Completion token for n:3:B11:0 -> n:1:F:0",
+      "kind": "disposable",
+      "type": "__agenticsdesa_token__:7:e:00038"
+    }
+  ],
+  "resources": [],
+  "schema_version": "s3-1.0",
+  "time_unit": "day"
+}

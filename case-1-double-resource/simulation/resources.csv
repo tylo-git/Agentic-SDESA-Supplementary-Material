@@ -1,0 +1,22 @@
+﻿resource_id,resource_type,ready_time,available,disposable,description,initial_ready_time,generated_by_record,consumed_by_record,busy_time,current_owner_entity,utilization
+CN-1,CN,16.0,True,False,吊机,0.0,,,7.0,,0.3181818181818182
+LB-1,LB,16.0,True,False,工人,0.0,,,16.0,,0.7272727272727273
+LB-2,LB,16.0,True,False,工人,0.0,,,16.0,,0.7272727272727273
+LB-3,LB,19.0,True,False,工人,0.0,,,16.0,,0.7272727272727273
+LB-4,LB,19.0,True,False,工人,0.0,,,16.0,,0.7272727272727273
+LB-5,LB,22.0,True,False,工人,0.0,,,10.0,,0.45454545454545453
+LB-6,LB,22.0,True,False,工人,0.0,,,10.0,,0.45454545454545453
+generated-__agenticsdesa_token__:7:e:00012-1,__agenticsdesa_token__:7:e:00012,0.0,False,True,Complete dependency e:00012,0.0,11,1,,,
+generated-__agenticsdesa_token__:7:e:00013-2,__agenticsdesa_token__:7:e:00013,0.0,False,True,Complete dependency e:00013,0.0,11,2,,,
+generated-__agenticsdesa_token__:7:e:00014-3,__agenticsdesa_token__:7:e:00014,0.0,False,True,Complete dependency e:00014,0.0,11,3,,,
+generated-__agenticsdesa_token__:7:e:00001-4,__agenticsdesa_token__:7:e:00001,2.0,False,True,Complete dependency e:00001,2.0,1,4,,,
+generated-__agenticsdesa_token__:7:e:00002-5,__agenticsdesa_token__:7:e:00002,2.0,False,True,Complete dependency e:00002,2.0,1,5,,,
+generated-__agenticsdesa_token__:7:e:00003-6,__agenticsdesa_token__:7:e:00003,5.0,False,True,Complete dependency e:00003,5.0,2,6,,,
+generated-__agenticsdesa_token__:7:e:00004-7,__agenticsdesa_token__:7:e:00004,5.0,False,True,Complete dependency e:00004,5.0,2,7,,,
+generated-__agenticsdesa_token__:7:e:00005-8,__agenticsdesa_token__:7:e:00005,10.0,False,True,Complete dependency e:00005,10.0,3,7,,,
+generated-__agenticsdesa_token__:7:e:00006-9,__agenticsdesa_token__:7:e:00006,14.0,False,True,Complete dependency e:00006,14.0,4,8,,,
+generated-__agenticsdesa_token__:7:e:00007-10,__agenticsdesa_token__:7:e:00007,14.0,False,True,Complete dependency e:00007,14.0,5,10,,,
+generated-__agenticsdesa_token__:7:e:00008-11,__agenticsdesa_token__:7:e:00008,13.0,False,True,Complete dependency e:00008,13.0,6,9,,,
+generated-__agenticsdesa_token__:7:e:00009-12,__agenticsdesa_token__:7:e:00009,19.0,False,True,Complete dependency e:00009,19.0,7,9,,,
+generated-__agenticsdesa_token__:7:e:00010-13,__agenticsdesa_token__:7:e:00010,16.0,False,True,Complete dependency e:00010,16.0,8,10,,,
+generated-__agenticsdesa_token__:7:e:00011-14,__agenticsdesa_token__:7:e:00011,22.0,False,True,Complete dependency e:00011,22.0,9,10,,,

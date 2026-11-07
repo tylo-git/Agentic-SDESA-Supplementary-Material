@@ -1,0 +1,1202 @@
+{
+  "metadata": {
+    "ProjectTitle": "箱涵排水工程案例",
+    "activity_labels": {
+      "A": "总体开挖",
+      "B1": "开挖额外2m厚海泥",
+      "B10": "安装顶板及上部侧墙模板",
+      "B11": "浇筑顶板及上部侧墙混凝土",
+      "B2": "铺填并压实额外2m厚填石料",
+      "B3": "铺设并压实400mm厚填石",
+      "B4": "浇筑75mm厚垫层混凝土",
+      "B5": "绑扎底板及下部侧墙钢筋",
+      "B6": "安装底板及下部侧墙模板",
+      "B7": "浇筑底板及下部侧墙混凝土",
+      "B8": "搭设顶板支架",
+      "B9": "绑扎顶板及上部侧墙钢筋",
+      "C1": "铺设并压实400mm厚填石",
+      "C2": "浇筑75mm厚垫层混凝土",
+      "C3": "绑扎底板及下部侧墙钢筋",
+      "C4": "安装底板及下部侧墙模板",
+      "C5": "浇筑底板及下部侧墙混凝土",
+      "C6": "搭设顶板支架",
+      "C7": "绑扎顶板及上部侧墙钢筋",
+      "C8": "安装顶板及上部侧墙模板",
+      "C9": "浇筑顶板及上部侧墙混凝土",
+      "D1": "铺设并压实400mm厚填石",
+      "D2": "浇筑75mm厚垫层混凝土",
+      "D3": "绑扎底板及下部侧墙钢筋",
+      "D4": "安装底板及下部侧墙模板",
+      "D5": "浇筑底板及下部侧墙混凝土",
+      "D6": "搭设顶板支架",
+      "D7": "绑扎顶板及上部侧墙钢筋",
+      "D8": "安装顶板及上部侧墙模板",
+      "D9": "浇筑顶板及上部侧墙混凝土",
+      "E1": "混凝土管报审批核及供货",
+      "E2": "在端墙处安放预制混凝土管",
+      "F": "回填及压实"
+    },
+    "columns": [
+      "From",
+      "FromSF",
+      "To",
+      "ToSF",
+      "duration",
+      "Info"
+    ],
+    "description": "AgenticSDESA PDM; activity durations and endpoint relationship lags share the duration column.",
+    "duration_policy": {
+      "kind": "confirmed_constant",
+      "source_ids": [
+        "policy-current"
+      ]
+    },
+    "execution_policy": {
+      "kind": "pause_release_reacquire",
+      "source_ids": [
+        "policy-current"
+      ]
+    },
+    "project_id": "case-2-box-culvert",
+    "project_revision": 2,
+    "project_sha256": "f02a9d9cad2c1b1003fc8f8f0840881e9ec88326c23af269648d5d18dd4fd80c",
+    "schema_version": "pdm-1.0",
+    "source_ids": [
+      "narrative-overview",
+      "narrative-calendar",
+      "narrative-resources",
+      "request-current"
+    ],
+    "sources": {
+      "narrative-calendar": {
+        "kind": "document",
+        "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=9",
+        "text": "Resource calendars: six-day labor and carpenter weeks, four-day concreting laborer weeks, no machine calendar."
+      },
+      "narrative-line-17": {
+        "kind": "document",
+        "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=17",
+        "text": "Activities, durations, predecessors and resource demands stated on line 17."
+      },
+      "narrative-line-19": {
+        "kind": "document",
+        "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=19",
+        "text": "Activities, durations, predecessors and resource demands stated on line 19."
+      },
+      "narrative-line-21": {
+        "kind": "document",
+        "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=21",
+        "text": "Activities, durations, predecessors and resource demands stated on line 21."
+      },
+      "narrative-line-23": {
+        "kind": "document",
+        "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=23",
+        "text": "Activities, durations, predecessors and resource demands stated on line 23."
+      },
+      "narrative-line-25": {
+        "kind": "document",
+        "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=25",
+        "text": "Activities, durations, predecessors and resource demands stated on line 25."
+      },
+      "narrative-line-27": {
+        "kind": "document",
+        "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=27",
+        "text": "Activities, durations, predecessors and resource demands stated on line 27."
+      },
+      "narrative-overview": {
+        "kind": "document",
+        "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=7",
+        "text": "33 activities, eight resource types and two construction fronts."
+      },
+      "narrative-resources": {
+        "kind": "document",
+        "locator": "case/Box_Culvert_Drainage_Case_Narrative.md#line=13",
+        "text": "Eight resource types and their stated available upper limits."
+      },
+      "policy-current": {
+        "kind": "policy",
+        "locator": "AGENTS.md#已确认的M1决策",
+        "text": "confirmed_constant duration and pause_release_reacquire execution policy."
+      },
+      "request-current": {
+        "kind": "user",
+        "locator": "conversation://current-user-request",
+        "text": "从原始叙述重新跑 case-2 的全部流程，结果保存到 run，不用看旧版本。"
+      },
+      "user-modeling-choices-2026-10-08": {
+        "kind": "user",
+        "locator": "conversation://question-reply/call_1f39a2803f6b48f78051edd570b23657",
+        "text": "用户对整组设置（33项活动 priority=0；8种资源从第0天可用；E1不占用这8种资源；起点0天、无 horizon、max_transactions=10000；目标F完成；1次运行、固定seed=17）答复：确认整组设置。"
+      }
+    },
+    "time_unit": "day",
+    "version": "1.1"
+  },
+  "rows": [
+    {
+      "From": "A",
+      "FromSF": "ST",
+      "Info": "总体开挖",
+      "To": "A",
+      "ToSF": "FN",
+      "duration": 16,
+      "id": "activity:A",
+      "kind": "activity",
+      "source_activity_id": "A",
+      "source_ids": [
+        "narrative-line-17"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B1",
+      "FromSF": "ST",
+      "Info": "开挖额外2m厚海泥",
+      "To": "B1",
+      "ToSF": "FN",
+      "duration": 8,
+      "id": "activity:B1",
+      "kind": "activity",
+      "source_activity_id": "B1",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B10",
+      "FromSF": "ST",
+      "Info": "安装顶板及上部侧墙模板",
+      "To": "B10",
+      "ToSF": "FN",
+      "duration": 20,
+      "id": "activity:B10",
+      "kind": "activity",
+      "source_activity_id": "B10",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B11",
+      "FromSF": "ST",
+      "Info": "浇筑顶板及上部侧墙混凝土",
+      "To": "B11",
+      "ToSF": "FN",
+      "duration": 5,
+      "id": "activity:B11",
+      "kind": "activity",
+      "source_activity_id": "B11",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B2",
+      "FromSF": "ST",
+      "Info": "铺填并压实额外2m厚填石料",
+      "To": "B2",
+      "ToSF": "FN",
+      "duration": 16,
+      "id": "activity:B2",
+      "kind": "activity",
+      "source_activity_id": "B2",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B3",
+      "FromSF": "ST",
+      "Info": "铺设并压实400mm厚填石",
+      "To": "B3",
+      "ToSF": "FN",
+      "duration": 12,
+      "id": "activity:B3",
+      "kind": "activity",
+      "source_activity_id": "B3",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B4",
+      "FromSF": "ST",
+      "Info": "浇筑75mm厚垫层混凝土",
+      "To": "B4",
+      "ToSF": "FN",
+      "duration": 3,
+      "id": "activity:B4",
+      "kind": "activity",
+      "source_activity_id": "B4",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B5",
+      "FromSF": "ST",
+      "Info": "绑扎底板及下部侧墙钢筋",
+      "To": "B5",
+      "ToSF": "FN",
+      "duration": 32,
+      "id": "activity:B5",
+      "kind": "activity",
+      "source_activity_id": "B5",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B6",
+      "FromSF": "ST",
+      "Info": "安装底板及下部侧墙模板",
+      "To": "B6",
+      "ToSF": "FN",
+      "duration": 16,
+      "id": "activity:B6",
+      "kind": "activity",
+      "source_activity_id": "B6",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B7",
+      "FromSF": "ST",
+      "Info": "浇筑底板及下部侧墙混凝土",
+      "To": "B7",
+      "ToSF": "FN",
+      "duration": 4,
+      "id": "activity:B7",
+      "kind": "activity",
+      "source_activity_id": "B7",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B8",
+      "FromSF": "ST",
+      "Info": "搭设顶板支架",
+      "To": "B8",
+      "ToSF": "FN",
+      "duration": 32,
+      "id": "activity:B8",
+      "kind": "activity",
+      "source_activity_id": "B8",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B9",
+      "FromSF": "ST",
+      "Info": "绑扎顶板及上部侧墙钢筋",
+      "To": "B9",
+      "ToSF": "FN",
+      "duration": 20,
+      "id": "activity:B9",
+      "kind": "activity",
+      "source_activity_id": "B9",
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "C1",
+      "FromSF": "ST",
+      "Info": "铺设并压实400mm厚填石",
+      "To": "C1",
+      "ToSF": "FN",
+      "duration": 12,
+      "id": "activity:C1",
+      "kind": "activity",
+      "source_activity_id": "C1",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "C2",
+      "FromSF": "ST",
+      "Info": "浇筑75mm厚垫层混凝土",
+      "To": "C2",
+      "ToSF": "FN",
+      "duration": 3,
+      "id": "activity:C2",
+      "kind": "activity",
+      "source_activity_id": "C2",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "C3",
+      "FromSF": "ST",
+      "Info": "绑扎底板及下部侧墙钢筋",
+      "To": "C3",
+      "ToSF": "FN",
+      "duration": 32,
+      "id": "activity:C3",
+      "kind": "activity",
+      "source_activity_id": "C3",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "C4",
+      "FromSF": "ST",
+      "Info": "安装底板及下部侧墙模板",
+      "To": "C4",
+      "ToSF": "FN",
+      "duration": 16,
+      "id": "activity:C4",
+      "kind": "activity",
+      "source_activity_id": "C4",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "C5",
+      "FromSF": "ST",
+      "Info": "浇筑底板及下部侧墙混凝土",
+      "To": "C5",
+      "ToSF": "FN",
+      "duration": 4,
+      "id": "activity:C5",
+      "kind": "activity",
+      "source_activity_id": "C5",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "C6",
+      "FromSF": "ST",
+      "Info": "搭设顶板支架",
+      "To": "C6",
+      "ToSF": "FN",
+      "duration": 32,
+      "id": "activity:C6",
+      "kind": "activity",
+      "source_activity_id": "C6",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "C7",
+      "FromSF": "ST",
+      "Info": "绑扎顶板及上部侧墙钢筋",
+      "To": "C7",
+      "ToSF": "FN",
+      "duration": 20,
+      "id": "activity:C7",
+      "kind": "activity",
+      "source_activity_id": "C7",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "C8",
+      "FromSF": "ST",
+      "Info": "安装顶板及上部侧墙模板",
+      "To": "C8",
+      "ToSF": "FN",
+      "duration": 20,
+      "id": "activity:C8",
+      "kind": "activity",
+      "source_activity_id": "C8",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "C9",
+      "FromSF": "ST",
+      "Info": "浇筑顶板及上部侧墙混凝土",
+      "To": "C9",
+      "ToSF": "FN",
+      "duration": 5,
+      "id": "activity:C9",
+      "kind": "activity",
+      "source_activity_id": "C9",
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "D1",
+      "FromSF": "ST",
+      "Info": "铺设并压实400mm厚填石",
+      "To": "D1",
+      "ToSF": "FN",
+      "duration": 2,
+      "id": "activity:D1",
+      "kind": "activity",
+      "source_activity_id": "D1",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "D2",
+      "FromSF": "ST",
+      "Info": "浇筑75mm厚垫层混凝土",
+      "To": "D2",
+      "ToSF": "FN",
+      "duration": 1,
+      "id": "activity:D2",
+      "kind": "activity",
+      "source_activity_id": "D2",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "D3",
+      "FromSF": "ST",
+      "Info": "绑扎底板及下部侧墙钢筋",
+      "To": "D3",
+      "ToSF": "FN",
+      "duration": 5,
+      "id": "activity:D3",
+      "kind": "activity",
+      "source_activity_id": "D3",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "D4",
+      "FromSF": "ST",
+      "Info": "安装底板及下部侧墙模板",
+      "To": "D4",
+      "ToSF": "FN",
+      "duration": 2,
+      "id": "activity:D4",
+      "kind": "activity",
+      "source_activity_id": "D4",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "D5",
+      "FromSF": "ST",
+      "Info": "浇筑底板及下部侧墙混凝土",
+      "To": "D5",
+      "ToSF": "FN",
+      "duration": 1,
+      "id": "activity:D5",
+      "kind": "activity",
+      "source_activity_id": "D5",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "D6",
+      "FromSF": "ST",
+      "Info": "搭设顶板支架",
+      "To": "D6",
+      "ToSF": "FN",
+      "duration": 4,
+      "id": "activity:D6",
+      "kind": "activity",
+      "source_activity_id": "D6",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "D7",
+      "FromSF": "ST",
+      "Info": "绑扎顶板及上部侧墙钢筋",
+      "To": "D7",
+      "ToSF": "FN",
+      "duration": 6,
+      "id": "activity:D7",
+      "kind": "activity",
+      "source_activity_id": "D7",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "D8",
+      "FromSF": "ST",
+      "Info": "安装顶板及上部侧墙模板",
+      "To": "D8",
+      "ToSF": "FN",
+      "duration": 3,
+      "id": "activity:D8",
+      "kind": "activity",
+      "source_activity_id": "D8",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "D9",
+      "FromSF": "ST",
+      "Info": "浇筑顶板及上部侧墙混凝土",
+      "To": "D9",
+      "ToSF": "FN",
+      "duration": 1,
+      "id": "activity:D9",
+      "kind": "activity",
+      "source_activity_id": "D9",
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "E1",
+      "FromSF": "ST",
+      "Info": "混凝土管报审批核及供货",
+      "To": "E1",
+      "ToSF": "FN",
+      "duration": 90,
+      "id": "activity:E1",
+      "kind": "activity",
+      "source_activity_id": "E1",
+      "source_ids": [
+        "narrative-line-25"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "E2",
+      "FromSF": "ST",
+      "Info": "在端墙处安放预制混凝土管",
+      "To": "E2",
+      "ToSF": "FN",
+      "duration": 1,
+      "id": "activity:E2",
+      "kind": "activity",
+      "source_activity_id": "E2",
+      "source_ids": [
+        "narrative-line-25"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "F",
+      "FromSF": "ST",
+      "Info": "回填及压实",
+      "To": "F",
+      "ToSF": "FN",
+      "duration": 7,
+      "id": "activity:F",
+      "kind": "activity",
+      "source_activity_id": "F",
+      "source_ids": [
+        "narrative-line-27"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "A",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B1",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-A-B1",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-A-B1"
+    },
+    {
+      "From": "A",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C1",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-A-C1",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-A-C1"
+    },
+    {
+      "From": "B1",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B2",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B1-B2",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B1-B2"
+    },
+    {
+      "From": "B10",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B11",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B10-B11",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B10-B11"
+    },
+    {
+      "From": "B11",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "F",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B11-F",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-27"
+      ],
+      "source_relation_id": "R-B11-F"
+    },
+    {
+      "From": "B2",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B3",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B2-B3",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B2-B3"
+    },
+    {
+      "From": "B3",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B4",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B3-B4",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B3-B4"
+    },
+    {
+      "From": "B4",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B5",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B4-B5",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B4-B5"
+    },
+    {
+      "From": "B4",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B6",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B4-B6",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B4-B6"
+    },
+    {
+      "From": "B5",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B7",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B5-B7",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B5-B7"
+    },
+    {
+      "From": "B6",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B7",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B6-B7",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B6-B7"
+    },
+    {
+      "From": "B7",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B8",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B7-B8",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B7-B8"
+    },
+    {
+      "From": "B8",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B10",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B8-B10",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B8-B10"
+    },
+    {
+      "From": "B8",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B9",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B8-B9",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B8-B9"
+    },
+    {
+      "From": "B9",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B11",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-B9-B11",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-19"
+      ],
+      "source_relation_id": "R-B9-B11"
+    },
+    {
+      "From": "C1",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C2",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C1-C2",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-C1-C2"
+    },
+    {
+      "From": "C2",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C3",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C2-C3",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-C2-C3"
+    },
+    {
+      "From": "C2",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C4",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C2-C4",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-C2-C4"
+    },
+    {
+      "From": "C3",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C5",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C3-C5",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-C3-C5"
+    },
+    {
+      "From": "C4",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C5",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C4-C5",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-C4-C5"
+    },
+    {
+      "From": "C5",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C6",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C5-C6",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-C5-C6"
+    },
+    {
+      "From": "C6",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C7",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C6-C7",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-C6-C7"
+    },
+    {
+      "From": "C6",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C8",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C6-C8",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-C6-C8"
+    },
+    {
+      "From": "C7",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C9",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C7-C9",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-C7-C9"
+    },
+    {
+      "From": "C8",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C9",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C8-C9",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-21"
+      ],
+      "source_relation_id": "R-C8-C9"
+    },
+    {
+      "From": "C9",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D1",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-C9-D1",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-C9-D1"
+    },
+    {
+      "From": "D1",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D2",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-D1-D2",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-D1-D2"
+    },
+    {
+      "From": "D2",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D3",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-D2-D3",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-D2-D3"
+    },
+    {
+      "From": "D3",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D4",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-D3-D4",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-D3-D4"
+    },
+    {
+      "From": "D4",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D5",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-D4-D5",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-D4-D5"
+    },
+    {
+      "From": "D5",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D6",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-D5-D6",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-D5-D6"
+    },
+    {
+      "From": "D6",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D7",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-D6-D7",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-D6-D7"
+    },
+    {
+      "From": "D6",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D8",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-D6-D8",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-D6-D8"
+    },
+    {
+      "From": "D7",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D9",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-D7-D9",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-D7-D9"
+    },
+    {
+      "From": "D8",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D9",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-D8-D9",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-D8-D9"
+    },
+    {
+      "From": "D9",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "F",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-D9-F",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-27"
+      ],
+      "source_relation_id": "R-D9-F"
+    },
+    {
+      "From": "E1",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "E2",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-E1-E2",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-25"
+      ],
+      "source_relation_id": "R-E1-E2"
+    },
+    {
+      "From": "E2",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D6",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R-E2-D6",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "narrative-line-23"
+      ],
+      "source_relation_id": "R-E2-D6"
+    }
+  ]
+}

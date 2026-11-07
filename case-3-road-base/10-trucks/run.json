@@ -1,0 +1,174 @@
+{
+  "schema_version": "agenticsdesa-run-1.0",
+  "project_id": "case-3-road-base-lu-2003",
+  "project_revision": 4,
+  "parent_input": {
+    "path": "../../case-3/project.json",
+    "sha256": "cb31cf89c66436088b0018fd2c80db5635d23c9e7dd212881051325591992d2a"
+  },
+  "inputs": {
+    "project": {
+      "path": "project.json",
+      "bytes": 22875,
+      "sha256": "ff10ff9bb1370a9c6ac2fb4261da363afee2b9d45feffade19f98657c7ec1d1e",
+      "canonical_sha256": "0e6609636074f5c2154be54aac36b20da25e7a414071d5cfce0c527c38f5f029"
+    },
+    "s3": {
+      "path": "s3.json",
+      "bytes": 9031,
+      "sha256": "50b69d0aa4c35a8a5b4b97e0100f017f2c838ccc2978226f36659f5bc46df688",
+      "strict_validation": "passed",
+      "native_loader": "accepted"
+    }
+  },
+  "model": {
+    "profile": "process_flow",
+    "time_unit": "minute",
+    "horizon": 480,
+    "goal": {
+      "kind": "time_window",
+      "activity_ids": [
+        "load",
+        "travel",
+        "dump",
+        "return",
+        "grade",
+        "moisten",
+        "compact"
+      ]
+    },
+    "trucks": 10,
+    "road_sections": 25,
+    "resource_calendar": "not included; first 480-minute observation only",
+    "priority_all": 0,
+    "durations": {
+      "load": 5,
+      "travel": 20,
+      "dump": 1,
+      "return": 20,
+      "grade": 27,
+      "moisten": 4.05,
+      "compact": 25.35
+    },
+    "max_transactions": 100000
+  },
+  "simulation": {
+    "runs": 1,
+    "seed": 17,
+    "output_dir": "simulation",
+    "engine": "bundled SDESA",
+    "engine_sha256": "889c512b5e6f450bc17f833c4e1da4fe13765ccf2ad0e5e99d7227d9f4f871f2",
+    "request_source": "conversation://2026-11-07/case3-480min-10-and-20-trucks"
+  },
+  "result": {
+    "business_status": "bounded_observation",
+    "stop_reason": "horizon_reached",
+    "final_completed_event_time": 479.6000000000001,
+    "activity_completions": {
+      "load": 102,
+      "travel": 100,
+      "dump": 100,
+      "return": 96,
+      "grade": 9,
+      "moisten": 9,
+      "compact": 9
+    },
+    "completed_road_sections": 9,
+    "total_road_sections": 25,
+    "events": 434,
+    "events_crossing_horizon": 9,
+    "flow_records": 451,
+    "unprocessed_flows": 17,
+    "pending_reasons": {
+      "required_resources_not_available": 15,
+      "begin_time_at_or_after_horizon": 2
+    },
+    "resources_total": 106,
+    "resource_utilization": [
+      {
+        "id": "flagman-1",
+        "type": "flagman",
+        "busy_minutes": 136.45000000000007,
+        "utilization": 0.2842708333333335
+      },
+      {
+        "id": "grader-1",
+        "type": "grader",
+        "busy_minutes": 253.79999999999995,
+        "utilization": 0.5287499999999999
+      },
+      {
+        "id": "roller-1",
+        "type": "roller",
+        "busy_minutes": 228.15000000000012,
+        "utilization": 0.47531250000000025
+      },
+      {
+        "id": "water-truck-1",
+        "type": "water_truck",
+        "busy_minutes": 36.450000000000074,
+        "utilization": 0.07593750000000016
+      },
+      {
+        "id": "loader-1",
+        "type": "loader",
+        "busy_minutes": 259.74999999999994,
+        "utilization": 0.5411458333333332
+      },
+      {
+        "id": "loader-2",
+        "type": "loader",
+        "busy_minutes": 258.74999999999994,
+        "utilization": 0.5390624999999999
+      }
+    ],
+    "material": {
+      "generated": 100,
+      "consumed": 100,
+      "remaining": 0,
+      "utilization": null
+    }
+  },
+  "utilization_definition": "For each reusable resource: sum of busy interval intersections with [0,480] divided by 480. Includes in-window work of activities ending after 480.",
+  "validation": {
+    "strict_s3": "passed",
+    "loader": "accepted",
+    "horizon_clipped_utilization_recomputed": "passed",
+    "resource_overlaps": 0,
+    "unreleased_reusables": 0,
+    "material_conservation": "passed",
+    "target_counts": "passed"
+  },
+  "performance": {
+    "engine_load_and_run_seconds": 0.07421640027314425,
+    "resources_csv_bytes": 13063
+  },
+  "outputs": [
+    {
+      "path": "simulation/summary.json",
+      "bytes": 3706,
+      "sha256": "cef4446e8dfca47cae86a037a7321bc6fa676543051bf12dcc6593fb5dd0547d"
+    },
+    {
+      "path": "simulation/events.csv",
+      "bytes": 52882,
+      "sha256": "a4083695778cc883b38d94899f0e16e305a8b470f17447437694dee8ef3351d2"
+    },
+    {
+      "path": "simulation/flow_queue.csv",
+      "bytes": 32413,
+      "sha256": "cac0fdf26010dc6f20cf6d57faa7c6a19ad271f69d4e4acbc37109011102fc20"
+    },
+    {
+      "path": "simulation/resources.csv",
+      "bytes": 13063,
+      "sha256": "533c6568c605ea9c003da0cc6f1a75e2087dbc4659edb88b614a0a5cea006776"
+    }
+  ],
+  "audit": "../comparison.md",
+  "limitations": [
+    "Deterministic teaching calibration durations, not unpublished paper Beta parameters.",
+    "Trucks are flow entities, not reusable resource instances; TRK-GRN is consumable, so no time-based resource utilization is assigned.",
+    "Horizon reached with pending flows is a bounded observation, not completion of all 25 sections."
+  ]
+}

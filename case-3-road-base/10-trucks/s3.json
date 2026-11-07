@@ -1,0 +1,401 @@
+{
+  "activities": [
+    {
+      "description": "压实 Compact",
+      "duration": {
+        "kind": "constant",
+        "provenance": "project:compact:confirmed-duration",
+        "value": 25.35
+      },
+      "id": "compact",
+      "priority": 0,
+      "produces": [],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "roller"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "roller"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": []
+    },
+    {
+      "description": "卸料 Dump",
+      "duration": {
+        "kind": "constant",
+        "provenance": "project:dump:confirmed-duration",
+        "value": 1
+      },
+      "id": "dump",
+      "priority": 0,
+      "produces": [
+        {
+          "description": "Project production by dump",
+          "quantity": 1,
+          "type": "truckload_granular"
+        }
+      ],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "flagman"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "flagman"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": [
+        {
+          "activity": "return",
+          "probability": 1
+        }
+      ]
+    },
+    {
+      "description": "摊铺 Grade",
+      "duration": {
+        "kind": "constant",
+        "provenance": "project:grade:confirmed-duration",
+        "value": 27
+      },
+      "id": "grade",
+      "priority": 0,
+      "produces": [],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "grader"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "grader"
+        },
+        {
+          "disposable": true,
+          "quantity": 10,
+          "type": "truckload_granular"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": [
+        {
+          "activity": "moisten",
+          "probability": 1
+        }
+      ]
+    },
+    {
+      "description": "装料 Load",
+      "duration": {
+        "kind": "constant",
+        "provenance": "project:load:confirmed-duration",
+        "value": 5
+      },
+      "id": "load",
+      "priority": 0,
+      "produces": [],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "loader"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "loader"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": [
+        {
+          "activity": "travel",
+          "probability": 1
+        }
+      ]
+    },
+    {
+      "description": "洒水湿润 Moisten",
+      "duration": {
+        "kind": "constant",
+        "provenance": "project:moisten:confirmed-duration",
+        "value": 4.05
+      },
+      "id": "moisten",
+      "priority": 0,
+      "produces": [],
+      "releases": [
+        {
+          "quantity": 1,
+          "type": "flagman"
+        },
+        {
+          "quantity": 1,
+          "type": "water_truck"
+        }
+      ],
+      "requires": [
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "flagman"
+        },
+        {
+          "disposable": false,
+          "quantity": 1,
+          "type": "water_truck"
+        }
+      ],
+      "route_mode": "choice",
+      "routes": [
+        {
+          "activity": "compact",
+          "probability": 1
+        }
+      ]
+    },
+    {
+      "description": "返回采石场 Return",
+      "duration": {
+        "kind": "constant",
+        "provenance": "project:return:confirmed-duration",
+        "value": 20
+      },
+      "id": "return",
+      "priority": 0,
+      "produces": [],
+      "releases": [],
+      "requires": [],
+      "route_mode": "choice",
+      "routes": [
+        {
+          "activity": "load",
+          "probability": 1
+        }
+      ]
+    },
+    {
+      "description": "运往现场 Travel",
+      "duration": {
+        "kind": "constant",
+        "provenance": "project:travel:confirmed-duration",
+        "value": 20
+      },
+      "id": "travel",
+      "priority": 0,
+      "produces": [],
+      "releases": [],
+      "requires": [],
+      "route_mode": "choice",
+      "routes": [
+        {
+          "activity": "dump",
+          "probability": 1
+        }
+      ]
+    }
+  ],
+  "flow_entities": [],
+  "flow_entity_batches": [
+    {
+      "arrival_time": 0,
+      "attributes": {},
+      "count": 25,
+      "group_size": 0,
+      "id_prefix": "section-",
+      "initial_activity": "grade",
+      "start_index": 1,
+      "type": "road_section"
+    },
+    {
+      "arrival_time": 0,
+      "attributes": {},
+      "count": 10,
+      "group_size": 0,
+      "id_prefix": "truck-",
+      "initial_activity": "load",
+      "start_index": 1,
+      "type": "dump_truck"
+    }
+  ],
+  "horizon": 480,
+  "metadata": {
+    "agenticsdesa": {
+      "activity_mapping": {
+        "compact": {
+          "project_activity_id": "compact",
+          "role": "process_activity",
+          "source_activity_id": "compact"
+        },
+        "dump": {
+          "project_activity_id": "dump",
+          "role": "process_activity",
+          "source_activity_id": "dump"
+        },
+        "grade": {
+          "project_activity_id": "grade",
+          "role": "process_activity",
+          "source_activity_id": "grade"
+        },
+        "load": {
+          "project_activity_id": "load",
+          "role": "process_activity",
+          "source_activity_id": "load"
+        },
+        "moisten": {
+          "project_activity_id": "moisten",
+          "role": "process_activity",
+          "source_activity_id": "moisten"
+        },
+        "return": {
+          "project_activity_id": "return",
+          "role": "process_activity",
+          "source_activity_id": "return"
+        },
+        "travel": {
+          "project_activity_id": "travel",
+          "role": "process_activity",
+          "source_activity_id": "travel"
+        }
+      },
+      "builder_version": "build-s3-1.1-project-direct",
+      "finish_gate_mapping": {},
+      "flow_mapping": {
+        "sections": {
+          "count": 25,
+          "id_prefix": "section-",
+          "kind": "batch",
+          "start_index": 1
+        },
+        "trucks": {
+          "count": 10,
+          "id_prefix": "truck-",
+          "kind": "batch",
+          "start_index": 1
+        }
+      },
+      "goal": {
+        "activity_ids": [
+          "load",
+          "travel",
+          "dump",
+          "return",
+          "grade",
+          "moisten",
+          "compact"
+        ],
+        "kind": "time_window"
+      },
+      "profile": "process_flow",
+      "project_id": "case-3-road-base-lu-2003",
+      "project_revision": 4,
+      "project_sha256": "0e6609636074f5c2154be54aac36b20da25e7a414071d5cfce0c527c38f5f029",
+      "source_mode": "project_direct",
+      "token_mapping": {}
+    },
+    "max_transactions": 100000,
+    "resource_queue_estimate": {
+      "activity_network_upper_bound": null,
+      "initial_entities": 6,
+      "process_flow_may_be_unbounded": true,
+      "produced_per_single_execution_of_each_activity": 1
+    }
+  },
+  "name": "道路粒料基层：10辆卡车，480分钟观察",
+  "resource_batches": [
+    {
+      "available": true,
+      "count": 2,
+      "description": "装载机 Loader",
+      "disposable": false,
+      "id_prefix": "loader-",
+      "ready_time": 0,
+      "start_index": 1,
+      "type": "loader"
+    }
+  ],
+  "resource_types": [
+    {
+      "description": "旗手 Flagman [person]",
+      "kind": "reusable",
+      "type": "flagman"
+    },
+    {
+      "description": "平地机 Grader [machine]",
+      "kind": "reusable",
+      "type": "grader"
+    },
+    {
+      "description": "装载机 Loader [machine]",
+      "kind": "reusable",
+      "type": "loader"
+    },
+    {
+      "description": "压路机 Roller [machine]",
+      "kind": "reusable",
+      "type": "roller"
+    },
+    {
+      "description": "一车粒料 Truckload Granular [truckload]",
+      "kind": "disposable",
+      "type": "truckload_granular"
+    },
+    {
+      "description": "洒水车 Water Truck [vehicle]",
+      "kind": "reusable",
+      "type": "water_truck"
+    }
+  ],
+  "resources": [
+    {
+      "available": true,
+      "description": "旗手 Flagman",
+      "disposable": false,
+      "id": "flagman-1",
+      "ready_time": 0,
+      "type": "flagman"
+    },
+    {
+      "available": true,
+      "description": "平地机 Grader",
+      "disposable": false,
+      "id": "grader-1",
+      "ready_time": 0,
+      "type": "grader"
+    },
+    {
+      "available": true,
+      "description": "压路机 Roller",
+      "disposable": false,
+      "id": "roller-1",
+      "ready_time": 0,
+      "type": "roller"
+    },
+    {
+      "available": true,
+      "description": "洒水车 Water Truck",
+      "disposable": false,
+      "id": "water-truck-1",
+      "ready_time": 0,
+      "type": "water_truck"
+    }
+  ],
+  "schema_version": "s3-1.0",
+  "time_unit": "minute"
+}

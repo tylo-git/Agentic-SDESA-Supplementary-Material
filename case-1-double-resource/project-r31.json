@@ -1,0 +1,1149 @@
+{
+  "activities": {
+    "A": {
+      "duration": 2,
+      "name": "活动 A",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "crane": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CN",
+          "source_ids": [
+            "case-activities-start"
+          ]
+        },
+        "labor": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "case-activities-start"
+          ]
+        }
+      },
+      "source_ids": [
+        "case-activities-start"
+      ]
+    },
+    "B": {
+      "duration": 3,
+      "name": "活动 B",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "labor": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "case-activities-start"
+          ]
+        }
+      },
+      "source_ids": [
+        "case-activities-start"
+      ]
+    },
+    "C": {
+      "duration": 5,
+      "name": "活动 C",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "labor": {
+          "at": "work_segments",
+          "quantity": 4,
+          "resource_id": "LB",
+          "source_ids": [
+            "case-activities-start"
+          ]
+        }
+      },
+      "source_ids": [
+        "case-activities-start"
+      ]
+    },
+    "D": {
+      "duration": 4,
+      "name": "活动 D",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "labor": {
+          "at": "work_segments",
+          "quantity": 3,
+          "resource_id": "LB",
+          "source_ids": [
+            "case-activities-middle"
+          ]
+        }
+      },
+      "source_ids": [
+        "case-activities-middle"
+      ]
+    },
+    "E": {
+      "duration": 4,
+      "name": "活动 E",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "labor": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "LB",
+          "source_ids": [
+            "case-activities-middle"
+          ]
+        }
+      },
+      "source_ids": [
+        "case-activities-middle"
+      ]
+    },
+    "F": {
+      "duration": 3,
+      "name": "活动 F",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "crane": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CN",
+          "source_ids": [
+            "case-activities-middle"
+          ]
+        },
+        "labor": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "LB",
+          "source_ids": [
+            "case-activities-middle"
+          ]
+        }
+      },
+      "source_ids": [
+        "case-activities-middle"
+      ]
+    },
+    "FN": {
+      "duration": 0,
+      "name": "Finish",
+      "priority": 0,
+      "produces": {},
+      "requires": {},
+      "source_ids": [
+        "case-boundaries"
+      ]
+    },
+    "G": {
+      "duration": 6,
+      "name": "活动 G",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "labor": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "LB",
+          "source_ids": [
+            "case-activities-middle"
+          ]
+        }
+      },
+      "source_ids": [
+        "case-activities-middle"
+      ]
+    },
+    "H": {
+      "duration": 2,
+      "name": "活动 H",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "crane": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "CN",
+          "source_ids": [
+            "case-activities-end"
+          ]
+        },
+        "labor": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "LB",
+          "source_ids": [
+            "case-activities-end"
+          ]
+        }
+      },
+      "source_ids": [
+        "case-activities-end"
+      ]
+    },
+    "I": {
+      "duration": 3,
+      "name": "活动 I",
+      "priority": 0,
+      "produces": {},
+      "requires": {
+        "labor": {
+          "at": "work_segments",
+          "quantity": 2,
+          "resource_id": "LB",
+          "source_ids": [
+            "case-activities-end"
+          ]
+        }
+      },
+      "source_ids": [
+        "case-activities-end"
+      ]
+    },
+    "ST": {
+      "duration": 0,
+      "name": "Start",
+      "priority": 0,
+      "produces": {},
+      "requires": {},
+      "source_ids": [
+        "case-boundaries"
+      ]
+    }
+  },
+  "id": "case-1-double-resource-p25",
+  "issues": {
+    "crane-available": {
+      "confirmation": {
+        "at_revision": 26,
+        "context": {
+          "/resources/CN/kind": "reusable",
+          "/resources/CN/unit": "crane"
+        },
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-crane-available",
+        "value": true
+      },
+      "kind": "missing",
+      "path": "/resources/CN/supply/initial/available",
+      "reason": "材料未明示吊机在初始时刻的 available 状态；S3 需明确。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "crane-ready-time": {
+      "confirmation": {
+        "at_revision": 25,
+        "context": {
+          "/resources/CN/kind": "reusable",
+          "/resources/CN/unit": "crane",
+          "/time_unit": "day"
+        },
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-crane-ready-time",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/resources/CN/supply/initial/ready_time",
+      "reason": "材料未明示吊机相对项目时间原点的初始就绪时刻；S3 需确定数值。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "horizon-choice": {
+      "confirmation": {
+        "at_revision": 29,
+        "context": {
+          "/time_unit": "day"
+        },
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-horizon",
+        "value": null
+      },
+      "kind": "default",
+      "path": "/simulation/horizon",
+      "proposal": null,
+      "reason": "用户确认不设仿真时间截止",
+      "source_ids": [
+        "user-case",
+        "case-activities-start",
+        "case-activities-middle",
+        "case-activities-end",
+        "case-resources",
+        "case-boundaries",
+        "project-policy"
+      ],
+      "status": "confirmed"
+    },
+    "labor-available": {
+      "confirmation": {
+        "at_revision": 24,
+        "context": {
+          "/resources/LB/kind": "reusable",
+          "/resources/LB/unit": "person"
+        },
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-labor-available",
+        "value": true
+      },
+      "kind": "missing",
+      "path": "/resources/LB/supply/initial/available",
+      "reason": "材料未明示工人在初始时刻的 available 状态；S3 需明确。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "labor-ready-time": {
+      "confirmation": {
+        "at_revision": 23,
+        "context": {
+          "/resources/LB/kind": "reusable",
+          "/resources/LB/unit": "person",
+          "/time_unit": "day"
+        },
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-labor-ready-time",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/resources/LB/supply/initial/ready_time",
+      "reason": "材料未明示 6 名工人相对项目时间原点的初始就绪时刻；S3 需确定数值。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "max-transactions": {
+      "confirmation": {
+        "at_revision": 28,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-max-transactions",
+        "value": 100000
+      },
+      "kind": "missing",
+      "path": "/simulation/max_transactions",
+      "reason": "材料未给仿真交易安全上限；S3 模型需要明确。",
+      "source_ids": [
+        "user-case"
+      ],
+      "status": "confirmed"
+    },
+    "priority-A": {
+      "confirmation": {
+        "at_revision": 4,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-A",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/A/priority",
+      "reason": "当前资料未给 A 的资源队列 priority；S3 需显式整数。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "priority-B": {
+      "confirmation": {
+        "at_revision": 5,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-B",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/B/priority",
+      "reason": "当前资料未给 B 的资源队列 priority；S3 需显式整数。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "priority-C": {
+      "confirmation": {
+        "at_revision": 6,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-C",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/C/priority",
+      "reason": "当前资料未给 C 的资源队列 priority；S3 需显式整数。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "priority-D": {
+      "confirmation": {
+        "at_revision": 7,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-D",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/D/priority",
+      "reason": "当前资料未给 D 的资源队列 priority；S3 需显式整数。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "priority-E": {
+      "confirmation": {
+        "at_revision": 8,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-E",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/E/priority",
+      "reason": "当前资料未给 E 的资源队列 priority；S3 需显式整数。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "priority-F": {
+      "confirmation": {
+        "at_revision": 9,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-F",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/F/priority",
+      "reason": "当前资料未给 F 的资源队列 priority；S3 需显式整数。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "priority-FN": {
+      "confirmation": {
+        "at_revision": 13,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-FN",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/FN/priority",
+      "reason": "规范化终点未给定资源队列 priority；S3 需要显式值。",
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "status": "confirmed"
+    },
+    "priority-G": {
+      "confirmation": {
+        "at_revision": 10,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-G",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/G/priority",
+      "reason": "当前资料未给 G 的资源队列 priority；S3 需显式整数。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "priority-H": {
+      "confirmation": {
+        "at_revision": 11,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-H",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/H/priority",
+      "reason": "当前资料未给 H 的资源队列 priority；S3 需显式整数。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "priority-I": {
+      "confirmation": {
+        "at_revision": 12,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-I",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/I/priority",
+      "reason": "当前资料未给 I 的资源队列 priority；S3 需显式整数。",
+      "source_ids": [
+        "case-resources"
+      ],
+      "status": "confirmed"
+    },
+    "priority-ST": {
+      "confirmation": {
+        "at_revision": 3,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-priority-ST",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/ST/priority",
+      "reason": "规范化起点未给定资源队列 priority；S3 需要显式值。",
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "status": "confirmed"
+    },
+    "produces-A": {
+      "confirmation": {
+        "at_revision": 14,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-produces-A",
+        "value": {}
+      },
+      "kind": "missing",
+      "path": "/activities/A/produces",
+      "reason": "当前资料没有明确 A 是否产出业务物料或控制资源；S3 需明确空集合或产出。",
+      "source_ids": [
+        "case-activities-start"
+      ],
+      "status": "confirmed"
+    },
+    "produces-B": {
+      "confirmation": {
+        "at_revision": 15,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-produces-B",
+        "value": {}
+      },
+      "kind": "missing",
+      "path": "/activities/B/produces",
+      "reason": "当前资料没有明确 B 是否产出业务物料或控制资源；S3 需明确空集合或产出。",
+      "source_ids": [
+        "case-activities-start"
+      ],
+      "status": "confirmed"
+    },
+    "produces-C": {
+      "confirmation": {
+        "at_revision": 16,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-produces-C",
+        "value": {}
+      },
+      "kind": "missing",
+      "path": "/activities/C/produces",
+      "reason": "当前资料没有明确 C 是否产出业务物料或控制资源；S3 需明确空集合或产出。",
+      "source_ids": [
+        "case-activities-start"
+      ],
+      "status": "confirmed"
+    },
+    "produces-D": {
+      "confirmation": {
+        "at_revision": 17,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-produces-D",
+        "value": {}
+      },
+      "kind": "missing",
+      "path": "/activities/D/produces",
+      "reason": "当前资料没有明确 D 是否产出业务物料或控制资源；S3 需明确空集合或产出。",
+      "source_ids": [
+        "case-activities-middle"
+      ],
+      "status": "confirmed"
+    },
+    "produces-E": {
+      "confirmation": {
+        "at_revision": 18,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-produces-E",
+        "value": {}
+      },
+      "kind": "missing",
+      "path": "/activities/E/produces",
+      "reason": "当前资料没有明确 E 是否产出业务物料或控制资源；S3 需明确空集合或产出。",
+      "source_ids": [
+        "case-activities-middle"
+      ],
+      "status": "confirmed"
+    },
+    "produces-F": {
+      "confirmation": {
+        "at_revision": 19,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-produces-F",
+        "value": {}
+      },
+      "kind": "missing",
+      "path": "/activities/F/produces",
+      "reason": "当前资料没有明确 F 是否产出业务物料或控制资源；S3 需明确空集合或产出。",
+      "source_ids": [
+        "case-activities-middle"
+      ],
+      "status": "confirmed"
+    },
+    "produces-G": {
+      "confirmation": {
+        "at_revision": 20,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-produces-G",
+        "value": {}
+      },
+      "kind": "missing",
+      "path": "/activities/G/produces",
+      "reason": "当前资料没有明确 G 是否产出业务物料或控制资源；S3 需明确空集合或产出。",
+      "source_ids": [
+        "case-activities-middle"
+      ],
+      "status": "confirmed"
+    },
+    "produces-H": {
+      "confirmation": {
+        "at_revision": 21,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-produces-H",
+        "value": {}
+      },
+      "kind": "missing",
+      "path": "/activities/H/produces",
+      "reason": "当前资料没有明确 H 是否产出业务物料或控制资源；S3 需明确空集合或产出。",
+      "source_ids": [
+        "case-activities-end"
+      ],
+      "status": "confirmed"
+    },
+    "produces-I": {
+      "confirmation": {
+        "at_revision": 22,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-produces-I",
+        "value": {}
+      },
+      "kind": "missing",
+      "path": "/activities/I/produces",
+      "reason": "当前资料没有明确 I 是否产出业务物料或控制资源；S3 需明确空集合或产出。",
+      "source_ids": [
+        "case-activities-end"
+      ],
+      "status": "confirmed"
+    },
+    "run-count": {
+      "confirmation": {
+        "at_revision": 30,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-run-count",
+        "value": 1
+      },
+      "kind": "default",
+      "path": "/simulation/run/runs",
+      "proposal": 1,
+      "reason": "用户明确选择单次运行",
+      "source_ids": [
+        "user-case",
+        "case-activities-start",
+        "case-activities-middle",
+        "case-activities-end",
+        "case-resources",
+        "case-boundaries",
+        "project-policy"
+      ],
+      "status": "confirmed"
+    },
+    "run-seed": {
+      "confirmation": {
+        "at_revision": 31,
+        "context": {},
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-run-seed",
+        "value": 17
+      },
+      "kind": "default",
+      "path": "/simulation/run/seed",
+      "proposal": 42,
+      "reason": "用户明确选择单次固定 seed 17",
+      "source_ids": [
+        "user-case",
+        "case-activities-start",
+        "case-activities-middle",
+        "case-activities-end",
+        "case-resources",
+        "case-boundaries",
+        "project-policy"
+      ],
+      "status": "confirmed"
+    },
+    "simulation-start-time": {
+      "confirmation": {
+        "at_revision": 27,
+        "context": {
+          "/time_unit": "day"
+        },
+        "project_id": "case-1-double-resource-p25",
+        "source_id": "user-simulation-start-time",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/simulation/start_time",
+      "reason": "材料未给相对时间轴的数值起点；S3 需要明确。",
+      "source_ids": [
+        "case-activities-start"
+      ],
+      "status": "confirmed"
+    }
+  },
+  "metadata": {
+    "boundary_convention": "ST and FN are included as permitted by revised narrative line 19; they are not construction work.",
+    "downstream_status": {
+      "s3": {
+        "reason": "project fact changed at /simulation/horizon",
+        "source_revision": 28,
+        "status": "stale"
+      },
+      "simulation": {
+        "reason": "project fact changed at /simulation/run/seed",
+        "source_revision": 30,
+        "status": "stale"
+      }
+    },
+    "resource_ids": "LB-1..LB-6 and CN-1 are technical instance labels only.",
+    "scope": "Step 1 draft from the named narrative only; no PDM, AON, S3 or simulation generated."
+  },
+  "name": "双资源施工调度案例（P25）",
+  "policy": {
+    "duration": "confirmed_constant",
+    "execution": "pause_release_reacquire",
+    "source_ids": [
+      "project-policy"
+    ]
+  },
+  "relations": {
+    "R01": {
+      "from": "ST",
+      "lag": 0,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "to": "A",
+      "type": "FS"
+    },
+    "R02": {
+      "from": "ST",
+      "lag": 0,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "to": "B",
+      "type": "FS"
+    },
+    "R03": {
+      "from": "ST",
+      "lag": 0,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "to": "C",
+      "type": "FS"
+    },
+    "R04": {
+      "from": "A",
+      "lag": 0,
+      "source_ids": [
+        "case-activities-middle",
+        "case-boundaries"
+      ],
+      "to": "D",
+      "type": "FS"
+    },
+    "R05": {
+      "from": "A",
+      "lag": 0,
+      "source_ids": [
+        "case-activities-middle",
+        "case-boundaries"
+      ],
+      "to": "E",
+      "type": "FS"
+    },
+    "R06": {
+      "from": "B",
+      "lag": 0,
+      "source_ids": [
+        "case-activities-middle",
+        "case-boundaries"
+      ],
+      "to": "F",
+      "type": "FS"
+    },
+    "R07": {
+      "from": "B",
+      "lag": 0,
+      "source_ids": [
+        "case-activities-middle",
+        "case-boundaries"
+      ],
+      "to": "G",
+      "type": "FS"
+    },
+    "R08": {
+      "from": "C",
+      "lag": 0,
+      "source_ids": [
+        "case-activities-middle",
+        "case-boundaries"
+      ],
+      "to": "G",
+      "type": "FS"
+    },
+    "R09": {
+      "from": "D",
+      "lag": 0,
+      "source_ids": [
+        "case-activities-end",
+        "case-boundaries"
+      ],
+      "to": "H",
+      "type": "FS"
+    },
+    "R10": {
+      "from": "F",
+      "lag": 0,
+      "source_ids": [
+        "case-activities-end",
+        "case-boundaries"
+      ],
+      "to": "I",
+      "type": "FS"
+    },
+    "R11": {
+      "from": "G",
+      "lag": 0,
+      "source_ids": [
+        "case-activities-end",
+        "case-boundaries"
+      ],
+      "to": "I",
+      "type": "FS"
+    },
+    "R12": {
+      "from": "E",
+      "lag": 0,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "to": "FN",
+      "type": "FS"
+    },
+    "R13": {
+      "from": "H",
+      "lag": 0,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "to": "FN",
+      "type": "FS"
+    },
+    "R14": {
+      "from": "I",
+      "lag": 0,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "to": "FN",
+      "type": "FS"
+    }
+  },
+  "resources": {
+    "CN": {
+      "kind": "reusable",
+      "name": "吊机",
+      "source_ids": [
+        "case-resources"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 1,
+          "id_prefix": "CN-",
+          "ready_time": 0,
+          "source_ids": [
+            "case-resources"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "crane"
+    },
+    "LB": {
+      "kind": "reusable",
+      "name": "工人",
+      "source_ids": [
+        "case-resources"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 6,
+          "id_prefix": "LB-",
+          "ready_time": 0,
+          "source_ids": [
+            "case-resources"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "person"
+    }
+  },
+  "revision": 31,
+  "schema_version": "project-1.0",
+  "simulation": {
+    "duration_mode": "confirmed_constant",
+    "goal": {
+      "finish_activity_ids": [
+        "FN"
+      ],
+      "kind": "project_completion"
+    },
+    "horizon": null,
+    "max_transactions": 100000,
+    "profile": "activity_network",
+    "run": {
+      "runs": 1,
+      "seed": 17,
+      "source_ids": [
+        "user-case"
+      ]
+    },
+    "source_ids": [
+      "user-case",
+      "case-activities-start",
+      "case-activities-end",
+      "case-boundaries"
+    ],
+    "start_time": 0
+  },
+  "source_ids": [
+    "user-case",
+    "case-activities-start",
+    "case-activities-middle",
+    "case-activities-end",
+    "case-resources",
+    "case-boundaries",
+    "project-policy"
+  ],
+  "sources": {
+    "case-activities-end": {
+      "kind": "document",
+      "locator": "case/Double_Resource_Scheduling_Case_P25_Narrative.md#line=9",
+      "text": "D→H，F/G→I，E/H/I 全部完成定义项目完工；H/I 的工期与资源需求。"
+    },
+    "case-activities-middle": {
+      "kind": "document",
+      "locator": "case/Double_Resource_Scheduling_Case_P25_Narrative.md#line=7",
+      "text": "A→D/E，B→F/G，C→G；D/E/F/G 的工期与资源需求。"
+    },
+    "case-activities-start": {
+      "kind": "document",
+      "locator": "case/Double_Resource_Scheduling_Case_P25_Narrative.md#line=5",
+      "text": "A/B/C 的工期、资源需求及三者项目开始后可开工。"
+    },
+    "case-boundaries": {
+      "kind": "document",
+      "locator": "case/Double_Resource_Scheduling_Case_P25_Narrative.md#line=19",
+      "text": "允许添加零工期 ST/FN：ST→A/B/C，E/H/I→FN，共 11 节点、14 条 FS0 关系；边界节点不是实际施工。"
+    },
+    "case-resources": {
+      "kind": "document",
+      "locator": "case/Double_Resource_Scheduling_Case_P25_Narrative.md#line=13",
+      "text": "工人和吊机是可重复资源；活动结束后释放已占用资源。"
+    },
+    "project-policy": {
+      "kind": "policy",
+      "locator": "ontology/ontology.md#line=21",
+      "text": "项目已确认的统一政策：采用已确认数值工期；若活动因转换拆段，允许段间暂停并释放/重新申请可重复资源。"
+    },
+    "user-case": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/case-1-request",
+      "text": "用户将 case/Double_Resource_Scheduling_Case_P25_Narrative.md 指定为 Case 1，并要求从 extract-project 开始。项目名称由文件名作显示标签。"
+    },
+    "user-crane-available": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/s3-initial-settings",
+      "text": "确认上述整组设置（推荐）"
+    },
+    "user-crane-ready-time": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/s3-initial-settings",
+      "text": "确认上述整组设置（推荐）"
+    },
+    "user-horizon": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/s3-initial-settings",
+      "text": "确认上述整组设置（推荐）"
+    },
+    "user-labor-available": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/s3-initial-settings",
+      "text": "确认上述整组设置（推荐）"
+    },
+    "user-labor-ready-time": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/s3-initial-settings",
+      "text": "确认上述整组设置（推荐）"
+    },
+    "user-max-transactions": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/s3-initial-settings",
+      "text": "确认上述整组设置（推荐）"
+    },
+    "user-priority-A": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-priority-B": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-priority-C": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-priority-D": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-priority-E": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-priority-F": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-priority-FN": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-priority-G": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-priority-H": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-priority-I": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-priority-ST": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/priority-choice",
+      "text": "A–I 和 ST/FN 全部设为 0"
+    },
+    "user-produces-A": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/no-business-production",
+      "text": "确认 A–I 均无额外产出（推荐）"
+    },
+    "user-produces-B": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/no-business-production",
+      "text": "确认 A–I 均无额外产出（推荐）"
+    },
+    "user-produces-C": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/no-business-production",
+      "text": "确认 A–I 均无额外产出（推荐）"
+    },
+    "user-produces-D": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/no-business-production",
+      "text": "确认 A–I 均无额外产出（推荐）"
+    },
+    "user-produces-E": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/no-business-production",
+      "text": "确认 A–I 均无额外产出（推荐）"
+    },
+    "user-produces-F": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/no-business-production",
+      "text": "确认 A–I 均无额外产出（推荐）"
+    },
+    "user-produces-G": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/no-business-production",
+      "text": "确认 A–I 均无额外产出（推荐）"
+    },
+    "user-produces-H": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/no-business-production",
+      "text": "确认 A–I 均无额外产出（推荐）"
+    },
+    "user-produces-I": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/no-business-production",
+      "text": "确认 A–I 均无额外产出（推荐）"
+    },
+    "user-run-count": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/run-choice",
+      "text": "1 run, seed 17 (recommended)"
+    },
+    "user-run-seed": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/run-choice",
+      "text": "1 run, seed 17 (recommended)"
+    },
+    "user-simulation-start-time": {
+      "kind": "user",
+      "locator": "conversation://2026-10-07/s3-initial-settings",
+      "text": "确认上述整组设置（推荐）"
+    }
+  },
+  "status": "draft",
+  "time_unit": "day"
+}

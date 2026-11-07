@@ -1,0 +1,46 @@
+{
+  "project": {
+    "canonical_sha256": "b9a32cffec456c63cedc3138f9a4777695a29b86aa3f0a1b7c9240dbabcd2dbf",
+    "declared_status": "draft",
+    "id": "case-1-double-resource-p25",
+    "revision": 31
+  },
+  "questions": [],
+  "readiness": {
+    "aon": {
+      "blockers": [],
+      "ready": true
+    },
+    "pdm": {
+      "blockers": [],
+      "ready": true
+    },
+    "run": {
+      "blockers": [],
+      "ready": true
+    },
+    "s3": {
+      "blockers": [],
+      "ready": true
+    },
+    "simulation": {
+      "blockers": [
+        {
+          "code": "GENERATED_S3_REQUIRED",
+          "message": "Actual simulation readiness requires same-revision AON/S3 generation, strict validation and loader acceptance.",
+          "path": "/simulation"
+        }
+      ],
+      "ready": false
+    }
+  },
+  "schema": {
+    "contract": "project-1.0",
+    "valid": true
+  },
+  "semantics": {
+    "diagnostics": [],
+    "valid": true
+  },
+  "status": "ready"
+}

@@ -1,0 +1,46 @@
+{
+  "project": {
+    "canonical_sha256": "0e6609636074f5c2154be54aac36b20da25e7a414071d5cfce0c527c38f5f029",
+    "declared_status": "specified",
+    "id": "case-3-road-base-lu-2003",
+    "revision": 4
+  },
+  "questions": [],
+  "readiness": {
+    "aon": {
+      "blockers": [],
+      "ready": true
+    },
+    "pdm": {
+      "blockers": [],
+      "ready": true
+    },
+    "run": {
+      "blockers": [],
+      "ready": true
+    },
+    "s3": {
+      "blockers": [],
+      "ready": true
+    },
+    "simulation": {
+      "blockers": [
+        {
+          "code": "GENERATED_S3_REQUIRED",
+          "message": "Actual simulation readiness requires same-revision AON/S3 generation, strict validation and loader acceptance.",
+          "path": "/simulation"
+        }
+      ],
+      "ready": false
+    }
+  },
+  "schema": {
+    "contract": "project-1.0",
+    "valid": true
+  },
+  "semantics": {
+    "diagnostics": [],
+    "valid": true
+  },
+  "status": "ready"
+}

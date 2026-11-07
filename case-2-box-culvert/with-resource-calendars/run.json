@@ -1,0 +1,183 @@
+{
+  "schema_version": "agenticsdesa-run-1.0",
+  "project_id": "case-2-box-culvert-lu-lam-dai-2008",
+  "project_revision": 5,
+  "inputs": {
+    "project": {
+      "path": "../case-2-resource-calendar-2026-11-04/project.json",
+      "sha256": "67ac2e468b56a5243a09175ba63bfebebd3e491f8351ddb34fceb4f2c95159ca",
+      "bytes": 97021
+    },
+    "pdm": {
+      "path": "../case-2-resource-calendar-2026-11-04/pdm.json",
+      "sha256": "7981f71927ac888d05b674fb939167d13fe174af981276aefd9c1b07036e945f",
+      "bytes": 38240
+    },
+    "aon": {
+      "path": "../case-2-resource-calendar-2026-11-04/aon.json",
+      "sha256": "011d058d4029d0bd0b55009555d0ba119da06571b5bdb07202161724e2358043",
+      "bytes": 61769
+    },
+    "s3": {
+      "path": "../case-2-resource-calendar-2026-11-04/s3.json",
+      "sha256": "519fe465ca91e79c42321ead91f509de7285828379fa51184be77c1b44d195cd",
+      "bytes": 72966,
+      "strict_validation": "passed",
+      "native_loader": "accepted"
+    }
+  },
+  "source": {
+    "path": "../../case/Box_Culvert_Drainage_Case_Narrative.md",
+    "source_snapshot": "../case-2-resource-calendar-2026-11-04/source-material.json"
+  },
+  "simulation": {
+    "runs": 1,
+    "seed": 17,
+    "use_resource_calendar": true,
+    "resource_assignment": "fixed_reusable_team_per_activity_visit",
+    "output_dir": "simulation",
+    "authorization": {
+      "locator": "conversation://2026-11-04/fix-calendar-fixed-resource-team",
+      "text": "正常情况下如果B6用了LB1-4，那么休息日之后也是1-4继续干活。修改我的引擎问题。修改完之后检查一下逻辑是否正确。"
+    }
+  },
+  "model": {
+    "resource_calendar": {
+      "day0_weekday": 1,
+      "units_per_day": 1,
+      "working_days": {
+        "BBF": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "BE": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "CF": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "CLB": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "CMC": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "DL": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "LB": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "RR": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "trigger_order": "unchanged; generated S3 flow order",
+    "horizon": null,
+    "max_transactions": 100000
+  },
+  "result": {
+    "business_status": "completed",
+    "stop_reason": "all_flow_records_processed",
+    "final_time": 338,
+    "F_begin": 330,
+    "time_unit": "day",
+    "checks": {
+      "activities": 33,
+      "flows": 33,
+      "work_intervals": 83,
+      "all_activities_keep_fixed_team": true,
+      "calendar_violations": 0,
+      "resource_overlaps": 0,
+      "precedence_violations": 0,
+      "work_conservation": true,
+      "resource_quantities_match": true,
+      "unreleased_reusables": 0,
+      "blocked_flows": 0,
+      "tokens_produced_consumed_once": 38
+    }
+  },
+  "implementation": {
+    "engine.py": {
+      "path": ".agents/skills/simulate-sdesa/scripts/sdesa/engine.py",
+      "sha256": "889c512b5e6f450bc17f833c4e1da4fe13765ccf2ad0e5e99d7227d9f4f871f2",
+      "bytes": 26230
+    },
+    "calendars.py": {
+      "path": ".agents/skills/simulate-sdesa/scripts/sdesa/calendars.py",
+      "sha256": "184dd8957f16ccf7180dda24a941f46eb1ace7887435e0f25e9e2fb120a514ec",
+      "bytes": 10798
+    },
+    "scope": "Only calendars.py fixed the team at its first actual work window. Schema, input S3, engine queue ordering and no-calendar path unchanged.",
+    "evidence": "../../artifacts/resource-calendar/2026-11-04-fixed-team/validation_report.json"
+  },
+  "outputs": [
+    {
+      "path": "simulation/summary.json",
+      "sha256": "a83f904badc7938c4bc81dff2cd2a9f19143f4d4f121db529dc6b92ed24161d3",
+      "bytes": 26174
+    },
+    {
+      "path": "simulation/events.csv",
+      "sha256": "0cb5f087424cf87ecd2379e2f3ed88dace8096a6c419430762a3124910b1aa18",
+      "bytes": 20363
+    },
+    {
+      "path": "simulation/flow_queue.csv",
+      "sha256": "f6d8918241cf6117daa2ebd78120d3ea53fadb0b2b825e88913d189be7fface6",
+      "bytes": 2431
+    },
+    {
+      "path": "simulation/resources.csv",
+      "sha256": "c91fb227023ea5d1f3954f7512dc94c1d718a603e99777cac56994fcba9ea4b5",
+      "bytes": 7675
+    }
+  ],
+  "limitations": [
+    "This is not the earlier diagnostic with natural-order trigger sorting (339 days). The current unchanged-order result is 338 days.",
+    "The manual screenshot's 335-day calendar coverage remains unconfirmed; no calendar end date was introduced to match it."
+  ]
+}

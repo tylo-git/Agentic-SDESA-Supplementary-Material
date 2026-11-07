@@ -1,0 +1,896 @@
+{
+  "model_name": "箱涵排水工程案例（2026-11-04 最新资源日历）",
+  "seed": 17,
+  "time_unit": "day",
+  "horizon": null,
+  "stop_reason": "all_flow_records_processed",
+  "activity_completions": {
+    "n:1:A:0": 1,
+    "n:2:B1:0": 1,
+    "n:2:B2:0": 1,
+    "n:2:B3:0": 1,
+    "n:2:B4:0": 1,
+    "n:2:B5:0": 1,
+    "n:2:B6:0": 1,
+    "n:2:B7:0": 1,
+    "n:2:B8:0": 1,
+    "n:2:B9:0": 1,
+    "n:2:C1:0": 1,
+    "n:2:C2:0": 1,
+    "n:2:C3:0": 1,
+    "n:2:C4:0": 1,
+    "n:2:C5:0": 1,
+    "n:2:C6:0": 1,
+    "n:2:C7:0": 1,
+    "n:2:C8:0": 1,
+    "n:2:C9:0": 1,
+    "n:2:D1:0": 1,
+    "n:2:D2:0": 1,
+    "n:2:D3:0": 1,
+    "n:2:D4:0": 1,
+    "n:2:D5:0": 1,
+    "n:2:E1:0": 1,
+    "n:2:E2:0": 1,
+    "n:2:D6:0": 1,
+    "n:2:D7:0": 1,
+    "n:2:D8:0": 1,
+    "n:2:D9:0": 1,
+    "n:3:B10:0": 1,
+    "n:3:B11:0": 1,
+    "n:1:F:0": 1
+  },
+  "average_wait_by_activity": {
+    "n:1:A:0": 0.0,
+    "n:2:B1:0": 18.0,
+    "n:2:B2:0": 28.0,
+    "n:2:B3:0": 46.0,
+    "n:2:B4:0": 63.0,
+    "n:2:B5:0": 66.0,
+    "n:2:B6:0": 66.0,
+    "n:2:B7:0": 105.0,
+    "n:2:B8:0": 109.0,
+    "n:2:B9:0": 147.0,
+    "n:2:C1:0": 147.0,
+    "n:2:C2:0": 161.0,
+    "n:2:C3:0": 164.0,
+    "n:2:C4:0": 170.0,
+    "n:2:C5:0": 203.0,
+    "n:2:C6:0": 207.0,
+    "n:2:C7:0": 245.0,
+    "n:2:C8:0": 245.0,
+    "n:2:C9:0": 268.0,
+    "n:2:D1:0": 276.0,
+    "n:2:D2:0": 280.0,
+    "n:2:D3:0": 281.0,
+    "n:2:D4:0": 287.0,
+    "n:2:D5:0": 289.0,
+    "n:2:E1:0": 0.0,
+    "n:2:E2:0": 289.0,
+    "n:2:D6:0": 290.0,
+    "n:2:D7:0": 295.0,
+    "n:2:D8:0": 295.0,
+    "n:2:D9:0": 302.0,
+    "n:3:B10:0": 298.0,
+    "n:3:B11:0": 322.0,
+    "n:1:F:0": 330.0
+  },
+  "resource_utilization": {
+    "BBF-1": 0.20414201183431951,
+    "BBF-2": 0.20710059171597633,
+    "BBF-3": 0.13609467455621302,
+    "BBF-4": 0.11834319526627218,
+    "BE-1": 0.12721893491124261,
+    "BE-2": 0.12721893491124261,
+    "BE-3": 0.12130177514792899,
+    "BE-4": 0.11538461538461539,
+    "CF-1": 0.13448275862068965,
+    "CF-2": 0.1310344827586207,
+    "CLB-1": 0.09278350515463918,
+    "CLB-2": 0.08762886597938144,
+    "CLB-3": 0.0979381443298969,
+    "CLB-4": 0.05154639175257732,
+    "CLB-5": 0.05154639175257732,
+    "CMC-1": 0.12721893491124261,
+    "CMC-2": 0.09467455621301775,
+    "CMC-3": 0.04437869822485207,
+    "DL-1": 0.0029585798816568047,
+    "LB-1": 0.8275862068965517,
+    "LB-2": 0.8413793103448276,
+    "LB-3": 0.7620689655172413,
+    "LB-4": 0.7517241379310344,
+    "LB-5": 0.5172413793103449,
+    "LB-6": 0.5172413793103449,
+    "LB-7": 0.5551724137931034,
+    "LB-8": 0.46551724137931033,
+    "RR-1": 0.10650887573964497,
+    "RR-2": 0.10650887573964497,
+    "RR-3": 0.0621301775147929,
+    "RR-4": 0.05917159763313609
+  },
+  "resource_busy_time": {
+    "BBF-1": 69.0,
+    "BBF-2": 70.0,
+    "BBF-3": 46.0,
+    "BBF-4": 40.0,
+    "BE-1": 43.0,
+    "BE-2": 43.0,
+    "BE-3": 41.0,
+    "BE-4": 39.0,
+    "CF-1": 39.0,
+    "CF-2": 38.0,
+    "CLB-1": 18.0,
+    "CLB-2": 17.0,
+    "CLB-3": 19.0,
+    "CLB-4": 10.0,
+    "CLB-5": 10.0,
+    "CMC-1": 43.0,
+    "CMC-2": 32.0,
+    "CMC-3": 15.0,
+    "DL-1": 1.0,
+    "LB-1": 240.0,
+    "LB-2": 244.0,
+    "LB-3": 221.0,
+    "LB-4": 218.0,
+    "LB-5": 150.0,
+    "LB-6": 150.0,
+    "LB-7": 161.0,
+    "LB-8": 135.0,
+    "RR-1": 36.0,
+    "RR-2": 36.0,
+    "RR-3": 21.0,
+    "RR-4": 20.0
+  },
+  "completed_entities_by_type": {
+    "activity_trigger": 33
+  },
+  "generated_resources_by_type": {
+    "__agenticsdesa_token__:7:e:00001": 1,
+    "__agenticsdesa_token__:7:e:00002": 1,
+    "__agenticsdesa_token__:7:e:00003": 1,
+    "__agenticsdesa_token__:7:e:00004": 1,
+    "__agenticsdesa_token__:7:e:00005": 1,
+    "__agenticsdesa_token__:7:e:00006": 1,
+    "__agenticsdesa_token__:7:e:00007": 1,
+    "__agenticsdesa_token__:7:e:00008": 1,
+    "__agenticsdesa_token__:7:e:00009": 1,
+    "__agenticsdesa_token__:7:e:00010": 1,
+    "__agenticsdesa_token__:7:e:00011": 1,
+    "__agenticsdesa_token__:7:e:00012": 1,
+    "__agenticsdesa_token__:7:e:00013": 1,
+    "__agenticsdesa_token__:7:e:00014": 1,
+    "__agenticsdesa_token__:7:e:00015": 1,
+    "__agenticsdesa_token__:7:e:00016": 1,
+    "__agenticsdesa_token__:7:e:00017": 1,
+    "__agenticsdesa_token__:7:e:00018": 1,
+    "__agenticsdesa_token__:7:e:00019": 1,
+    "__agenticsdesa_token__:7:e:00020": 1,
+    "__agenticsdesa_token__:7:e:00021": 1,
+    "__agenticsdesa_token__:7:e:00022": 1,
+    "__agenticsdesa_token__:7:e:00023": 1,
+    "__agenticsdesa_token__:7:e:00024": 1,
+    "__agenticsdesa_token__:7:e:00025": 1,
+    "__agenticsdesa_token__:7:e:00026": 1,
+    "__agenticsdesa_token__:7:e:00027": 1,
+    "__agenticsdesa_token__:7:e:00028": 1,
+    "__agenticsdesa_token__:7:e:00029": 1,
+    "__agenticsdesa_token__:7:e:00035": 1,
+    "__agenticsdesa_token__:7:e:00036": 1,
+    "__agenticsdesa_token__:7:e:00030": 1,
+    "__agenticsdesa_token__:7:e:00031": 1,
+    "__agenticsdesa_token__:7:e:00032": 1,
+    "__agenticsdesa_token__:7:e:00033": 1,
+    "__agenticsdesa_token__:7:e:00034": 1,
+    "__agenticsdesa_token__:7:e:00037": 1,
+    "__agenticsdesa_token__:7:e:00038": 1
+  },
+  "consumed_resources_by_type": {
+    "__agenticsdesa_token__:7:e:00001": 1,
+    "__agenticsdesa_token__:7:e:00003": 1,
+    "__agenticsdesa_token__:7:e:00004": 1,
+    "__agenticsdesa_token__:7:e:00005": 1,
+    "__agenticsdesa_token__:7:e:00006": 1,
+    "__agenticsdesa_token__:7:e:00007": 1,
+    "__agenticsdesa_token__:7:e:00008": 1,
+    "__agenticsdesa_token__:7:e:00009": 1,
+    "__agenticsdesa_token__:7:e:00010": 1,
+    "__agenticsdesa_token__:7:e:00011": 1,
+    "__agenticsdesa_token__:7:e:00002": 1,
+    "__agenticsdesa_token__:7:e:00014": 1,
+    "__agenticsdesa_token__:7:e:00015": 1,
+    "__agenticsdesa_token__:7:e:00016": 1,
+    "__agenticsdesa_token__:7:e:00017": 1,
+    "__agenticsdesa_token__:7:e:00018": 1,
+    "__agenticsdesa_token__:7:e:00019": 1,
+    "__agenticsdesa_token__:7:e:00020": 1,
+    "__agenticsdesa_token__:7:e:00021": 1,
+    "__agenticsdesa_token__:7:e:00022": 1,
+    "__agenticsdesa_token__:7:e:00023": 1,
+    "__agenticsdesa_token__:7:e:00024": 1,
+    "__agenticsdesa_token__:7:e:00025": 1,
+    "__agenticsdesa_token__:7:e:00026": 1,
+    "__agenticsdesa_token__:7:e:00027": 1,
+    "__agenticsdesa_token__:7:e:00028": 1,
+    "__agenticsdesa_token__:7:e:00035": 1,
+    "__agenticsdesa_token__:7:e:00029": 1,
+    "__agenticsdesa_token__:7:e:00036": 1,
+    "__agenticsdesa_token__:7:e:00030": 1,
+    "__agenticsdesa_token__:7:e:00031": 1,
+    "__agenticsdesa_token__:7:e:00032": 1,
+    "__agenticsdesa_token__:7:e:00033": 1,
+    "__agenticsdesa_token__:7:e:00012": 1,
+    "__agenticsdesa_token__:7:e:00013": 1,
+    "__agenticsdesa_token__:7:e:00037": 1,
+    "__agenticsdesa_token__:7:e:00034": 1,
+    "__agenticsdesa_token__:7:e:00038": 1
+  },
+  "final_time": 338.0,
+  "metadata": {
+    "agenticsdesa": {
+      "activity_mapping": {
+        "n:1:A:0": {
+          "aon_node_id": "n:1:A:0",
+          "role": "work",
+          "source_activity_id": "A",
+          "work_interval": {
+            "finish": 16,
+            "start": 0
+          }
+        },
+        "n:1:F:0": {
+          "aon_node_id": "n:1:F:0",
+          "role": "work",
+          "source_activity_id": "F",
+          "work_interval": {
+            "finish": 7,
+            "start": 0
+          }
+        },
+        "n:2:B1:0": {
+          "aon_node_id": "n:2:B1:0",
+          "role": "work",
+          "source_activity_id": "B1",
+          "work_interval": {
+            "finish": 8,
+            "start": 0
+          }
+        },
+        "n:2:B2:0": {
+          "aon_node_id": "n:2:B2:0",
+          "role": "work",
+          "source_activity_id": "B2",
+          "work_interval": {
+            "finish": 16,
+            "start": 0
+          }
+        },
+        "n:2:B3:0": {
+          "aon_node_id": "n:2:B3:0",
+          "role": "work",
+          "source_activity_id": "B3",
+          "work_interval": {
+            "finish": 12,
+            "start": 0
+          }
+        },
+        "n:2:B4:0": {
+          "aon_node_id": "n:2:B4:0",
+          "role": "work",
+          "source_activity_id": "B4",
+          "work_interval": {
+            "finish": 3,
+            "start": 0
+          }
+        },
+        "n:2:B5:0": {
+          "aon_node_id": "n:2:B5:0",
+          "role": "work",
+          "source_activity_id": "B5",
+          "work_interval": {
+            "finish": 32,
+            "start": 0
+          }
+        },
+        "n:2:B6:0": {
+          "aon_node_id": "n:2:B6:0",
+          "role": "work",
+          "source_activity_id": "B6",
+          "work_interval": {
+            "finish": 16,
+            "start": 0
+          }
+        },
+        "n:2:B7:0": {
+          "aon_node_id": "n:2:B7:0",
+          "role": "work",
+          "source_activity_id": "B7",
+          "work_interval": {
+            "finish": 4,
+            "start": 0
+          }
+        },
+        "n:2:B8:0": {
+          "aon_node_id": "n:2:B8:0",
+          "role": "work",
+          "source_activity_id": "B8",
+          "work_interval": {
+            "finish": 32,
+            "start": 0
+          }
+        },
+        "n:2:B9:0": {
+          "aon_node_id": "n:2:B9:0",
+          "role": "work",
+          "source_activity_id": "B9",
+          "work_interval": {
+            "finish": 20,
+            "start": 0
+          }
+        },
+        "n:2:C1:0": {
+          "aon_node_id": "n:2:C1:0",
+          "role": "work",
+          "source_activity_id": "C1",
+          "work_interval": {
+            "finish": 12,
+            "start": 0
+          }
+        },
+        "n:2:C2:0": {
+          "aon_node_id": "n:2:C2:0",
+          "role": "work",
+          "source_activity_id": "C2",
+          "work_interval": {
+            "finish": 3,
+            "start": 0
+          }
+        },
+        "n:2:C3:0": {
+          "aon_node_id": "n:2:C3:0",
+          "role": "work",
+          "source_activity_id": "C3",
+          "work_interval": {
+            "finish": 32,
+            "start": 0
+          }
+        },
+        "n:2:C4:0": {
+          "aon_node_id": "n:2:C4:0",
+          "role": "work",
+          "source_activity_id": "C4",
+          "work_interval": {
+            "finish": 16,
+            "start": 0
+          }
+        },
+        "n:2:C5:0": {
+          "aon_node_id": "n:2:C5:0",
+          "role": "work",
+          "source_activity_id": "C5",
+          "work_interval": {
+            "finish": 4,
+            "start": 0
+          }
+        },
+        "n:2:C6:0": {
+          "aon_node_id": "n:2:C6:0",
+          "role": "work",
+          "source_activity_id": "C6",
+          "work_interval": {
+            "finish": 32,
+            "start": 0
+          }
+        },
+        "n:2:C7:0": {
+          "aon_node_id": "n:2:C7:0",
+          "role": "work",
+          "source_activity_id": "C7",
+          "work_interval": {
+            "finish": 20,
+            "start": 0
+          }
+        },
+        "n:2:C8:0": {
+          "aon_node_id": "n:2:C8:0",
+          "role": "work",
+          "source_activity_id": "C8",
+          "work_interval": {
+            "finish": 20,
+            "start": 0
+          }
+        },
+        "n:2:C9:0": {
+          "aon_node_id": "n:2:C9:0",
+          "role": "work",
+          "source_activity_id": "C9",
+          "work_interval": {
+            "finish": 5,
+            "start": 0
+          }
+        },
+        "n:2:D1:0": {
+          "aon_node_id": "n:2:D1:0",
+          "role": "work",
+          "source_activity_id": "D1",
+          "work_interval": {
+            "finish": 2,
+            "start": 0
+          }
+        },
+        "n:2:D2:0": {
+          "aon_node_id": "n:2:D2:0",
+          "role": "work",
+          "source_activity_id": "D2",
+          "work_interval": {
+            "finish": 1,
+            "start": 0
+          }
+        },
+        "n:2:D3:0": {
+          "aon_node_id": "n:2:D3:0",
+          "role": "work",
+          "source_activity_id": "D3",
+          "work_interval": {
+            "finish": 5,
+            "start": 0
+          }
+        },
+        "n:2:D4:0": {
+          "aon_node_id": "n:2:D4:0",
+          "role": "work",
+          "source_activity_id": "D4",
+          "work_interval": {
+            "finish": 2,
+            "start": 0
+          }
+        },
+        "n:2:D5:0": {
+          "aon_node_id": "n:2:D5:0",
+          "role": "work",
+          "source_activity_id": "D5",
+          "work_interval": {
+            "finish": 1,
+            "start": 0
+          }
+        },
+        "n:2:D6:0": {
+          "aon_node_id": "n:2:D6:0",
+          "role": "work",
+          "source_activity_id": "D6",
+          "work_interval": {
+            "finish": 4,
+            "start": 0
+          }
+        },
+        "n:2:D7:0": {
+          "aon_node_id": "n:2:D7:0",
+          "role": "work",
+          "source_activity_id": "D7",
+          "work_interval": {
+            "finish": 6,
+            "start": 0
+          }
+        },
+        "n:2:D8:0": {
+          "aon_node_id": "n:2:D8:0",
+          "role": "work",
+          "source_activity_id": "D8",
+          "work_interval": {
+            "finish": 3,
+            "start": 0
+          }
+        },
+        "n:2:D9:0": {
+          "aon_node_id": "n:2:D9:0",
+          "role": "work",
+          "source_activity_id": "D9",
+          "work_interval": {
+            "finish": 1,
+            "start": 0
+          }
+        },
+        "n:2:E1:0": {
+          "aon_node_id": "n:2:E1:0",
+          "role": "work",
+          "source_activity_id": "E1",
+          "work_interval": {
+            "finish": 90,
+            "start": 0
+          }
+        },
+        "n:2:E2:0": {
+          "aon_node_id": "n:2:E2:0",
+          "role": "work",
+          "source_activity_id": "E2",
+          "work_interval": {
+            "finish": 1,
+            "start": 0
+          }
+        },
+        "n:3:B10:0": {
+          "aon_node_id": "n:3:B10:0",
+          "role": "work",
+          "source_activity_id": "B10",
+          "work_interval": {
+            "finish": 20,
+            "start": 0
+          }
+        },
+        "n:3:B11:0": {
+          "aon_node_id": "n:3:B11:0",
+          "role": "work",
+          "source_activity_id": "B11",
+          "work_interval": {
+            "finish": 5,
+            "start": 0
+          }
+        }
+      },
+      "aon_schema_version": "aon-1.0",
+      "aon_sha256": "b69604f8955dfea9474d87520d0d9f74e3ef3f75f95712ea0d50c6dcf08d08dc",
+      "builder_version": "build-s3-1.0",
+      "finish_gate_mapping": {},
+      "goal": {
+        "finish_activity_ids": [
+          "F"
+        ],
+        "kind": "project_completion"
+      },
+      "goal_activity_mapping": {
+        "F": "n:1:F:0"
+      },
+      "profile": "activity_network",
+      "project_id": "case-2-box-culvert-lu-lam-dai-2008",
+      "project_revision": 5,
+      "project_sha256": "d5802d140a035014182eef7bcee85e628f71d336fb7d79ccfda8f47f2603799d",
+      "token_mapping": {
+        "__agenticsdesa_token__:7:e:00001": {
+          "consumer_activity": "n:2:B1:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:A:0",
+          "quantity": 1,
+          "source_edge_id": "e:00001"
+        },
+        "__agenticsdesa_token__:7:e:00002": {
+          "consumer_activity": "n:2:C1:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:1:A:0",
+          "quantity": 1,
+          "source_edge_id": "e:00002"
+        },
+        "__agenticsdesa_token__:7:e:00003": {
+          "consumer_activity": "n:2:B2:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B1:0",
+          "quantity": 1,
+          "source_edge_id": "e:00003"
+        },
+        "__agenticsdesa_token__:7:e:00004": {
+          "consumer_activity": "n:2:B3:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B2:0",
+          "quantity": 1,
+          "source_edge_id": "e:00004"
+        },
+        "__agenticsdesa_token__:7:e:00005": {
+          "consumer_activity": "n:2:B4:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B3:0",
+          "quantity": 1,
+          "source_edge_id": "e:00005"
+        },
+        "__agenticsdesa_token__:7:e:00006": {
+          "consumer_activity": "n:2:B5:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B4:0",
+          "quantity": 1,
+          "source_edge_id": "e:00006"
+        },
+        "__agenticsdesa_token__:7:e:00007": {
+          "consumer_activity": "n:2:B6:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B4:0",
+          "quantity": 1,
+          "source_edge_id": "e:00007"
+        },
+        "__agenticsdesa_token__:7:e:00008": {
+          "consumer_activity": "n:2:B7:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B5:0",
+          "quantity": 1,
+          "source_edge_id": "e:00008"
+        },
+        "__agenticsdesa_token__:7:e:00009": {
+          "consumer_activity": "n:2:B7:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B6:0",
+          "quantity": 1,
+          "source_edge_id": "e:00009"
+        },
+        "__agenticsdesa_token__:7:e:00010": {
+          "consumer_activity": "n:2:B8:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B7:0",
+          "quantity": 1,
+          "source_edge_id": "e:00010"
+        },
+        "__agenticsdesa_token__:7:e:00011": {
+          "consumer_activity": "n:2:B9:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B8:0",
+          "quantity": 1,
+          "source_edge_id": "e:00011"
+        },
+        "__agenticsdesa_token__:7:e:00012": {
+          "consumer_activity": "n:3:B10:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B8:0",
+          "quantity": 1,
+          "source_edge_id": "e:00012"
+        },
+        "__agenticsdesa_token__:7:e:00013": {
+          "consumer_activity": "n:3:B11:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:B9:0",
+          "quantity": 1,
+          "source_edge_id": "e:00013"
+        },
+        "__agenticsdesa_token__:7:e:00014": {
+          "consumer_activity": "n:2:C2:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C1:0",
+          "quantity": 1,
+          "source_edge_id": "e:00014"
+        },
+        "__agenticsdesa_token__:7:e:00015": {
+          "consumer_activity": "n:2:C3:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C2:0",
+          "quantity": 1,
+          "source_edge_id": "e:00015"
+        },
+        "__agenticsdesa_token__:7:e:00016": {
+          "consumer_activity": "n:2:C4:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C2:0",
+          "quantity": 1,
+          "source_edge_id": "e:00016"
+        },
+        "__agenticsdesa_token__:7:e:00017": {
+          "consumer_activity": "n:2:C5:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C3:0",
+          "quantity": 1,
+          "source_edge_id": "e:00017"
+        },
+        "__agenticsdesa_token__:7:e:00018": {
+          "consumer_activity": "n:2:C5:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C4:0",
+          "quantity": 1,
+          "source_edge_id": "e:00018"
+        },
+        "__agenticsdesa_token__:7:e:00019": {
+          "consumer_activity": "n:2:C6:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C5:0",
+          "quantity": 1,
+          "source_edge_id": "e:00019"
+        },
+        "__agenticsdesa_token__:7:e:00020": {
+          "consumer_activity": "n:2:C7:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C6:0",
+          "quantity": 1,
+          "source_edge_id": "e:00020"
+        },
+        "__agenticsdesa_token__:7:e:00021": {
+          "consumer_activity": "n:2:C8:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C6:0",
+          "quantity": 1,
+          "source_edge_id": "e:00021"
+        },
+        "__agenticsdesa_token__:7:e:00022": {
+          "consumer_activity": "n:2:C9:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C7:0",
+          "quantity": 1,
+          "source_edge_id": "e:00022"
+        },
+        "__agenticsdesa_token__:7:e:00023": {
+          "consumer_activity": "n:2:C9:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C8:0",
+          "quantity": 1,
+          "source_edge_id": "e:00023"
+        },
+        "__agenticsdesa_token__:7:e:00024": {
+          "consumer_activity": "n:2:D1:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:C9:0",
+          "quantity": 1,
+          "source_edge_id": "e:00024"
+        },
+        "__agenticsdesa_token__:7:e:00025": {
+          "consumer_activity": "n:2:D2:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D1:0",
+          "quantity": 1,
+          "source_edge_id": "e:00025"
+        },
+        "__agenticsdesa_token__:7:e:00026": {
+          "consumer_activity": "n:2:D3:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D2:0",
+          "quantity": 1,
+          "source_edge_id": "e:00026"
+        },
+        "__agenticsdesa_token__:7:e:00027": {
+          "consumer_activity": "n:2:D4:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D3:0",
+          "quantity": 1,
+          "source_edge_id": "e:00027"
+        },
+        "__agenticsdesa_token__:7:e:00028": {
+          "consumer_activity": "n:2:D5:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D4:0",
+          "quantity": 1,
+          "source_edge_id": "e:00028"
+        },
+        "__agenticsdesa_token__:7:e:00029": {
+          "consumer_activity": "n:2:D6:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D5:0",
+          "quantity": 1,
+          "source_edge_id": "e:00029"
+        },
+        "__agenticsdesa_token__:7:e:00030": {
+          "consumer_activity": "n:2:D7:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D6:0",
+          "quantity": 1,
+          "source_edge_id": "e:00030"
+        },
+        "__agenticsdesa_token__:7:e:00031": {
+          "consumer_activity": "n:2:D8:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D6:0",
+          "quantity": 1,
+          "source_edge_id": "e:00031"
+        },
+        "__agenticsdesa_token__:7:e:00032": {
+          "consumer_activity": "n:2:D9:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D7:0",
+          "quantity": 1,
+          "source_edge_id": "e:00032"
+        },
+        "__agenticsdesa_token__:7:e:00033": {
+          "consumer_activity": "n:2:D9:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D8:0",
+          "quantity": 1,
+          "source_edge_id": "e:00033"
+        },
+        "__agenticsdesa_token__:7:e:00034": {
+          "consumer_activity": "n:1:F:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:D9:0",
+          "quantity": 1,
+          "source_edge_id": "e:00034"
+        },
+        "__agenticsdesa_token__:7:e:00035": {
+          "consumer_activity": "n:2:E2:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:E1:0",
+          "quantity": 1,
+          "source_edge_id": "e:00035"
+        },
+        "__agenticsdesa_token__:7:e:00036": {
+          "consumer_activity": "n:2:D6:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:2:E2:0",
+          "quantity": 1,
+          "source_edge_id": "e:00036"
+        },
+        "__agenticsdesa_token__:7:e:00037": {
+          "consumer_activity": "n:3:B11:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:3:B10:0",
+          "quantity": 1,
+          "source_edge_id": "e:00037"
+        },
+        "__agenticsdesa_token__:7:e:00038": {
+          "consumer_activity": "n:1:F:0",
+          "kind": "aon_precedence",
+          "producer_activity": "n:3:B11:0",
+          "quantity": 1,
+          "source_edge_id": "e:00038"
+        }
+      }
+    },
+    "max_transactions": 100000,
+    "resource_queue_estimate": {
+      "activity_network_upper_bound": 69,
+      "initial_entities": 31,
+      "process_flow_may_be_unbounded": false,
+      "produced_per_single_execution_of_each_activity": 38
+    },
+    "resource_calendar": {
+      "day0_weekday": 1,
+      "units_per_day": 1,
+      "working_days": {
+        "BBF": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "BE": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "CF": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "CLB": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "CMC": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "DL": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "LB": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "RR": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "enabled": true
+    }
+  }
+}

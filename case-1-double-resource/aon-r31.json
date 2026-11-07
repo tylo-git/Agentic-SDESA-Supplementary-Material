@@ -1,0 +1,958 @@
+{
+  "conversion": {
+    "duration_policy": "confirmed_constant",
+    "execution_policy": "pause_release_reacquire",
+    "numeric_policy": "decimal_exact_json",
+    "ruleset_version": "workshop-1.0",
+    "semantics": "work_prefix_tail_endpoint_lower_bounds",
+    "source_pdm_schema": "pdm-1.0",
+    "source_pdm_sha256": "4ae6a9125d668abd71bd88a407a36207e14aca4769a05cff22b387b196906057",
+    "source_project_sha256": "b9a32cffec456c63cedc3138f9a4777695a29b86aa3f0a1b7c9240dbabcd2dbf"
+  },
+  "edges": [
+    {
+      "from": "n:1:A:0",
+      "id": "e:00001",
+      "lag": 0,
+      "source_relation_ids": [
+        "R04"
+      ],
+      "to": "n:1:D:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:A:0",
+      "id": "e:00002",
+      "lag": 0,
+      "source_relation_ids": [
+        "R05"
+      ],
+      "to": "n:1:E:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:B:0",
+      "id": "e:00003",
+      "lag": 0,
+      "source_relation_ids": [
+        "R06"
+      ],
+      "to": "n:1:F:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:B:0",
+      "id": "e:00004",
+      "lag": 0,
+      "source_relation_ids": [
+        "R07"
+      ],
+      "to": "n:1:G:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:C:0",
+      "id": "e:00005",
+      "lag": 0,
+      "source_relation_ids": [
+        "R08"
+      ],
+      "to": "n:1:G:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:D:0",
+      "id": "e:00006",
+      "lag": 0,
+      "source_relation_ids": [
+        "R09"
+      ],
+      "to": "n:1:H:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:E:0",
+      "id": "e:00007",
+      "lag": 0,
+      "source_relation_ids": [
+        "R12"
+      ],
+      "to": "n:2:FN:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:F:0",
+      "id": "e:00008",
+      "lag": 0,
+      "source_relation_ids": [
+        "R10"
+      ],
+      "to": "n:1:I:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:G:0",
+      "id": "e:00009",
+      "lag": 0,
+      "source_relation_ids": [
+        "R11"
+      ],
+      "to": "n:1:I:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:H:0",
+      "id": "e:00010",
+      "lag": 0,
+      "source_relation_ids": [
+        "R13"
+      ],
+      "to": "n:2:FN:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:1:I:0",
+      "id": "e:00011",
+      "lag": 0,
+      "source_relation_ids": [
+        "R14"
+      ],
+      "to": "n:2:FN:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:ST:0",
+      "id": "e:00012",
+      "lag": 0,
+      "source_relation_ids": [
+        "R01"
+      ],
+      "to": "n:1:A:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:ST:0",
+      "id": "e:00013",
+      "lag": 0,
+      "source_relation_ids": [
+        "R02"
+      ],
+      "to": "n:1:B:0",
+      "type": "FS"
+    },
+    {
+      "from": "n:2:ST:0",
+      "id": "e:00014",
+      "lag": 0,
+      "source_relation_ids": [
+        "R03"
+      ],
+      "to": "n:1:C:0",
+      "type": "FS"
+    }
+  ],
+  "mapping": {
+    "activities": {
+      "A": {
+        "cut_points": [],
+        "duration": 2,
+        "label": "活动 A",
+        "source_ids": [
+          "case-activities-start"
+        ],
+        "source_pdm_row_id": "activity:A"
+      },
+      "B": {
+        "cut_points": [],
+        "duration": 3,
+        "label": "活动 B",
+        "source_ids": [
+          "case-activities-start"
+        ],
+        "source_pdm_row_id": "activity:B"
+      },
+      "C": {
+        "cut_points": [],
+        "duration": 5,
+        "label": "活动 C",
+        "source_ids": [
+          "case-activities-start"
+        ],
+        "source_pdm_row_id": "activity:C"
+      },
+      "D": {
+        "cut_points": [],
+        "duration": 4,
+        "label": "活动 D",
+        "source_ids": [
+          "case-activities-middle"
+        ],
+        "source_pdm_row_id": "activity:D"
+      },
+      "E": {
+        "cut_points": [],
+        "duration": 4,
+        "label": "活动 E",
+        "source_ids": [
+          "case-activities-middle"
+        ],
+        "source_pdm_row_id": "activity:E"
+      },
+      "F": {
+        "cut_points": [],
+        "duration": 3,
+        "label": "活动 F",
+        "source_ids": [
+          "case-activities-middle"
+        ],
+        "source_pdm_row_id": "activity:F"
+      },
+      "FN": {
+        "cut_points": [],
+        "duration": 0,
+        "label": "Finish",
+        "source_ids": [
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "activity:FN"
+      },
+      "G": {
+        "cut_points": [],
+        "duration": 6,
+        "label": "活动 G",
+        "source_ids": [
+          "case-activities-middle"
+        ],
+        "source_pdm_row_id": "activity:G"
+      },
+      "H": {
+        "cut_points": [],
+        "duration": 2,
+        "label": "活动 H",
+        "source_ids": [
+          "case-activities-end"
+        ],
+        "source_pdm_row_id": "activity:H"
+      },
+      "I": {
+        "cut_points": [],
+        "duration": 3,
+        "label": "活动 I",
+        "source_ids": [
+          "case-activities-end"
+        ],
+        "source_pdm_row_id": "activity:I"
+      },
+      "ST": {
+        "cut_points": [],
+        "duration": 0,
+        "label": "Start",
+        "source_ids": [
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "activity:ST"
+      }
+    },
+    "activity_endpoints": {
+      "A": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:A:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:A:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:A:0"
+        }
+      },
+      "B": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:B:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:B:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:B:0"
+        }
+      },
+      "C": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:C:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:C:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:C:0"
+        }
+      },
+      "D": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:D:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:D:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:D:0"
+        }
+      },
+      "E": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:E:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:E:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:E:0"
+        }
+      },
+      "F": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:F:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:F:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:F:0"
+        }
+      },
+      "FN": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:FN:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:FN:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:FN:0"
+        }
+      },
+      "G": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:G:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:G:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:G:0"
+        }
+      },
+      "H": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:H:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:H:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:H:0"
+        }
+      },
+      "I": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:1:I:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:1:I:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:1:I:0"
+        }
+      },
+      "ST": {
+        "finish": {
+          "event": "finish",
+          "node_id": "n:2:ST:0"
+        },
+        "start": {
+          "event": "start",
+          "node_id": "n:2:ST:0"
+        },
+        "work_finish": {
+          "event": "finish",
+          "node_id": "n:2:ST:0"
+        }
+      }
+    },
+    "activity_segments": {
+      "A": [
+        "n:1:A:0"
+      ],
+      "B": [
+        "n:1:B:0"
+      ],
+      "C": [
+        "n:1:C:0"
+      ],
+      "D": [
+        "n:1:D:0"
+      ],
+      "E": [
+        "n:1:E:0"
+      ],
+      "F": [
+        "n:1:F:0"
+      ],
+      "FN": [
+        "n:2:FN:0"
+      ],
+      "G": [
+        "n:1:G:0"
+      ],
+      "H": [
+        "n:1:H:0"
+      ],
+      "I": [
+        "n:1:I:0"
+      ],
+      "ST": [
+        "n:2:ST:0"
+      ]
+    },
+    "patterns": [],
+    "relations": [
+      {
+        "from_activity_id": "ST",
+        "generated_edge_ids": [
+          "e:00012"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:ST:0"
+        },
+        "source_ids": [
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R01",
+        "source_relation_id": "R01",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:A:0"
+        },
+        "to_activity_id": "A",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "ST",
+        "generated_edge_ids": [
+          "e:00013"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:ST:0"
+        },
+        "source_ids": [
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R02",
+        "source_relation_id": "R02",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:B:0"
+        },
+        "to_activity_id": "B",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "ST",
+        "generated_edge_ids": [
+          "e:00014"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:2:ST:0"
+        },
+        "source_ids": [
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R03",
+        "source_relation_id": "R03",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:C:0"
+        },
+        "to_activity_id": "C",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "A",
+        "generated_edge_ids": [
+          "e:00001"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:A:0"
+        },
+        "source_ids": [
+          "case-activities-middle",
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R04",
+        "source_relation_id": "R04",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:D:0"
+        },
+        "to_activity_id": "D",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "A",
+        "generated_edge_ids": [
+          "e:00002"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:A:0"
+        },
+        "source_ids": [
+          "case-activities-middle",
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R05",
+        "source_relation_id": "R05",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:E:0"
+        },
+        "to_activity_id": "E",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B",
+        "generated_edge_ids": [
+          "e:00003"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:B:0"
+        },
+        "source_ids": [
+          "case-activities-middle",
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R06",
+        "source_relation_id": "R06",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:F:0"
+        },
+        "to_activity_id": "F",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "B",
+        "generated_edge_ids": [
+          "e:00004"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:B:0"
+        },
+        "source_ids": [
+          "case-activities-middle",
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R07",
+        "source_relation_id": "R07",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:G:0"
+        },
+        "to_activity_id": "G",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "C",
+        "generated_edge_ids": [
+          "e:00005"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:C:0"
+        },
+        "source_ids": [
+          "case-activities-middle",
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R08",
+        "source_relation_id": "R08",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:G:0"
+        },
+        "to_activity_id": "G",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "D",
+        "generated_edge_ids": [
+          "e:00006"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:D:0"
+        },
+        "source_ids": [
+          "case-activities-end",
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R09",
+        "source_relation_id": "R09",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:H:0"
+        },
+        "to_activity_id": "H",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "F",
+        "generated_edge_ids": [
+          "e:00008"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:F:0"
+        },
+        "source_ids": [
+          "case-activities-end",
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R10",
+        "source_relation_id": "R10",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:I:0"
+        },
+        "to_activity_id": "I",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "G",
+        "generated_edge_ids": [
+          "e:00009"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:G:0"
+        },
+        "source_ids": [
+          "case-activities-end",
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R11",
+        "source_relation_id": "R11",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:1:I:0"
+        },
+        "to_activity_id": "I",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "E",
+        "generated_edge_ids": [
+          "e:00007"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:E:0"
+        },
+        "source_ids": [
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R12",
+        "source_relation_id": "R12",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:FN:0"
+        },
+        "to_activity_id": "FN",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "H",
+        "generated_edge_ids": [
+          "e:00010"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:H:0"
+        },
+        "source_ids": [
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R13",
+        "source_relation_id": "R13",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:FN:0"
+        },
+        "to_activity_id": "FN",
+        "type": "FS"
+      },
+      {
+        "from_activity_id": "I",
+        "generated_edge_ids": [
+          "e:00011"
+        ],
+        "generated_node_ids": [],
+        "lag": 0,
+        "pattern_ids": [],
+        "rule_id": "R-FS",
+        "source_anchor": {
+          "event": "finish",
+          "node_id": "n:1:I:0"
+        },
+        "source_ids": [
+          "case-boundaries"
+        ],
+        "source_pdm_row_id": "relation:R14",
+        "source_relation_id": "R14",
+        "target_anchor": {
+          "event": "start",
+          "node_id": "n:2:FN:0"
+        },
+        "to_activity_id": "FN",
+        "type": "FS"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "duration": 2,
+      "id": "n:1:A:0",
+      "kind": "activity",
+      "label": "活动 A",
+      "role": "work",
+      "source_activity_id": "A",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 2,
+        "start": 0
+      }
+    },
+    {
+      "duration": 3,
+      "id": "n:1:B:0",
+      "kind": "activity",
+      "label": "活动 B",
+      "role": "work",
+      "source_activity_id": "B",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 3,
+        "start": 0
+      }
+    },
+    {
+      "duration": 5,
+      "id": "n:1:C:0",
+      "kind": "activity",
+      "label": "活动 C",
+      "role": "work",
+      "source_activity_id": "C",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 5,
+        "start": 0
+      }
+    },
+    {
+      "duration": 4,
+      "id": "n:1:D:0",
+      "kind": "activity",
+      "label": "活动 D",
+      "role": "work",
+      "source_activity_id": "D",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 4,
+        "start": 0
+      }
+    },
+    {
+      "duration": 4,
+      "id": "n:1:E:0",
+      "kind": "activity",
+      "label": "活动 E",
+      "role": "work",
+      "source_activity_id": "E",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 4,
+        "start": 0
+      }
+    },
+    {
+      "duration": 3,
+      "id": "n:1:F:0",
+      "kind": "activity",
+      "label": "活动 F",
+      "role": "work",
+      "source_activity_id": "F",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 3,
+        "start": 0
+      }
+    },
+    {
+      "duration": 6,
+      "id": "n:1:G:0",
+      "kind": "activity",
+      "label": "活动 G",
+      "role": "work",
+      "source_activity_id": "G",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 6,
+        "start": 0
+      }
+    },
+    {
+      "duration": 2,
+      "id": "n:1:H:0",
+      "kind": "activity",
+      "label": "活动 H",
+      "role": "work",
+      "source_activity_id": "H",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 2,
+        "start": 0
+      }
+    },
+    {
+      "duration": 3,
+      "id": "n:1:I:0",
+      "kind": "activity",
+      "label": "活动 I",
+      "role": "work",
+      "source_activity_id": "I",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 3,
+        "start": 0
+      }
+    },
+    {
+      "duration": 0,
+      "id": "n:2:FN:0",
+      "kind": "milestone",
+      "label": "Finish",
+      "role": "zero_work",
+      "source_activity_id": "FN",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 0,
+        "start": 0
+      }
+    },
+    {
+      "duration": 0,
+      "id": "n:2:ST:0",
+      "kind": "milestone",
+      "label": "Start",
+      "role": "zero_work",
+      "source_activity_id": "ST",
+      "source_relation_ids": [],
+      "work_interval": {
+        "finish": 0,
+        "start": 0
+      }
+    }
+  ],
+  "project_id": "case-1-double-resource-p25",
+  "project_revision": 31,
+  "schema_version": "aon-1.0",
+  "time_unit": "day"
+}

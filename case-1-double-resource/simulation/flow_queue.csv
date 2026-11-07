@@ -1,0 +1,12 @@
+﻿record_id,entity_id,entity_type,activity_id,arrival_time,begin_time,departure_time,waiting_time,blocked_reason
+1,trigger:7:n:1:A:0,activity_trigger,n:1:A:0,0.0,0.0,2.0,0.0,
+2,trigger:7:n:1:B:0,activity_trigger,n:1:B:0,0.0,2.0,5.0,2.0,
+3,trigger:7:n:1:C:0,activity_trigger,n:1:C:0,0.0,5.0,10.0,5.0,
+4,trigger:7:n:1:D:0,activity_trigger,n:1:D:0,0.0,10.0,14.0,10.0,
+5,trigger:7:n:1:E:0,activity_trigger,n:1:E:0,0.0,10.0,14.0,10.0,
+6,trigger:7:n:1:F:0,activity_trigger,n:1:F:0,0.0,10.0,13.0,10.0,
+7,trigger:7:n:1:G:0,activity_trigger,n:1:G:0,0.0,13.0,19.0,13.0,
+8,trigger:7:n:1:H:0,activity_trigger,n:1:H:0,0.0,14.0,16.0,14.0,
+9,trigger:7:n:1:I:0,activity_trigger,n:1:I:0,0.0,19.0,22.0,19.0,
+10,trigger:8:n:2:FN:0,activity_trigger,n:2:FN:0,0.0,22.0,22.0,22.0,
+11,trigger:8:n:2:ST:0,activity_trigger,n:2:ST:0,0.0,0.0,0.0,0.0,

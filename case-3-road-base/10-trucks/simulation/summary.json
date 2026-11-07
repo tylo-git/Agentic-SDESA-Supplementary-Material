@@ -1,0 +1,133 @@
+{
+  "model_name": "道路粒料基层：10辆卡车，480分钟观察",
+  "seed": 17,
+  "time_unit": "minute",
+  "horizon": 480.0,
+  "stop_reason": "horizon_reached",
+  "activity_completions": {
+    "load": 102,
+    "travel": 100,
+    "dump": 100,
+    "return": 96,
+    "grade": 9,
+    "moisten": 9,
+    "compact": 9
+  },
+  "average_wait_by_activity": {
+    "load": 1.4627450980392176,
+    "travel": 0.0,
+    "dump": 0.25500000000000084,
+    "return": 0.0,
+    "grade": 234.64444444444447,
+    "moisten": 0.0,
+    "compact": 0.0
+  },
+  "resource_utilization": {
+    "flagman-1": 0.2842708333333335,
+    "grader-1": 0.5287499999999999,
+    "roller-1": 0.47531250000000025,
+    "water-truck-1": 0.07593750000000016,
+    "loader-1": 0.5411458333333332,
+    "loader-2": 0.5390624999999999
+  },
+  "resource_busy_time": {
+    "flagman-1": 136.45000000000007,
+    "grader-1": 253.79999999999995,
+    "roller-1": 228.15000000000012,
+    "water-truck-1": 36.450000000000074,
+    "loader-1": 259.74999999999994,
+    "loader-2": 258.74999999999994
+  },
+  "completed_entities_by_type": {
+    "road_section": 9
+  },
+  "generated_resources_by_type": {
+    "truckload_granular": 100
+  },
+  "consumed_resources_by_type": {
+    "truckload_granular": 100
+  },
+  "final_time": 479.6000000000001,
+  "metadata": {
+    "agenticsdesa": {
+      "activity_mapping": {
+        "compact": {
+          "project_activity_id": "compact",
+          "role": "process_activity",
+          "source_activity_id": "compact"
+        },
+        "dump": {
+          "project_activity_id": "dump",
+          "role": "process_activity",
+          "source_activity_id": "dump"
+        },
+        "grade": {
+          "project_activity_id": "grade",
+          "role": "process_activity",
+          "source_activity_id": "grade"
+        },
+        "load": {
+          "project_activity_id": "load",
+          "role": "process_activity",
+          "source_activity_id": "load"
+        },
+        "moisten": {
+          "project_activity_id": "moisten",
+          "role": "process_activity",
+          "source_activity_id": "moisten"
+        },
+        "return": {
+          "project_activity_id": "return",
+          "role": "process_activity",
+          "source_activity_id": "return"
+        },
+        "travel": {
+          "project_activity_id": "travel",
+          "role": "process_activity",
+          "source_activity_id": "travel"
+        }
+      },
+      "builder_version": "build-s3-1.1-project-direct",
+      "finish_gate_mapping": {},
+      "flow_mapping": {
+        "sections": {
+          "count": 25,
+          "id_prefix": "section-",
+          "kind": "batch",
+          "start_index": 1
+        },
+        "trucks": {
+          "count": 10,
+          "id_prefix": "truck-",
+          "kind": "batch",
+          "start_index": 1
+        }
+      },
+      "goal": {
+        "activity_ids": [
+          "load",
+          "travel",
+          "dump",
+          "return",
+          "grade",
+          "moisten",
+          "compact"
+        ],
+        "kind": "time_window"
+      },
+      "profile": "process_flow",
+      "project_id": "case-3-road-base-lu-2003",
+      "project_revision": 4,
+      "project_sha256": "0e6609636074f5c2154be54aac36b20da25e7a414071d5cfce0c527c38f5f029",
+      "source_mode": "project_direct",
+      "token_mapping": {}
+    },
+    "max_transactions": 100000,
+    "resource_queue_estimate": {
+      "activity_network_upper_bound": null,
+      "initial_entities": 6,
+      "process_flow_may_be_unbounded": true,
+      "produced_per_single_execution_of_each_activity": 1
+    }
+  }
+}

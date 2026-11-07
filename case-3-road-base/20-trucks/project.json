@@ -1,0 +1,891 @@
+{
+  "activities": {
+    "compact": {
+      "duration": 25.35,
+      "name": "压实 Compact",
+      "priority": 0,
+      "produces": {},
+      "releases": {
+        "roller": {
+          "quantity": 1,
+          "resource_id": "roller",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "requires": {
+        "roller": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "roller",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative",
+        "calibration"
+      ]
+    },
+    "dump": {
+      "duration": 1,
+      "name": "卸料 Dump",
+      "priority": 0,
+      "produces": {
+        "granular": {
+          "quantity": 1,
+          "resource_id": "truckload_granular",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "releases": {
+        "flagman": {
+          "quantity": 1,
+          "resource_id": "flagman",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "requires": {
+        "flagman": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "flagman",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative",
+        "calibration"
+      ]
+    },
+    "grade": {
+      "duration": 27,
+      "name": "摊铺 Grade",
+      "priority": 0,
+      "produces": {},
+      "releases": {
+        "grader": {
+          "quantity": 1,
+          "resource_id": "grader",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "requires": {
+        "grader": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "grader",
+          "source_ids": [
+            "narrative"
+          ]
+        },
+        "granular": {
+          "at": "work_segments",
+          "quantity": 10,
+          "resource_id": "truckload_granular",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative",
+        "calibration"
+      ]
+    },
+    "load": {
+      "duration": 5,
+      "name": "装料 Load",
+      "priority": 0,
+      "produces": {},
+      "releases": {
+        "loader": {
+          "quantity": 1,
+          "resource_id": "loader",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "requires": {
+        "loader": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "loader",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative",
+        "calibration"
+      ]
+    },
+    "moisten": {
+      "duration": 4.05,
+      "name": "洒水湿润 Moisten",
+      "priority": 0,
+      "produces": {},
+      "releases": {
+        "flagman": {
+          "quantity": 1,
+          "resource_id": "flagman",
+          "source_ids": [
+            "narrative"
+          ]
+        },
+        "water_truck": {
+          "quantity": 1,
+          "resource_id": "water_truck",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "requires": {
+        "flagman": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "flagman",
+          "source_ids": [
+            "narrative"
+          ]
+        },
+        "water_truck": {
+          "at": "work_segments",
+          "quantity": 1,
+          "resource_id": "water_truck",
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "source_ids": [
+        "narrative",
+        "calibration"
+      ]
+    },
+    "return": {
+      "duration": 20,
+      "name": "返回采石场 Return",
+      "priority": 0,
+      "produces": {},
+      "releases": {},
+      "requires": {},
+      "source_ids": [
+        "narrative",
+        "calibration"
+      ]
+    },
+    "travel": {
+      "duration": 20,
+      "name": "运往现场 Travel",
+      "priority": 0,
+      "produces": {},
+      "releases": {},
+      "requires": {},
+      "source_ids": [
+        "narrative",
+        "calibration"
+      ]
+    }
+  },
+  "id": "case-3-road-base-lu-2003",
+  "issues": {
+    "duration-mode": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {
+          "/time_unit": "minute"
+        },
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-duration",
+        "value": "confirmed_constant"
+      },
+      "kind": "missing",
+      "path": "/simulation/duration_mode",
+      "proposal": "confirmed_constant",
+      "reason": "需要确认本次采用叙述给出的确定性教学工期，而非论文未公开参数的 Beta 分布。",
+      "source_ids": [
+        "calibration"
+      ],
+      "status": "confirmed"
+    },
+    "max-transactions": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-run",
+        "value": 100000
+      },
+      "kind": "default",
+      "path": "/simulation/max_transactions",
+      "proposal": 100000,
+      "reason": "原文没有给出技术事务上限；需要显式运行保护值。",
+      "source_ids": [
+        "window",
+        "template"
+      ],
+      "status": "confirmed"
+    },
+    "priority-compact": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-priority",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/compact/priority",
+      "proposal": 0,
+      "reason": "原文没有给出 Compact 的资源队列优先级。",
+      "source_ids": [
+        "narrative",
+        "template"
+      ],
+      "status": "confirmed"
+    },
+    "priority-dump": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-priority",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/dump/priority",
+      "proposal": 0,
+      "reason": "原文没有给出 Dump 的资源队列优先级。",
+      "source_ids": [
+        "narrative",
+        "template"
+      ],
+      "status": "confirmed"
+    },
+    "priority-grade": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-priority",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/grade/priority",
+      "proposal": 0,
+      "reason": "原文没有给出 Grade 的资源队列优先级。",
+      "source_ids": [
+        "narrative",
+        "template"
+      ],
+      "status": "confirmed"
+    },
+    "priority-load": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-priority",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/load/priority",
+      "proposal": 0,
+      "reason": "原文没有给出 Load 的资源队列优先级。",
+      "source_ids": [
+        "narrative",
+        "template"
+      ],
+      "status": "confirmed"
+    },
+    "priority-moisten": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-priority",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/moisten/priority",
+      "proposal": 0,
+      "reason": "原文没有给出 Moisten 的资源队列优先级。",
+      "source_ids": [
+        "narrative",
+        "template"
+      ],
+      "status": "confirmed"
+    },
+    "priority-return": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-priority",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/return/priority",
+      "proposal": 0,
+      "reason": "原文没有给出 Return 的资源队列优先级。",
+      "source_ids": [
+        "narrative",
+        "template"
+      ],
+      "status": "confirmed"
+    },
+    "priority-travel": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-priority",
+        "value": 0
+      },
+      "kind": "missing",
+      "path": "/activities/travel/priority",
+      "proposal": 0,
+      "reason": "原文没有给出 Travel 的资源队列优先级。",
+      "source_ids": [
+        "narrative",
+        "template"
+      ],
+      "status": "confirmed"
+    },
+    "run-count": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-run",
+        "value": 1
+      },
+      "kind": "missing",
+      "path": "/simulation/run/runs",
+      "proposal": 1,
+      "reason": "原文未给运行次数。",
+      "source_ids": [
+        "window"
+      ],
+      "status": "confirmed"
+    },
+    "run-seed": {
+      "confirmation": {
+        "at_revision": 2,
+        "context": {},
+        "project_id": "case-3-road-base-lu-2003",
+        "source_id": "user-case3-run",
+        "value": 17
+      },
+      "kind": "default",
+      "path": "/simulation/run/seed",
+      "proposal": 17,
+      "reason": "原文未给随机种子；固定种子便于复现记录。",
+      "source_ids": [
+        "window"
+      ],
+      "status": "confirmed"
+    },
+    "observation-horizon": {
+      "kind": "conflict",
+      "path": "/simulation/horizon",
+      "status": "confirmed",
+      "reason": "用户本次明确限制观察窗为480分钟，替代旧多工作日6240分钟观察窗。",
+      "source_ids": [
+        "user-case3-480-two-scenarios"
+      ],
+      "confirmation": {
+        "source_id": "user-case3-480-two-scenarios",
+        "project_id": "case-3-road-base-lu-2003",
+        "at_revision": 5,
+        "value": 480,
+        "context": {
+          "/time_unit": "minute"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "scenario": {
+      "truck_count": 20,
+      "road_sections": 25,
+      "observation_minutes": 480,
+      "runs": 1,
+      "seed": 17,
+      "priority_all": 0,
+      "duration_basis": "Previously confirmed deterministic teaching calibration values.",
+      "calendar_enabled": false
+    },
+    "parent_project": "runs/case-3/project.json",
+    "parent_revision": 3,
+    "superseded_for_this_scenario": {
+      "work_schedule": {
+        "day1_weekday": 1,
+        "source_ids": [
+          "user-case3-real-shift"
+        ],
+        "units_per_day": 1440,
+        "work_duration": 480,
+        "work_start": 0,
+        "working_days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "issues": {
+        "shift-goal": {
+          "confirmation": {
+            "at_revision": 3,
+            "context": {},
+            "project_id": "case-3-road-base-lu-2003",
+            "source_id": "user-case3-shift-confirm",
+            "value": {
+              "kind": "target_completions",
+              "targets": {
+                "compact": 25
+              }
+            }
+          },
+          "kind": "default",
+          "path": "/simulation/goal",
+          "proposal": {
+            "kind": "target_completions",
+            "targets": {
+              "compact": 25
+            }
+          },
+          "reason": "新业务目标是 25 个路段完成 Compact；旧 time_window 目标只统计首个工作日。",
+          "source_ids": [
+            "window",
+            "user-case3-real-shift"
+          ],
+          "status": "confirmed"
+        },
+        "shift-horizon": {
+          "confirmation": {
+            "at_revision": 3,
+            "context": {
+              "/time_unit": "minute"
+            },
+            "project_id": "case-3-road-base-lu-2003",
+            "source_id": "user-case3-shift-confirm",
+            "value": 6240
+          },
+          "kind": "conflict",
+          "path": "/simulation/horizon",
+          "proposal": 6240,
+          "reason": "原 480 min 是一个工作日，不是全项目时界；第 5 个工作日收工 t=6240 仅作捕获完成时刻的技术观察窗。",
+          "source_ids": [
+            "window",
+            "user-case3-real-shift"
+          ],
+          "status": "confirmed"
+        },
+        "shift-schedule": {
+          "confirmation": {
+            "at_revision": 3,
+            "context": {
+              "/time_unit": "minute"
+            },
+            "project_id": "case-3-road-base-lu-2003",
+            "source_id": "user-case3-shift-confirm",
+            "value": {
+              "day1_weekday": 1,
+              "source_ids": [
+                "user-case3-real-shift"
+              ],
+              "units_per_day": 1440,
+              "work_duration": 480,
+              "work_start": 0,
+              "working_days": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            }
+          },
+          "kind": "default",
+          "path": "/work_schedule",
+          "proposal": {
+            "day1_weekday": 1,
+            "source_ids": [
+              "user-case3-real-shift"
+            ],
+            "units_per_day": 1440,
+            "work_duration": 480,
+            "work_start": 0,
+            "working_days": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "reason": "用户要求真实每日 8 小时班次，并同意周一至周五、全活动暂停及跨班释放/重领的整组方案；需要绑定该项目事实。",
+          "source_ids": [
+            "user-case3-real-shift"
+          ],
+          "status": "confirmed"
+        }
+      }
+    },
+    "downstream_status": {
+      "s3": {
+        "status": "stale",
+        "source_revision": 3,
+        "reason": "New 480-minute scenario and truck count require regenerated S3."
+      },
+      "simulation": {
+        "status": "stale",
+        "source_revision": 3,
+        "reason": "New scenario requires new run; results do not alter historical outputs."
+      }
+    },
+    "scope": "process_flow; no PDM/AON. One execution per truck-count scenario; no parameter fitting or engine changes."
+  },
+  "name": "道路粒料基层：20辆卡车，480分钟观察",
+  "policy": {
+    "duration": "confirmed_constant",
+    "execution": "pause_release_reacquire",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "relations": {},
+  "resources": {
+    "flagman": {
+      "kind": "reusable",
+      "name": "旗手 Flagman",
+      "source_ids": [
+        "narrative"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "id": "flagman-1",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "unit": "person"
+    },
+    "grader": {
+      "kind": "reusable",
+      "name": "平地机 Grader",
+      "source_ids": [
+        "narrative"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "id": "grader-1",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "unit": "machine"
+    },
+    "loader": {
+      "kind": "reusable",
+      "name": "装载机 Loader",
+      "source_ids": [
+        "narrative"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "count": 2,
+          "id_prefix": "loader-",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative"
+          ],
+          "start_index": 1
+        }
+      },
+      "unit": "machine"
+    },
+    "roller": {
+      "kind": "reusable",
+      "name": "压路机 Roller",
+      "source_ids": [
+        "narrative"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "id": "roller-1",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "unit": "machine"
+    },
+    "truckload_granular": {
+      "kind": "disposable",
+      "name": "一车粒料 Truckload Granular",
+      "source_ids": [
+        "narrative"
+      ],
+      "supply": {},
+      "unit": "truckload"
+    },
+    "water_truck": {
+      "kind": "reusable",
+      "name": "洒水车 Water Truck",
+      "source_ids": [
+        "narrative"
+      ],
+      "supply": {
+        "initial": {
+          "available": true,
+          "id": "water-truck-1",
+          "ready_time": 0,
+          "source_ids": [
+            "narrative"
+          ]
+        }
+      },
+      "unit": "vehicle"
+    }
+  },
+  "revision": 5,
+  "schema_version": "project-1.0",
+  "simulation": {
+    "duration_mode": "confirmed_constant",
+    "flows": {
+      "sections": {
+        "arrival_time": 0,
+        "count": 25,
+        "id_prefix": "section-",
+        "initial_activity": "grade",
+        "source_ids": [
+          "narrative"
+        ],
+        "start_index": 1,
+        "type": "road_section"
+      },
+      "trucks": {
+        "arrival_time": 0,
+        "count": 20,
+        "id_prefix": "truck-",
+        "initial_activity": "load",
+        "source_ids": [
+          "narrative",
+          "user-case3-480-two-scenarios"
+        ],
+        "start_index": 1,
+        "type": "dump_truck"
+      }
+    },
+    "goal": {
+      "kind": "time_window",
+      "activity_ids": [
+        "load",
+        "travel",
+        "dump",
+        "return",
+        "grade",
+        "moisten",
+        "compact"
+      ]
+    },
+    "horizon": 480,
+    "max_transactions": 100000,
+    "profile": "process_flow",
+    "routes": {
+      "compact": {
+        "mode": "choice",
+        "source_ids": [
+          "narrative"
+        ],
+        "targets": {}
+      },
+      "dump": {
+        "mode": "choice",
+        "source_ids": [
+          "narrative"
+        ],
+        "targets": {
+          "next": {
+            "activity_id": "return",
+            "weight": 1
+          }
+        }
+      },
+      "grade": {
+        "mode": "choice",
+        "source_ids": [
+          "narrative"
+        ],
+        "targets": {
+          "next": {
+            "activity_id": "moisten",
+            "weight": 1
+          }
+        }
+      },
+      "load": {
+        "mode": "choice",
+        "source_ids": [
+          "narrative"
+        ],
+        "targets": {
+          "next": {
+            "activity_id": "travel",
+            "weight": 1
+          }
+        }
+      },
+      "moisten": {
+        "mode": "choice",
+        "source_ids": [
+          "narrative"
+        ],
+        "targets": {
+          "next": {
+            "activity_id": "compact",
+            "weight": 1
+          }
+        }
+      },
+      "return": {
+        "mode": "choice",
+        "source_ids": [
+          "narrative"
+        ],
+        "targets": {
+          "next": {
+            "activity_id": "load",
+            "weight": 1
+          }
+        }
+      },
+      "travel": {
+        "mode": "choice",
+        "source_ids": [
+          "narrative"
+        ],
+        "targets": {
+          "next": {
+            "activity_id": "dump",
+            "weight": 1
+          }
+        }
+      }
+    },
+    "run": {
+      "runs": 1,
+      "seed": 17,
+      "source_ids": [
+        "user-case3-run",
+        "user-case3-480-two-scenarios"
+      ]
+    },
+    "source_ids": [
+      "narrative",
+      "calibration",
+      "window",
+      "user-case3-480-two-scenarios",
+      "observation-representation"
+    ],
+    "start_time": 0
+  },
+  "source_ids": [
+    "narrative",
+    "calibration",
+    "window",
+    "policy",
+    "user-case3-480-two-scenarios"
+  ],
+  "sources": {
+    "calibration": {
+      "kind": "document",
+      "locator": "case/Road_Base_Construction_Case_Lu_2003_Narrative.md#line=29",
+      "text": "论文 Beta 分布参数未公开；本叙述另给 5/20/1/20/27/4.05/25.35 min 的确定性教学校准值，不是论文原始输入。"
+    },
+    "narrative": {
+      "kind": "document",
+      "locator": "case/Road_Base_Construction_Case_Lu_2003_Narrative.md#line=7-25",
+      "text": "25 个路段、10 辆循环卡车、装卸与摊铺/湿润/压实流程、资源数量、每 10 车粒料消耗及各项显式释放。"
+    },
+    "policy": {
+      "kind": "policy",
+      "locator": "AGENTS.md#M1 当前产物",
+      "text": "项目既有确认政策：一般使用确认的数值工期，活动暂停时释放 reusable，恢复时重新申请。"
+    },
+    "template": {
+      "kind": "example",
+      "locator": "examples/s3/granular-basecourse/project.json",
+      "text": "现有教学例将 priority 设 0、max_transactions 设 100000；这里只作为待用户确认的建议，不作为本案例原文事实。"
+    },
+    "user-case3-duration": {
+      "kind": "user",
+      "locator": "conversation://case-3/duration-mode-answer",
+      "text": "采用确定性教学工期（推荐）"
+    },
+    "user-case3-priority": {
+      "kind": "user",
+      "locator": "conversation://case-3/priority-answer",
+      "text": "全部设为 0（推荐）"
+    },
+    "user-case3-real-shift": {
+      "kind": "user",
+      "locator": "conversation://case-3/real-daily-shift-choice",
+      "text": "需要真实每日 8 小时班次与夜间/休息日暂停"
+    },
+    "user-case3-run": {
+      "kind": "user",
+      "locator": "conversation://case-3/run-settings-answer",
+      "text": "确认这组可复现设置（推荐）"
+    },
+    "user-case3-shift-confirm": {
+      "kind": "user",
+      "locator": "conversation://case-3/ok-continue-real-shift",
+      "text": "ok继续"
+    },
+    "window": {
+      "kind": "document",
+      "locator": "case/Road_Base_Construction_Case_Lu_2003_Narrative.md#line=33",
+      "text": "观察下一个工作日各项活动完成数；模型时间 0 起，观察窗 480 min。"
+    },
+    "user-case3-480-two-scenarios": {
+      "kind": "user",
+      "locator": "conversation://2026-11-07/case3-480min-10-and-20-trucks",
+      "text": "请根据skill你把case-3重新跑一遍。480min限制。10个truck跑一遍，20个truck跑一遍，保存在同一个文件夹路径下。最后报告给我所有resource的资源利用率。"
+    },
+    "observation-representation": {
+      "kind": "document",
+      "locator": "case/Road_Base_Construction_Case_Lu_2003_Narrative.md#仿真目的与时间范围",
+      "text": "This run observes the first 480 minutes, not completion of all 25 sections over multiple shifts. The new scenario omits the former cross-day work_schedule; within 0–480 minutes there is no night/weekend. Goal is time_window, with completion counts and horizon-clipped utilization reported."
+    }
+  },
+  "status": "specified",
+  "time_unit": "minute"
+}

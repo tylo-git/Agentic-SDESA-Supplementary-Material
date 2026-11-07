@@ -1,0 +1,82 @@
+{
+  "schema_version": "agenticsdesa-run-1.0",
+  "project_id": "case-2-box-culvert",
+  "project_revision": 2,
+  "source": {
+    "path": "../../case/Box_Culvert_Drainage_Case_Narrative.md",
+    "sha256": "498472a9574a4bf00eefa0507cc4b60da689ba32150d506cce14fa06f9b4fad1"
+  },
+  "canonical_project_sha256": "f02a9d9cad2c1b1003fc8f8f0840881e9ec88326c23af269648d5d18dd4fd80c",
+  "inputs": {
+    "project": {
+      "path": "project-r2.json",
+      "bytes": 68900,
+      "sha256": "1c2fcd35bf14d77228a63bfd7ff29798c77688775723e3591f0b1b40c6b0e097"
+    },
+    "pdm": {
+      "path": "pdm.json",
+      "bytes": 29030,
+      "sha256": "a585dccbc178a9f2426339dc3b2c1d5d7afca42687016abd32e47bde2fdc2a1a"
+    },
+    "aon": {
+      "path": "aon.json",
+      "bytes": 60078,
+      "sha256": "25595c5e4dc6bd3f9f9f672f4ba396df31a21fad80e9fad6fd80ef9c8cfe3188"
+    },
+    "s3": {
+      "path": "s3.json",
+      "bytes": 72016,
+      "sha256": "0f6cc45bc87fcc277bd9e41fff68f29c488f7a6f6a694bd11d71f01a95ba55a2"
+    }
+  },
+  "scope": {
+    "resource_calendars": "all_resources_continuously_available",
+    "equivalence_to_paper_calendar_schedule": false,
+    "confirmation": {
+      "locator": "conversation://question-reply/call_446487a741aa4b0f8a37e3c00599198f",
+      "text": "按全天连续可用简化运行（结果不等价于论文日历排程）"
+    }
+  },
+  "simulation": {
+    "runs": 1,
+    "seed": 17,
+    "output_dir": "simulation",
+    "engine": "bundled copied SDESA",
+    "horizon": null,
+    "max_transactions": 10000
+  },
+  "result": {
+    "stop_reason": "all_flow_records_processed",
+    "business_status": "completed",
+    "project_completion_time": 281,
+    "time_unit": "day",
+    "evidence": [
+      "F completed once at t=281 and completed_within_horizon=True.",
+      "33 of 33 activity trigger flows departed; no blocked_reason remained.",
+      "All 38 AON completion tokens were produced and consumed.",
+      "No reusable resource had an owner at the end."
+    ]
+  },
+  "outputs": [
+    {
+      "path": "simulation/summary.json",
+      "bytes": 25031,
+      "sha256": "62a0ff311bd384cd512c7f3c0f8f53d571bfc84ac04eb0b1e695052817ff3429"
+    },
+    {
+      "path": "simulation/events.csv",
+      "bytes": 10628,
+      "sha256": "e4cdae9055ced2a347f0c3183adc27dda011e52d1ae6b13c48b40e874c5275b4"
+    },
+    {
+      "path": "simulation/flow_queue.csv",
+      "bytes": 2449,
+      "sha256": "bd0a4176d78dc69d73e001c0a00679b264966f83098da15c6ef9eb291aa9d02c"
+    },
+    {
+      "path": "simulation/resources.csv",
+      "bytes": 7669,
+      "sha256": "3b24a4c3b00ad581126bfb96388597f7b53c013051b4986624203a4e4876834c"
+    }
+  ]
+}

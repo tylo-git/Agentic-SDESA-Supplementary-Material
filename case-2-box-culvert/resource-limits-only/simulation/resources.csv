@@ -1,0 +1,70 @@
+﻿resource_id,resource_type,ready_time,available,disposable,description,initial_ready_time,generated_by_record,consumed_by_record,busy_time,current_owner_entity,utilization
+BBF-1,BBF,239.0,True,False,钢筋工,0.0,,,69.0,,0.24555160142348753
+BBF-2,BBF,252.0,True,False,钢筋工,0.0,,,70.0,,0.2491103202846975
+BBF-3,BBF,252.0,True,False,钢筋工,0.0,,,46.0,,0.16370106761565836
+BBF-4,BBF,226.0,True,False,钢筋工,0.0,,,40.0,,0.1423487544483986
+BE-1,BE,281.0,True,False,反铲挖掘机,0.0,,,43.0,,0.15302491103202848
+BE-2,BE,281.0,True,False,反铲挖掘机,0.0,,,43.0,,0.15302491103202848
+BE-3,BE,281.0,True,False,反铲挖掘机,0.0,,,41.0,,0.14590747330960854
+BE-4,BE,281.0,True,False,反铲挖掘机,0.0,,,39.0,,0.1387900355871886
+CF-1,CF,249.0,True,False,模板木工,0.0,,,39.0,,0.1387900355871886
+CF-2,CF,269.0,True,False,模板木工,0.0,,,38.0,,0.13523131672597866
+CLB-1,CLB,274.0,True,False,混凝土工,0.0,,,18.0,,0.06405693950177936
+CLB-2,CLB,274.0,True,False,混凝土工,0.0,,,17.0,,0.060498220640569395
+CLB-3,CLB,274.0,True,False,混凝土工,0.0,,,19.0,,0.06761565836298933
+CLB-4,CLB,253.0,True,False,混凝土工,0.0,,,10.0,,0.03558718861209965
+CLB-5,CLB,253.0,True,False,混凝土工,0.0,,,10.0,,0.03558718861209965
+CMC-1,CMC,253.0,True,False,履带式起重机,0.0,,,43.0,,0.15302491103202848
+CMC-2,CMC,274.0,True,False,履带式起重机,0.0,,,32.0,,0.11387900355871886
+CMC-3,CMC,252.0,True,False,履带式起重机,0.0,,,15.0,,0.05338078291814947
+DL-1,DL,242.0,True,False,渠管工,0.0,,,1.0,,0.0035587188612099642
+LB-1,LB,281.0,True,False,技术工人,0.0,,,240.0,,0.8540925266903915
+LB-2,LB,281.0,True,False,技术工人,0.0,,,244.0,,0.8683274021352313
+LB-3,LB,281.0,True,False,技术工人,0.0,,,221.0,,0.7864768683274022
+LB-4,LB,281.0,True,False,技术工人,0.0,,,218.0,,0.7758007117437722
+LB-5,LB,281.0,True,False,技术工人,0.0,,,150.0,,0.5338078291814946
+LB-6,LB,281.0,True,False,技术工人,0.0,,,150.0,,0.5338078291814946
+LB-7,LB,281.0,True,False,技术工人,0.0,,,161.0,,0.5729537366548043
+LB-8,LB,281.0,True,False,技术工人,0.0,,,135.0,,0.4804270462633452
+RR-1,RR,281.0,True,False,压路机,0.0,,,36.0,,0.12811387900355872
+RR-2,RR,281.0,True,False,压路机,0.0,,,36.0,,0.12811387900355872
+RR-3,RR,281.0,True,False,压路机,0.0,,,21.0,,0.07473309608540925
+RR-4,RR,281.0,True,False,压路机,0.0,,,20.0,,0.0711743772241993
+generated-__agenticsdesa_token__:7:e:00001-1,__agenticsdesa_token__:7:e:00001,16.0,False,True,Complete dependency e:00001,16.0,1,3,,,
+generated-__agenticsdesa_token__:7:e:00002-2,__agenticsdesa_token__:7:e:00002,16.0,False,True,Complete dependency e:00002,16.0,1,12,,,
+generated-__agenticsdesa_token__:7:e:00003-3,__agenticsdesa_token__:7:e:00003,24.0,False,True,Complete dependency e:00003,24.0,3,4,,,
+generated-__agenticsdesa_token__:7:e:00004-4,__agenticsdesa_token__:7:e:00004,40.0,False,True,Complete dependency e:00004,40.0,4,5,,,
+generated-__agenticsdesa_token__:7:e:00005-5,__agenticsdesa_token__:7:e:00005,52.0,False,True,Complete dependency e:00005,52.0,5,6,,,
+generated-__agenticsdesa_token__:7:e:00006-6,__agenticsdesa_token__:7:e:00006,55.0,False,True,Complete dependency e:00006,55.0,6,7,,,
+generated-__agenticsdesa_token__:7:e:00007-7,__agenticsdesa_token__:7:e:00007,55.0,False,True,Complete dependency e:00007,55.0,6,8,,,
+generated-__agenticsdesa_token__:7:e:00008-8,__agenticsdesa_token__:7:e:00008,87.0,False,True,Complete dependency e:00008,87.0,7,9,,,
+generated-__agenticsdesa_token__:7:e:00009-9,__agenticsdesa_token__:7:e:00009,71.0,False,True,Complete dependency e:00009,71.0,8,9,,,
+generated-__agenticsdesa_token__:7:e:00010-10,__agenticsdesa_token__:7:e:00010,91.0,False,True,Complete dependency e:00010,91.0,9,10,,,
+generated-__agenticsdesa_token__:7:e:00011-11,__agenticsdesa_token__:7:e:00011,123.0,False,True,Complete dependency e:00011,123.0,10,11,,,
+generated-__agenticsdesa_token__:7:e:00012-12,__agenticsdesa_token__:7:e:00012,123.0,False,True,Complete dependency e:00012,123.0,10,32,,,
+generated-__agenticsdesa_token__:7:e:00013-13,__agenticsdesa_token__:7:e:00013,143.0,False,True,Complete dependency e:00013,143.0,11,33,,,
+generated-__agenticsdesa_token__:7:e:00014-14,__agenticsdesa_token__:7:e:00014,135.0,False,True,Complete dependency e:00014,135.0,12,13,,,
+generated-__agenticsdesa_token__:7:e:00015-15,__agenticsdesa_token__:7:e:00015,138.0,False,True,Complete dependency e:00015,138.0,13,14,,,
+generated-__agenticsdesa_token__:7:e:00016-16,__agenticsdesa_token__:7:e:00016,138.0,False,True,Complete dependency e:00016,138.0,13,15,,,
+generated-__agenticsdesa_token__:7:e:00017-17,__agenticsdesa_token__:7:e:00017,170.0,False,True,Complete dependency e:00017,170.0,14,16,,,
+generated-__agenticsdesa_token__:7:e:00018-18,__agenticsdesa_token__:7:e:00018,159.0,False,True,Complete dependency e:00018,159.0,15,16,,,
+generated-__agenticsdesa_token__:7:e:00019-19,__agenticsdesa_token__:7:e:00019,174.0,False,True,Complete dependency e:00019,174.0,16,17,,,
+generated-__agenticsdesa_token__:7:e:00020-20,__agenticsdesa_token__:7:e:00020,206.0,False,True,Complete dependency e:00020,206.0,17,18,,,
+generated-__agenticsdesa_token__:7:e:00021-21,__agenticsdesa_token__:7:e:00021,206.0,False,True,Complete dependency e:00021,206.0,17,19,,,
+generated-__agenticsdesa_token__:7:e:00022-22,__agenticsdesa_token__:7:e:00022,226.0,False,True,Complete dependency e:00022,226.0,18,20,,,
+generated-__agenticsdesa_token__:7:e:00023-23,__agenticsdesa_token__:7:e:00023,226.0,False,True,Complete dependency e:00023,226.0,19,20,,,
+generated-__agenticsdesa_token__:7:e:00024-24,__agenticsdesa_token__:7:e:00024,231.0,False,True,Complete dependency e:00024,231.0,20,21,,,
+generated-__agenticsdesa_token__:7:e:00025-25,__agenticsdesa_token__:7:e:00025,233.0,False,True,Complete dependency e:00025,233.0,21,22,,,
+generated-__agenticsdesa_token__:7:e:00026-26,__agenticsdesa_token__:7:e:00026,234.0,False,True,Complete dependency e:00026,234.0,22,23,,,
+generated-__agenticsdesa_token__:7:e:00027-27,__agenticsdesa_token__:7:e:00027,239.0,False,True,Complete dependency e:00027,239.0,23,24,,,
+generated-__agenticsdesa_token__:7:e:00028-28,__agenticsdesa_token__:7:e:00028,241.0,False,True,Complete dependency e:00028,241.0,24,25,,,
+generated-__agenticsdesa_token__:7:e:00029-29,__agenticsdesa_token__:7:e:00029,242.0,False,True,Complete dependency e:00029,242.0,25,26,,,
+generated-__agenticsdesa_token__:7:e:00035-30,__agenticsdesa_token__:7:e:00035,90.0,False,True,Complete dependency e:00035,90.0,30,31,,,
+generated-__agenticsdesa_token__:7:e:00036-31,__agenticsdesa_token__:7:e:00036,242.0,False,True,Complete dependency e:00036,242.0,31,26,,,
+generated-__agenticsdesa_token__:7:e:00030-32,__agenticsdesa_token__:7:e:00030,246.0,False,True,Complete dependency e:00030,246.0,26,27,,,
+generated-__agenticsdesa_token__:7:e:00031-33,__agenticsdesa_token__:7:e:00031,246.0,False,True,Complete dependency e:00031,246.0,26,28,,,
+generated-__agenticsdesa_token__:7:e:00032-34,__agenticsdesa_token__:7:e:00032,252.0,False,True,Complete dependency e:00032,252.0,27,29,,,
+generated-__agenticsdesa_token__:7:e:00033-35,__agenticsdesa_token__:7:e:00033,249.0,False,True,Complete dependency e:00033,249.0,28,29,,,
+generated-__agenticsdesa_token__:7:e:00034-36,__agenticsdesa_token__:7:e:00034,253.0,False,True,Complete dependency e:00034,253.0,29,2,,,
+generated-__agenticsdesa_token__:7:e:00037-37,__agenticsdesa_token__:7:e:00037,269.0,False,True,Complete dependency e:00037,269.0,32,33,,,
+generated-__agenticsdesa_token__:7:e:00038-38,__agenticsdesa_token__:7:e:00038,274.0,False,True,Complete dependency e:00038,274.0,33,2,,,

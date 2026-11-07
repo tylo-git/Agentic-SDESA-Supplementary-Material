@@ -1,0 +1,621 @@
+{
+  "metadata": {
+    "ProjectTitle": "双资源施工调度案例（P25）",
+    "activity_labels": {
+      "A": "活动 A",
+      "B": "活动 B",
+      "C": "活动 C",
+      "D": "活动 D",
+      "E": "活动 E",
+      "F": "活动 F",
+      "FN": "Finish",
+      "G": "活动 G",
+      "H": "活动 H",
+      "I": "活动 I",
+      "ST": "Start"
+    },
+    "columns": [
+      "From",
+      "FromSF",
+      "To",
+      "ToSF",
+      "duration",
+      "Info"
+    ],
+    "description": "AgenticSDESA PDM; activity durations and endpoint relationship lags share the duration column.",
+    "duration_policy": {
+      "kind": "confirmed_constant",
+      "source_ids": [
+        "project-policy"
+      ]
+    },
+    "execution_policy": {
+      "kind": "pause_release_reacquire",
+      "source_ids": [
+        "project-policy"
+      ]
+    },
+    "project_id": "case-1-double-resource-p25",
+    "project_revision": 31,
+    "project_sha256": "b9a32cffec456c63cedc3138f9a4777695a29b86aa3f0a1b7c9240dbabcd2dbf",
+    "schema_version": "pdm-1.0",
+    "source_ids": [
+      "user-case",
+      "case-activities-start",
+      "case-activities-middle",
+      "case-activities-end",
+      "case-resources",
+      "case-boundaries",
+      "project-policy"
+    ],
+    "sources": {
+      "case-activities-end": {
+        "kind": "document",
+        "locator": "case/Double_Resource_Scheduling_Case_P25_Narrative.md#line=9",
+        "text": "D→H，F/G→I，E/H/I 全部完成定义项目完工；H/I 的工期与资源需求。"
+      },
+      "case-activities-middle": {
+        "kind": "document",
+        "locator": "case/Double_Resource_Scheduling_Case_P25_Narrative.md#line=7",
+        "text": "A→D/E，B→F/G，C→G；D/E/F/G 的工期与资源需求。"
+      },
+      "case-activities-start": {
+        "kind": "document",
+        "locator": "case/Double_Resource_Scheduling_Case_P25_Narrative.md#line=5",
+        "text": "A/B/C 的工期、资源需求及三者项目开始后可开工。"
+      },
+      "case-boundaries": {
+        "kind": "document",
+        "locator": "case/Double_Resource_Scheduling_Case_P25_Narrative.md#line=19",
+        "text": "允许添加零工期 ST/FN：ST→A/B/C，E/H/I→FN，共 11 节点、14 条 FS0 关系；边界节点不是实际施工。"
+      },
+      "case-resources": {
+        "kind": "document",
+        "locator": "case/Double_Resource_Scheduling_Case_P25_Narrative.md#line=13",
+        "text": "工人和吊机是可重复资源；活动结束后释放已占用资源。"
+      },
+      "project-policy": {
+        "kind": "policy",
+        "locator": "ontology/ontology.md#line=21",
+        "text": "项目已确认的统一政策：采用已确认数值工期；若活动因转换拆段，允许段间暂停并释放/重新申请可重复资源。"
+      },
+      "user-case": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/case-1-request",
+        "text": "用户将 case/Double_Resource_Scheduling_Case_P25_Narrative.md 指定为 Case 1，并要求从 extract-project 开始。项目名称由文件名作显示标签。"
+      },
+      "user-crane-available": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/s3-initial-settings",
+        "text": "确认上述整组设置（推荐）"
+      },
+      "user-crane-ready-time": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/s3-initial-settings",
+        "text": "确认上述整组设置（推荐）"
+      },
+      "user-horizon": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/s3-initial-settings",
+        "text": "确认上述整组设置（推荐）"
+      },
+      "user-labor-available": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/s3-initial-settings",
+        "text": "确认上述整组设置（推荐）"
+      },
+      "user-labor-ready-time": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/s3-initial-settings",
+        "text": "确认上述整组设置（推荐）"
+      },
+      "user-max-transactions": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/s3-initial-settings",
+        "text": "确认上述整组设置（推荐）"
+      },
+      "user-priority-A": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-priority-B": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-priority-C": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-priority-D": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-priority-E": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-priority-F": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-priority-FN": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-priority-G": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-priority-H": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-priority-I": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-priority-ST": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/priority-choice",
+        "text": "A–I 和 ST/FN 全部设为 0"
+      },
+      "user-produces-A": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/no-business-production",
+        "text": "确认 A–I 均无额外产出（推荐）"
+      },
+      "user-produces-B": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/no-business-production",
+        "text": "确认 A–I 均无额外产出（推荐）"
+      },
+      "user-produces-C": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/no-business-production",
+        "text": "确认 A–I 均无额外产出（推荐）"
+      },
+      "user-produces-D": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/no-business-production",
+        "text": "确认 A–I 均无额外产出（推荐）"
+      },
+      "user-produces-E": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/no-business-production",
+        "text": "确认 A–I 均无额外产出（推荐）"
+      },
+      "user-produces-F": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/no-business-production",
+        "text": "确认 A–I 均无额外产出（推荐）"
+      },
+      "user-produces-G": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/no-business-production",
+        "text": "确认 A–I 均无额外产出（推荐）"
+      },
+      "user-produces-H": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/no-business-production",
+        "text": "确认 A–I 均无额外产出（推荐）"
+      },
+      "user-produces-I": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/no-business-production",
+        "text": "确认 A–I 均无额外产出（推荐）"
+      },
+      "user-run-count": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/run-choice",
+        "text": "1 run, seed 17 (recommended)"
+      },
+      "user-run-seed": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/run-choice",
+        "text": "1 run, seed 17 (recommended)"
+      },
+      "user-simulation-start-time": {
+        "kind": "user",
+        "locator": "conversation://2026-10-07/s3-initial-settings",
+        "text": "确认上述整组设置（推荐）"
+      }
+    },
+    "time_unit": "day",
+    "version": "1.1"
+  },
+  "rows": [
+    {
+      "From": "A",
+      "FromSF": "ST",
+      "Info": "活动 A",
+      "To": "A",
+      "ToSF": "FN",
+      "duration": 2,
+      "id": "activity:A",
+      "kind": "activity",
+      "source_activity_id": "A",
+      "source_ids": [
+        "case-activities-start"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "B",
+      "FromSF": "ST",
+      "Info": "活动 B",
+      "To": "B",
+      "ToSF": "FN",
+      "duration": 3,
+      "id": "activity:B",
+      "kind": "activity",
+      "source_activity_id": "B",
+      "source_ids": [
+        "case-activities-start"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "C",
+      "FromSF": "ST",
+      "Info": "活动 C",
+      "To": "C",
+      "ToSF": "FN",
+      "duration": 5,
+      "id": "activity:C",
+      "kind": "activity",
+      "source_activity_id": "C",
+      "source_ids": [
+        "case-activities-start"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "D",
+      "FromSF": "ST",
+      "Info": "活动 D",
+      "To": "D",
+      "ToSF": "FN",
+      "duration": 4,
+      "id": "activity:D",
+      "kind": "activity",
+      "source_activity_id": "D",
+      "source_ids": [
+        "case-activities-middle"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "E",
+      "FromSF": "ST",
+      "Info": "活动 E",
+      "To": "E",
+      "ToSF": "FN",
+      "duration": 4,
+      "id": "activity:E",
+      "kind": "activity",
+      "source_activity_id": "E",
+      "source_ids": [
+        "case-activities-middle"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "F",
+      "FromSF": "ST",
+      "Info": "活动 F",
+      "To": "F",
+      "ToSF": "FN",
+      "duration": 3,
+      "id": "activity:F",
+      "kind": "activity",
+      "source_activity_id": "F",
+      "source_ids": [
+        "case-activities-middle"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "FN",
+      "FromSF": "ST",
+      "Info": "Finish",
+      "To": "FN",
+      "ToSF": "FN",
+      "duration": 0,
+      "id": "activity:FN",
+      "kind": "activity",
+      "source_activity_id": "FN",
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "G",
+      "FromSF": "ST",
+      "Info": "活动 G",
+      "To": "G",
+      "ToSF": "FN",
+      "duration": 6,
+      "id": "activity:G",
+      "kind": "activity",
+      "source_activity_id": "G",
+      "source_ids": [
+        "case-activities-middle"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "H",
+      "FromSF": "ST",
+      "Info": "活动 H",
+      "To": "H",
+      "ToSF": "FN",
+      "duration": 2,
+      "id": "activity:H",
+      "kind": "activity",
+      "source_activity_id": "H",
+      "source_ids": [
+        "case-activities-end"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "I",
+      "FromSF": "ST",
+      "Info": "活动 I",
+      "To": "I",
+      "ToSF": "FN",
+      "duration": 3,
+      "id": "activity:I",
+      "kind": "activity",
+      "source_activity_id": "I",
+      "source_ids": [
+        "case-activities-end"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "ST",
+      "FromSF": "ST",
+      "Info": "Start",
+      "To": "ST",
+      "ToSF": "FN",
+      "duration": 0,
+      "id": "activity:ST",
+      "kind": "activity",
+      "source_activity_id": "ST",
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "source_relation_id": null
+    },
+    {
+      "From": "ST",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "A",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R01",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "source_relation_id": "R01"
+    },
+    {
+      "From": "ST",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "B",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R02",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "source_relation_id": "R02"
+    },
+    {
+      "From": "ST",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "C",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R03",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "source_relation_id": "R03"
+    },
+    {
+      "From": "A",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "D",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R04",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-activities-middle",
+        "case-boundaries"
+      ],
+      "source_relation_id": "R04"
+    },
+    {
+      "From": "A",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "E",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R05",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-activities-middle",
+        "case-boundaries"
+      ],
+      "source_relation_id": "R05"
+    },
+    {
+      "From": "B",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "F",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R06",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-activities-middle",
+        "case-boundaries"
+      ],
+      "source_relation_id": "R06"
+    },
+    {
+      "From": "B",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "G",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R07",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-activities-middle",
+        "case-boundaries"
+      ],
+      "source_relation_id": "R07"
+    },
+    {
+      "From": "C",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "G",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R08",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-activities-middle",
+        "case-boundaries"
+      ],
+      "source_relation_id": "R08"
+    },
+    {
+      "From": "D",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "H",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R09",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-activities-end",
+        "case-boundaries"
+      ],
+      "source_relation_id": "R09"
+    },
+    {
+      "From": "F",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "I",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R10",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-activities-end",
+        "case-boundaries"
+      ],
+      "source_relation_id": "R10"
+    },
+    {
+      "From": "G",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "I",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R11",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-activities-end",
+        "case-boundaries"
+      ],
+      "source_relation_id": "R11"
+    },
+    {
+      "From": "E",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "FN",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R12",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "source_relation_id": "R12"
+    },
+    {
+      "From": "H",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "FN",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R13",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "source_relation_id": "R13"
+    },
+    {
+      "From": "I",
+      "FromSF": "FN",
+      "Info": "FS",
+      "To": "FN",
+      "ToSF": "ST",
+      "duration": 0,
+      "id": "relation:R14",
+      "kind": "relation",
+      "source_activity_id": null,
+      "source_ids": [
+        "case-boundaries"
+      ],
+      "source_relation_id": "R14"
+    }
+  ]
+}
